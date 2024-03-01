@@ -10,10 +10,10 @@ import Typography from '@mui/material/Typography';
 import Carousel from 'react-material-ui-carousel'
 
 const items = [
-  {src: 'drillm.png'},
-  {src: 'lampm.png'},
-  {src: 'laptopm.png'},
-  {src: 'tvm.png'},
+  {src: 'drillm.png', time: "1 година", vt: "800 Вт"},
+  {src: 'lampm.png', time: "120 годин", vt: "7 Вт"},
+  {src: 'laptopm.png', time: "10 годин", vt: "80 Вт"},
+  {src: 'tvm.png', time: "14 годин", vt: "60 Вт"},
 ];
 
 export default function Hero() {
@@ -102,7 +102,7 @@ export default function Hero() {
           sx={(theme) => ({
             mt: { xs: 8, sm: 10 },
             alignSelf: 'center',
-            height: { xs: 300, sm: 700 },
+            height: { xs: 330, sm: 700 },
             width: '100%',
             backgroundImage:
               theme.palette.mode === 'light'
@@ -140,7 +140,9 @@ function Item(props)
 {
     return (
          <Paper>
-          <img src={props.item.src}/>
+          <img width="200px" src={props.item.src}/>
+          <p>{props.item.time}</p>
+          <p color='#FF6C00'>{props.item.vt}</p>
          </Paper> 
     )
 }

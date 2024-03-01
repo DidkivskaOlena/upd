@@ -1,6 +1,5 @@
 import { alpha } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
-import { createTheme } from '@mui/system';
 
 export const brand = {
   50: '#F0F7FF',
