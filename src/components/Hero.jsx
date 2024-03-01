@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { alpha } from '@mui/material';
+import { Paper, alpha } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -7,6 +7,14 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import Carousel from 'react-material-ui-carousel'
+
+const items = [
+  {src: '../../public/drillm.png'},
+  {src: '../../public/lampm.png'},
+  {src: '../../public/laptopm.png'},
+  {src: '../../public/tvm.png'},
+];
 
 export default function Hero() {
   return (
@@ -56,10 +64,9 @@ export default function Hero() {
               />
           </Box>
           <Typography variant="body1" textAlign="center" color="text.secondary">
-          Пристрій безперебійного живлення <br />
-            Elevate your experience with top-tier features and services.
+          UPD-1600 є компактним, мобільним, екологічно-чистим, чудовим рішенням для забезпечення резвервного живлення.
           </Typography>
-          <Stack
+          {/* <Stack
             direction={{ xs: 'column', sm: 'row' }}
             alignSelf="center"
             spacing={1}
@@ -88,14 +95,14 @@ export default function Hero() {
               Terms & Conditions
             </Link>
             .
-          </Typography>
+          </Typography> */}
         </Stack>
         <Box
           id="image"
           sx={(theme) => ({
             mt: { xs: 8, sm: 10 },
             alignSelf: 'center',
-            height: { xs: 200, sm: 700 },
+            height: { xs: 300, sm: 700 },
             width: '100%',
             backgroundImage:
               theme.palette.mode === 'light'
@@ -113,8 +120,27 @@ export default function Hero() {
                 ? `0 0 12px 8px ${alpha('#9CCCFC', 0.2)}`
                 : `0 0 24px 12px ${alpha('#033363', 0.2)}`,
           })}
-        />
+        ><Carousel>
+            {
+                items.map( (item, i) => <Item key={i} item={item} /> )
+            }
+        </Carousel></Box>
+        
+        <Typography variant="body1" textAlign="center" color="text.secondary" sx={{
+          mt: { xs: 8, sm: 10 },
+        }}>
+          Вбудована інвертнорна система з сучасним літій-залізо-фосфатним (LiFePO4) акумулятором утворює надійний вузол для забезпечення автономного живлення електроприладів квартир, офісів, магазинів, медичних та косметоглогічних кабінетів та інших місць, де потрібне просте, надійне та економічне рішення.
+          </Typography>
       </Container>
     </Box>
   );
+}
+
+function Item(props)
+{
+    return (
+         <Paper>
+          <img src={props.item.src}/>
+         </Paper> 
+    )
 }
