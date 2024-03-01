@@ -10,10 +10,10 @@ import Typography from '@mui/material/Typography';
 import Carousel from 'react-material-ui-carousel'
 
 const items = [
-  {src: '../../public/drillm.png'},
-  {src: '../../public/lampm.png'},
-  {src: '../../public/laptopm.png'},
-  {src: '../../public/tvm.png'},
+  {src: 'drillm.png'},
+  {src: 'lampm.png'},
+  {src: 'laptopm.png'},
+  {src: 'tvm.png'},
 ];
 
 export default function Hero() {

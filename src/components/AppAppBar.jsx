@@ -85,7 +85,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <img
                 src={
-                  '../../public/logo.png'
+                  'logo.png'
                 }
                 href="/"
                 style={logoStyle}
