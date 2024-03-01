@@ -43,19 +43,20 @@ export default function Hero() {
             <Typography
               component="h1"
               variant="h1"
+              sx={{
+                fontSize: { xs: '40px'}
+              }}
             >
               UPD - 1600
             </Typography>
             <img
-                src={`../../public/upd.png`}
+                src='upd250.png'
                 alt='photo upd'
-                width={'300px'}
                 loading="lazy"
               />
           </Box>
           <Typography variant="body1" textAlign="center" color="text.secondary">
-            Explore our cutting-edge dashboard, delivering high-quality solutions
-            tailored to your needs. <br />
+          Пристрій безперебійного живлення <br />
             Elevate your experience with top-tier features and services.
           </Typography>
           <Stack

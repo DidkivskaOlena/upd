@@ -54,18 +54,6 @@ export const green = {
   900: '#021D02',
 };
 
-export const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 480,
-      md: 768,
-      lg: 1200,
-      xl: 1486,
-    },
-  },
-});
-
 const getDesignTokens = (mode) => ({
   palette: {
     mode,
