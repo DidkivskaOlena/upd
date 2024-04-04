@@ -1,0 +1,43 @@
+.address {
+    @media (min-width: $tablet) and (max-width: $desktop) {
+        display: inline-block;
+        margin-right: 165px;
+        margin-left: 76px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 8px;
+        }
+        
+    }
+
+    &__list{
+        @media screen and (max-width:767px) {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.address__link {
+    // color: $color-text-footer;
+
+    @include font (400, 14px, 1.71, 0.03em);
+    font-style: normal;
+    text-decoration: none;
+    // @include transition(color);
+
+    &--color-white {
+        // color: $color-text-secondary;
+    }
+
+    &:hover,
+    &:focus {
+        // color: $color-accent;
+    }
+}

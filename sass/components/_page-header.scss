@@ -1,0 +1,113 @@
+.page-header {
+    border-bottom: 2px solid #FF9900;
+    background-image: url(background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__container {
+        // @extend %align-list;
+
+        @media screen and (max-width: 767px) {
+            justify-content: space-between;
+            position: relative;
+        }
+    }
+
+    &__button{
+        display: inline-flex;
+        // @extend %button;
+        border: none;
+        // background-color: $color-bkbtn-menu;
+        z-index: 2;
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &__button.is-open{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    &__links{
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-wrap: wrap;
+            // background-color: $color-bk-primary;
+        }
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        @include font (500, 18px, 1.22, 0.02em);
+        margin-bottom: 10px;
+        
+        // color: $color-accent;
+        
+    }
+
+    &__link--after::after {
+        content: '';
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.page-header__button.is-open .page-header__icon-menu {
+    display: none;
+}
+
+.page-header__icon-cross{
+    display: none;
+
+    .page-header__button.is-open &{
+        display: block;
+    }
+}
+
+.page-header__menu{
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 48px 40px 38px;
+        height: 100%;
+        z-index: 1;
+        overflow-y: scroll;
+
+        // background-color: $color-bk-primary;
+
+        &.is-open {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+    }
+}

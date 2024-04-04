@@ -1,0 +1,76 @@
+.modal {
+    position: relative;
+    padding: 40px;
+
+    opacity: 1;
+    // background: $color-bk-primary;
+    
+    // @include transition(transform);
+
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+        position: fixed;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 528px;
+    }
+    
+    .backdrop--is-hidden & {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    &__text {
+        margin-bottom: 12px;
+        @include font (700, 20px, 1.15, 0.03em);
+
+        // color: $color-title-primary;
+    }
+}
+
+.modal__button {
+    // @extend %button;
+    // @include bordered(rgba(0, 0, 0, 0.1));
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    // background: $color-bk-primary;
+    // @include transition(background-color);
+
+    // &:hover,
+    // &:focus {
+    //     background-color: $color-bk-primary;
+    // }
+}
+
+.modal__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+
+    // fill: $color-modal-btn;
+    // @include transition(fill);
+
+    .modal__button:hover & {
+        // fill: $color-accent;
+    }
+}

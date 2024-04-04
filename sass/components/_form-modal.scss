@@ -1,0 +1,76 @@
+.form {
+    outline: none;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+    @media screen and (max-width: 767px) {
+        max-width: 370px;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        width: 370px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 448px;
+    }
+
+    &__label {
+        margin-bottom: 4px;
+        @include font (400, 12px, 1.17, 0.01em);
+    }
+}
+
+.form__field {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+    &--margin {
+        margin-bottom: 20px;
+    }
+}
+
+%form-input-textarea {
+    margin: 0;
+    // @include bordered (rgba(33, 33, 33, 0.2));
+    // @include transition (border);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+
+    &:focus {
+        // @include bordered($color-accent);
+    }
+}
+
+.form__input {
+    @extend %form-input-textarea;
+    padding: 11px 12px 11px 42px;
+}
+
+.form__textarea {
+    @extend %form-input-textarea;
+    padding: 12px 16px;
+
+    &::placeholder {
+        letter-spacing: 0.01em;
+        // color: $color-placeholder-textarea;
+    }
+}
+
+.form__icon {
+    // fill: $color-icon-form;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    // @include transition(fill);
+
+    .form__field:focus-within & {
+        // fill: $color-accent;
+    }
+}
