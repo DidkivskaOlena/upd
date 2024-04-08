@@ -130,16 +130,19 @@ img {
   background-size: cover;
   height: 404px;
 }
+.page-header__container {
+  display: flex;
+  align-items: center;
+  padding: 0px 25px 0 8px;
+}
 @media screen and (max-width: 767px) {
   .page-header__container {
     justify-content: space-between;
     position: relative;
-    height: 88px;
+    height: 64px;
   }
 }
 .page-header__button {
-  position: fixed;
-  right: 30px;
   border: none;
   border: none;
   background-color: rgba(0, 0, 0, 0);
@@ -179,15 +182,15 @@ img {
 
 .p-icon--menu {
   background-size: contain;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.1rem;
+  width: 2.1rem;
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
   font-size: inherit;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 0;
-  vertical-align: calc(0.5px + 0.3465em - 0.5rem);
+  vertical-align: calc(0.4px + 0.2465em - 0.4rem);
 }
 
 @media screen and (max-width: 767px) {
@@ -376,7 +379,7 @@ img {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 12px 25px 12px;
+  padding: 0px 12px 25px 25px;
 }
 @media screen and (max-width: 480px) {
   .hero {
@@ -390,15 +393,22 @@ img {
     max-width: 768px;
   }
 }
+.hero__container {
+  align-content: end;
+}
 .hero__content {
   display: flex;
   justify-content: flex-start;
 }
 .hero__title {
-  margin-bottom: 20px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  align-items: flex-end;
   font-size: 36px;
-  color: #FFFFFF;
-  font-weight: 500;
+  color: #0B1535;
+  font-weight: 600;
   text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
@@ -411,25 +421,26 @@ img {
 }
 .hero__texttop {
   color: #FFFFFF;
-  font-size: 9px;
-  margin-top: 30px;
   text-transform: uppercase;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 .hero__textbottom {
-  font-size: 10px;
   color: #FFFFFF;
   display: block;
-  width: 180px;
+  padding: 90px 0 90px 0;
+  width: 98px;
   font-weight: 400;
   font-size: 10px;
   line-height: 2;
   letter-spacing: 0.02em;
 }
 .hero__img {
-  width: 70%;
   position: absolute;
-  right: 40px;
-  top: 50px;
+  right: 10px;
+  top: 65px;
 }
 
 .modal {

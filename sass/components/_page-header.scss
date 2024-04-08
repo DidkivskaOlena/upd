@@ -12,18 +12,18 @@
     // }
 
     &__container {
-        // @extend %align-list;
+        display: flex;
+        align-items: center;
+        padding: 0px 25px 0 8px;
 
         @media screen and (max-width: 767px) {
             justify-content: space-between;
             position: relative;
-            height: 88px;
+            height: 64px;
         }
     }
 
     &__button{
-        position: fixed;
-        right: 30px;
         border: none;
         border: none;
         background-color: rgba(0, 0, 0, 0);
@@ -117,13 +117,13 @@
 
 .p-icon--menu{
     background-size: contain;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.1rem;
+    width: 2.1rem;
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
     font-size: inherit;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0;
-    vertical-align: calc(.5px + .3465em - .5rem);
+    vertical-align: calc(.4px + .2465em - .4rem);
 }

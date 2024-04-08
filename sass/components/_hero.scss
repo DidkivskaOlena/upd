@@ -1,7 +1,7 @@
 .hero {
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 12px 25px 12px;
+    padding: 0px 12px 25px 25px;
     // background-color: $color-bk-hero;
     // text-align: center;
 
@@ -77,6 +77,10 @@
     //         }
     // }
 
+    &__container {
+        align-content: end;
+    }
+
     &__content {
         display: flex;
         justify-content: flex-start;
@@ -84,10 +88,14 @@
     }
 
     &__title {
-        margin-bottom: 20px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        align-items: flex-end;
         font-size: 36px;
-        color: #FFFFFF;
-        font-weight: 500;
+        color: #0B1535;
+        font-weight: 600;
         text-transform: uppercase;
 
         // @media screen and (max-width: 1199px) {
@@ -101,28 +109,25 @@
 
     &__texttop {
         color: #FFFFFF;
-        font-size: 9px;
-        margin-top: 30px;
         text-transform: uppercase;
 
 
-        // @include font (700, 16px, 1.88, 0.06em);
+        @include font (500, 9px, 1.88, 0.06em);
     }
 
     &__textbottom {
-        font-size: 10px;
         color: #FFFFFF;
         display: block;
-        width: 180px;
+        padding: 90px 0 90px 0;
+        width: 98px;
 
         @include font (400, 10px, 2, 0.02em);
     }
 
     &__img {
-        width: 70%;
         position: absolute;
-        right: 40px;
-        top: 50px;
+        right: 10px;
+        top: 65px;
     }
 }
 
