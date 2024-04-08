@@ -6,10 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-css": "sass -w --load-path=node_modules src:dist --style=compressed"
   },
   "devDependencies": {
     "sass": "^1.74.1",
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "vanilla-framework": "^4.9.1"
   }
 }
