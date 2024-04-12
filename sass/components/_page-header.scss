@@ -2,7 +2,33 @@
     background-image: url(/background-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 404px;
+
+    @media screen and (max-width: 280px) {
+        height: 320px;
+    }
+
+    @media (min-width: 281px) and (max-width: 320px) {
+        height: 360px;
+    }
+
+    @media (min-width: 321px) and (max-width: 360px) {
+        height: 400px;
+    }
+
+    @media (min-width: 361px) and (max-width: 420px) {
+        height: 440px;
+    }
+
+    @media (min-width: 421px) and (max-width: 480px) {
+        height: 500px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2px solid #FF9900;
+    }
 
     @media screen and (min-width: $desktop) {
         max-width: 1600px;
@@ -14,7 +40,34 @@
     &__container {
         display: flex;
         align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
         padding: 0px 26px;
+
+        @media screen and (max-width: 280px) {
+            height: 54px;
+            padding: 0px 16px;
+        }
+
+        @media (min-width: 281px) and (max-width: 320px) {
+            height: 58px;
+            padding: 0px 16px;
+        }
+
+        @media (min-width: 321px) and (max-width: 360px) {
+            height: 58px;
+            padding: 0px 18px;
+        }
+
+        @media (min-width: 361px) and (max-width: 420px) {
+            height: 60px;
+            padding: 0px 20px;
+        }
+
+        @media (min-width: 421px) and (max-width: 480px) {
+            height: 60px;
+            padding: 0px 28px;
+        }
 
         @media screen and (max-width: 767px) {
             justify-content: space-between;

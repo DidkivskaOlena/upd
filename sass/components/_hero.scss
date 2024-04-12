@@ -5,47 +5,47 @@
     // background-color: $color-bk-hero;
     // text-align: center;
 
-    @media screen and (max-width: 480px) {
-        max-width: 480px;
-        // background-image: linear-gradient(to left,
-        //             $color-gradient-hero,
-        //             $color-gradient-hero),
-        //         url(../images/header-480.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+    // @media screen and (max-width: 480px) {
+    //     max-width: 480px;
+    //     // background-image: linear-gradient(to left,
+    //     //             $color-gradient-hero,
+    //     //             $color-gradient-hero),
+    //     //         url(../images/header-480.jpg);
+    //         background-repeat: no-repeat;
+    //         background-size: cover;
 
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-             & {
-                // background-image: linear-gradient(to left,
-                //         $color-gradient-hero,
-                //         $color-gradient-hero),
-                //     url('../images/header@2x-480.jpg');
-        }
-    }
-    }
+    //     @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //          & {
+    //             // background-image: linear-gradient(to left,
+    //             //         $color-gradient-hero,
+    //             //         $color-gradient-hero),
+    //             //     url('../images/header@2x-480.jpg');
+    //     }
+    // }
+    // }
     
-    @media (min-width: 481px) and (max-width: 768px) {
-        max-width: 768px;
-        // background-image: linear-gradient(to left,
-        //             $color-gradient-hero,
-        //             $color-gradient-hero),
-        //         url(../images/header-768.jpg);
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
+    // @media (min-width: 481px) and (max-width: 768px) {
+    //     max-width: 768px;
+    //     // background-image: linear-gradient(to left,
+    //     //             $color-gradient-hero,
+    //     //             $color-gradient-hero),
+    //     //         url(../images/header-768.jpg);
+    //     //     background-repeat: no-repeat;
+    //     //     background-size: cover;
 
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            & {
-                // background-image: linear-gradient(to left,
-                //             $color-gradient-hero,
-                //             $color-gradient-hero),
-                //         url('../images/header@2x-768.jpg');
-            }
-        }    
-    }
+    //     @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //         & {
+    //             // background-image: linear-gradient(to left,
+    //             //             $color-gradient-hero,
+    //             //             $color-gradient-hero),
+    //             //         url('../images/header@2x-768.jpg');
+    //         }
+    //     }    
+    // }
 
     // @media screen and (max-width: 1199px) {
     //     padding-top: 118px;
@@ -97,9 +97,26 @@
         text-transform: uppercase;
         font-family: "Open Sans", sans-serif;
 
-        // @media screen and (max-width: 1199px) {
-        //     @include font (900, 26px, 1.62, 0.06em);
-        // }
+        @media screen and (max-width: 280px) {
+            font-size: 24px;
+        }
+
+        @media (min-width: 281px) and (max-width: 320px) {
+            font-size: 28px;
+        }
+
+        @media (min-width: 321px) and (max-width: 360px) {
+            font-size: 30px;
+        }
+
+        @media (min-width: 361px) and (max-width: 420px) {
+            font-size: 32px;
+        }
+
+        @media (min-width: 421px) and (max-width: 480px) {
+            font-size: 40px;
+            margin-right: 20px;
+        }
 
         @media screen and (min-width: $desktop) {
             @include font (900, 44px, 1.36, 0.06em);
@@ -111,19 +128,63 @@
         color: #FFFFFF;
         text-transform: uppercase;
 
-
-        @include font (500, 9px, 1.88, 0.06em);
+        @include font (500, 10px, 1.88, 0.06em);
         font-family: "Open Sans", sans-serif;
+
+        @media screen and (max-width: 280px) {
+            font-size: 8px;
+            margin-bottom: 14px;
+        }
+
+        @media (min-width: 281px) and (max-width: 320px) {
+            font-size: 9px;
+            margin-bottom: 12px;
+        }
+
+        @media (min-width: 321px) and (max-width: 360px) {
+            font-size: 9px;
+            margin-bottom: 11px;
+        }
+
+        @media (min-width: 361px) and (max-width: 420px) {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 421px) and (max-width: 480px) {
+            font-size: 11px;
+            margin-bottom: 9px;
+        }
     }
 
     &__textbottom {
         color: #FFFFFF;
         display: block;
-        padding: 90px 0 90px 0;
         width: 98px;
 
         @include font (400, 10px, 2, 0.02em);
         font-family: "Open Sans", sans-serif;
+
+        @media screen and (max-width: 280px) {
+            padding: 50px 0 50px 0;
+        }
+
+        @media (min-width: 281px) and (max-width: 320px) {
+            padding: 65px 0 65px 0;
+        }
+
+        @media (min-width: 321px) and (max-width: 360px) {
+            padding: 90px 0 90px 0;
+        }
+
+        @media (min-width: 361px) and (max-width: 420px) {
+            padding: 110px 0 110px 0;
+        }
+
+        @media (min-width: 421px) and (max-width: 480px) {
+            font-size: 11px;
+            padding: 120px 0 120px 0;
+        }
     }
 
     &__img {
@@ -136,6 +197,26 @@
         position: fixed;
         top: 34px;
         width: 90vw;
+
+        @media screen and (max-width: 280px) {
+            top: 64px;
+        }
+
+        @media (min-width: 281px) and (max-width: 320px) {
+            top: 75px;
+        }
+
+        @media (min-width: 321px) and (max-width: 360px) {
+            top: 74px;
+        }
+
+        @media (min-width: 361px) and (max-width: 420px) {
+            top: 64px;
+        }
+
+        @media (min-width: 421px) and (max-width: 480px) {
+            top: 64px;
+        }
     }
 }
 
