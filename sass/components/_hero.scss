@@ -88,15 +88,13 @@
     }
 
     &__title {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        align-items: flex-end;
+        position: absolute;
+        right: 30px;
         font-size: 36px;
         color: #0B1535;
         font-weight: 600;
         text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
 
         // @media screen and (max-width: 1199px) {
         //     @include font (900, 26px, 1.62, 0.06em);
@@ -113,6 +111,7 @@
 
 
         @include font (500, 9px, 1.88, 0.06em);
+        font-family: "Open Sans", sans-serif;
     }
 
     &__textbottom {
@@ -122,6 +121,7 @@
         width: 98px;
 
         @include font (400, 10px, 2, 0.02em);
+        font-family: "Open Sans", sans-serif;
     }
 
     &__img {
