@@ -14,6 +14,7 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
+    "pug": "^3.0.2",
     "vanilla-framework": "^4.9.1"
   }
 }

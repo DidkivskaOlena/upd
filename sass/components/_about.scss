@@ -1,6 +1,7 @@
 .about {
     padding: 10px 20px;
     background-color: rgba(212, 214, 216, 30%);
+    height: 465px;
 
     &__component {
         position: absolute;
@@ -461,3 +462,113 @@
         height: 50px;
     }
 }
+
+/* ANIMATION */
+
+@keyframes cycle {
+    0%  { left: 0px; } /* When you start the slide, the first image is already visible */
+    12%  { left: 180px; opacity:1;} /* Original Position */
+    25% { left: 360px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+    37% { left: 720px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+    100% { left: 720px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+ }
+ 
+ @keyframes cycletwo {
+    0%  { left: -180px; opacity: 0; } /* Original Position */
+    12% { left: 0px; opacity: 1; }/* Starts moving after 16% to this position */
+    25% { left: 180px; opacity: 1; }
+    37% { left: 360px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+    50% { left: 720px; opacity: 0; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+    100%{ left: 720px; opacity: 0; z-index: -1; }
+ }
+ 
+ @keyframes cyclethree {
+    0%  { left: -180px; opacity: 0; }
+    12% { left: -180px; opacity: 0; }
+    25% { left: 0px; opacity: 1; }
+    37% { left: 160px; opacity: 1; }
+    50% { left: 320px; opacity: 1; z-index: 0; }
+    62% { left: 640px; opacity: 0; z-index: -1; }
+    100%{ left: 720px; opacity: 0; z-index: -1; }
+ }
+ 
+ @keyframes cyclefour {
+    0%  { left: -180px; opacity: 0; }
+    25% { left: -180px; opacity: 1; }   
+    37% { left: 0px; opacity: 1; }
+    50% { left: 150px; opacity: 1; z-index: 0; }
+    62% { left: 300px; opacity: 1; z-index: 0; }
+    75%{ left: 600px; opacity: 0; z-index: -1; }
+    100%{ left: 720px; opacity: 0; z-index: -1; }
+ }
+
+ @keyframes cyclefive {
+    0%  { left: -180px; opacity: 0; }
+    37% { left: -180px; opacity: 0; }
+    50% { left: 0px; opacity: 1; }
+    62% { left: 160px; opacity: 1; }
+    75% { left: 320px; opacity: 1; z-index: 0; }
+    88% { left: 640px; opacity: 1; z-index: 0; }
+    100%{ left: 720px; opacity: 1; z-index: 0; }
+ }
+
+ @keyframes cyclesix {
+    0%  { left: -180px; opacity: 0; }
+    50% { left: -180px; opacity: 0; }
+    62% { left: 0px; opacity: 1; }
+    75% { left: 180px; opacity: 1; }
+    88% { left: 360px; opacity: 1; z-index: 0; }
+    100%{ left: 720px; opacity: 1; z-index: 0; }
+ }
+
+    #slider {
+        background: #D4D6D8;
+        height: 320px;
+        max-width: 540px;
+        margin: 40px auto 0;
+        overflow: visible;
+        position: relative;
+    }
+    
+    #mask {
+        overflow: hidden;
+        height: 200px;
+     }
+
+     #slider ul {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+     }
+     
+     #slider li {
+        width: 140px;  /* Width Image */
+        height: 30%; /* Height Image */
+        position: absolute;
+        left: -225px; /* Original Position - Outside of the Slider */
+        list-style: none;
+     }
+
+     #slider li.firstanimation {
+        animation: cycle 30s linear infinite;
+     }
+     
+     #slider li.secondanimation {
+        animation: cycletwo 30s linear infinite;
+     }
+     
+     #slider li.thirdanimation {
+        animation: cyclethree 30s linear infinite;
+     }
+     
+     #slider li.fourthanimation {
+        animation: cyclefour 30s linear infinite;
+     }
+     
+     #slider li.fifthanimation {
+        animation: cyclefive 30s linear infinite;
+     }
+
+     #slider li.sixanimation {
+        animation: cyclesix 30s linear infinite;
+     }
