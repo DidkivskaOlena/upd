@@ -35,17 +35,22 @@
             width: 160px;
         }
     
-        @media (min-width: 421px) and (max-width: 440px) {
+        @media (min-width: 421px) and (max-width: 450px) {
             top: 380px;
             width: 180px;
         }
 
-        @media (min-width: 441px) and (max-width: 480px) {
+        @media (min-width: 451px) and (max-width: 480px) {
             top: 380px;
             width: 180px;
         }
 
-        @media (min-width: 481px) and (max-width: 540px) {
+        @media (min-width: 481px) and (max-width: 510px) {
+            top: 390px;
+            width: 200px;
+        }
+
+        @media (min-width: 511px) and (max-width: 540px) {
             top: 390px;
             width: 210px;
         }
@@ -235,7 +240,7 @@
             line-height: 1.17;
         }
 
-        @media (min-width: 421px) and (max-width: 440px) {
+        @media (min-width: 421px) and (max-width: 450px) {
             font-size: 12px;
             color: #3E434A;
             width: 195px;
@@ -243,7 +248,7 @@
             line-height: 1.25;
         }
     
-        @media (min-width: 441px) and (max-width: 480px) {
+        @media (min-width: 451px) and (max-width: 480px) {
             font-size: 12px;
             color: #3E434A;
             width: 220px;
@@ -251,12 +256,20 @@
             line-height: 1.5;
         }
 
-        @media (min-width: 481px) and (max-width: 540px) {
+        @media (min-width: 481px) and (max-width: 510px) {
             font-size: 12px;
             color: #3E434A;
-            width: 240px;
+            width: 230px;
             letter-spacing: 0.05em;
             line-height: 1.45;
+        }
+
+        @media (min-width: 511px) and (max-width: 540px) {
+            font-size: 12px;
+            color: #3E434A;
+            width: 250px;
+            letter-spacing: 0.05em;
+            line-height: 1.63;
         }
     }
 
@@ -307,14 +320,14 @@
             padding: 6px 15px;
         }
 
-        @media (min-width: 421px) and (max-width: 440px) {
+        @media (min-width: 421px) and (max-width: 450px) {
             margin-top: 11px;
             margin-left: 210px;
             font-size: 10px;
             padding: 6px 15px;
         }
     
-        @media (min-width: 441px) and (max-width: 480px) {
+        @media (min-width: 451px) and (max-width: 480px) {
             margin-top: 11px;
             margin-left: 230px;
             font-size: 10px;

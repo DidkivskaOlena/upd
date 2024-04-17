@@ -493,21 +493,27 @@ img {
     font-size: 32px;
   }
 }
-@media (min-width: 421px) and (max-width: 440px) {
+@media (min-width: 421px) and (max-width: 450px) {
   .hero__title {
     font-size: 36px;
     margin-right: 14px;
   }
 }
-@media (min-width: 441px) and (max-width: 480px) {
+@media (min-width: 451px) and (max-width: 480px) {
   .hero__title {
     font-size: 40px;
     margin-right: 20px;
   }
 }
-@media (min-width: 481px) and (max-width: 540px) {
+@media (min-width: 481px) and (max-width: 510px) {
   .hero__title {
-    font-size: 44px;
+    font-size: 42px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 511px) and (max-width: 540px) {
+  .hero__title {
+    font-size: 42px;
     margin-right: 20px;
   }
 }
@@ -746,19 +752,25 @@ img {
     width: 160px;
   }
 }
-@media (min-width: 421px) and (max-width: 440px) {
+@media (min-width: 421px) and (max-width: 450px) {
   .about__component {
     top: 380px;
     width: 180px;
   }
 }
-@media (min-width: 441px) and (max-width: 480px) {
+@media (min-width: 451px) and (max-width: 480px) {
   .about__component {
     top: 380px;
     width: 180px;
   }
 }
-@media (min-width: 481px) and (max-width: 540px) {
+@media (min-width: 481px) and (max-width: 510px) {
+  .about__component {
+    top: 390px;
+    width: 200px;
+  }
+}
+@media (min-width: 511px) and (max-width: 540px) {
   .about__component {
     top: 390px;
     width: 210px;
@@ -967,7 +979,7 @@ img {
     line-height: 1.17;
   }
 }
-@media (min-width: 421px) and (max-width: 440px) {
+@media (min-width: 421px) and (max-width: 450px) {
   .about__text {
     font-size: 12px;
     color: #3E434A;
@@ -976,7 +988,7 @@ img {
     line-height: 1.25;
   }
 }
-@media (min-width: 441px) and (max-width: 480px) {
+@media (min-width: 451px) and (max-width: 480px) {
   .about__text {
     font-size: 12px;
     color: #3E434A;
@@ -985,13 +997,22 @@ img {
     line-height: 1.5;
   }
 }
-@media (min-width: 481px) and (max-width: 540px) {
+@media (min-width: 481px) and (max-width: 510px) {
   .about__text {
     font-size: 12px;
     color: #3E434A;
-    width: 240px;
+    width: 230px;
     letter-spacing: 0.05em;
     line-height: 1.45;
+  }
+}
+@media (min-width: 511px) and (max-width: 540px) {
+  .about__text {
+    font-size: 12px;
+    color: #3E434A;
+    width: 250px;
+    letter-spacing: 0.05em;
+    line-height: 1.63;
   }
 }
 .about__btn {
@@ -1047,7 +1068,7 @@ img {
     padding: 6px 15px;
   }
 }
-@media (min-width: 421px) and (max-width: 440px) {
+@media (min-width: 421px) and (max-width: 450px) {
   .about__btn {
     margin-top: 11px;
     margin-left: 210px;
@@ -1055,7 +1076,7 @@ img {
     padding: 6px 15px;
   }
 }
-@media (min-width: 441px) and (max-width: 480px) {
+@media (min-width: 451px) and (max-width: 480px) {
   .about__btn {
     margin-top: 11px;
     margin-left: 230px;
