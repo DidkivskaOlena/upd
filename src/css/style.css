@@ -153,6 +153,11 @@ img {
     height: 500px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .page-header {
+    height: 500px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-header {
     max-width: 1600px;
@@ -206,11 +211,10 @@ img {
     padding: 0px 28px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 540px) {
   .page-header__container {
-    justify-content: space-between;
-    position: relative;
-    height: 64px;
+    height: 60px;
+    padding: 0px 35px;
   }
 }
 .page-header__button {
@@ -501,6 +505,12 @@ img {
     margin-right: 20px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .hero__title {
+    font-size: 44px;
+    margin-right: 20px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
@@ -549,6 +559,12 @@ img {
     margin-bottom: 9px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .hero__texttop {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+}
 .hero__textbottom {
   color: #FFFFFF;
   display: block;
@@ -585,12 +601,18 @@ img {
     padding: 120px 0 120px 0;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .hero__textbottom {
+    font-size: 12px;
+    padding: 100px 0 100px 0;
+  }
+}
 .hero__img {
   width: 61vw;
   height: 65vw;
 }
 .hero__backdrop {
-  position: fixed;
+  position: absolute;
   top: 34px;
   width: 90vw;
 }
@@ -617,6 +639,11 @@ img {
 @media (min-width: 421px) and (max-width: 480px) {
   .hero__backdrop {
     top: 64px;
+  }
+}
+@media (min-width: 481px) and (max-width: 540px) {
+  .hero__backdrop {
+    top: 55px;
   }
 }
 
@@ -731,6 +758,12 @@ img {
     width: 180px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .about__component {
+    top: 390px;
+    width: 210px;
+  }
+}
 .about__block {
   background-color: #2C3049;
   padding: 10px;
@@ -785,6 +818,12 @@ img {
     margin-bottom: 6px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .about__title-hero {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+}
 .about__title {
   text-align: center;
   text-transform: uppercase;
@@ -822,37 +861,44 @@ img {
     margin-bottom: 6px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .about__title {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
 .about__comment {
   text-align: center;
+  color: #FF6C00;
 }
 @media screen and (max-width: 290px) {
   .about__comment {
     font-size: 9px;
-    color: #FF6C00;
   }
 }
 @media (min-width: 291px) and (max-width: 320px) {
   .about__comment {
     font-size: 9px;
-    color: #FF6C00;
   }
 }
 @media (min-width: 321px) and (max-width: 360px) {
   .about__comment {
     font-size: 10px;
-    color: #FF6C00;
   }
 }
 @media (min-width: 361px) and (max-width: 420px) {
   .about__comment {
     font-size: 11px;
-    color: #FF6C00;
   }
 }
 @media (min-width: 421px) and (max-width: 480px) {
   .about__comment {
     font-size: 11px;
-    color: #FF6C00;
+  }
+}
+@media (min-width: 481px) and (max-width: 540px) {
+  .about__comment {
+    font-size: 12px;
   }
 }
 .about__text {
@@ -939,6 +985,15 @@ img {
     line-height: 1.5;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .about__text {
+    font-size: 12px;
+    color: #3E434A;
+    width: 240px;
+    letter-spacing: 0.05em;
+    line-height: 1.45;
+  }
+}
 .about__btn {
   text-transform: uppercase;
   border: 1px solid #FF6C00;
@@ -1008,6 +1063,14 @@ img {
     padding: 6px 15px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .about__btn {
+    margin-top: 11px;
+    margin-left: 260px;
+    font-size: 10px;
+    padding: 6px 15px;
+  }
+}
 
 .gallery {
   background: #EEE;
@@ -1061,6 +1124,12 @@ img {
     height: 60px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .bi-command {
+    width: 190px;
+    height: 50px;
+  }
+}
 
 @media screen and (max-width: 290px) {
   .bi-activity {
@@ -1092,6 +1161,12 @@ img {
     height: 60px;
   }
 }
+@media (min-width: 481px) and (max-width: 540px) {
+  .bi-activity {
+    width: 190px;
+    height: 50px;
+  }
+}
 
 @media screen and (max-width: 290px) {
   .bi-sunset {
@@ -1121,6 +1196,12 @@ img {
   .bi-sunset {
     width: 165px;
     height: 60px;
+  }
+}
+@media (min-width: 481px) and (max-width: 540px) {
+  .bi-sunset {
+    width: 190px;
+    height: 50px;
   }
 }
 
