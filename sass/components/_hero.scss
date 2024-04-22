@@ -2,8 +2,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0px 12px 25px 25px;
-    // background-color: $color-bk-hero;
-    // text-align: center;
 
     // @media screen and (max-width: 480px) {
     //     max-width: 480px;
@@ -88,14 +86,29 @@
         
     }
 
+    &__titletop{
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 541px) {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        
+    }
+
     &__title {
         position: absolute;
-        right: 30px;
-        font-size: 36px;
-        color: #0B1535;
         font-weight: 600;
         text-transform: uppercase;
         font-family: "Open Sans", sans-serif;
+
+        @media screen and (max-width: 540px) {
+            right: 30px;
+            color: #0B1535;
+        }
 
         @media screen and (max-width: 290px) {
             font-size: 24px;
@@ -123,19 +136,29 @@
             margin-right: 20px;
         }
 
-        @media (min-width: 481px) and (max-width: 510px) {
+        @media (min-width: 481px) and (max-width: 540px) {
             font-size: 42px;
             margin-right: 20px;
         }
 
-        @media (min-width: 511px) and (max-width: 540px) {
-            font-size: 42px;
-            margin-right: 20px;
+        @media (min-width: 541px) and (max-width: 768px) {
+            display: none;
         }
 
         @media screen and (min-width: $desktop) {
             @include font (900, 44px, 1.36, 0.06em);
         }
+    }
+
+    &__title-tablet {
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+
+        margin-top: 25px;
+        font-size: 55px;
+        font-weight: 600;
+        color: #FFFFFF;
     }
 
     &__texttop {
@@ -175,6 +198,14 @@
             font-size: 12px;
             margin-bottom: 9px;
         }
+
+        @media screen and (min-width: 541px) {
+            display: none;
+        }
+    }
+
+    &__content-title{
+        margin-left: 20px;
     }
 
     &__textbottom {
@@ -210,12 +241,34 @@
             font-size: 12px;
             padding: 100px 0 100px 0;
         }
+
+        @media screen and (min-width: 541px) {
+            display: none;
+        }
+    }
+
+    &__textbottom-tablet{
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+
+        color: #FFFFFF;
+        display: block;
+        font-size: 14px;
+        width: 250px;
+        margin-top: 40px;
     }
 
     &__img {
         
         width: 61vw;
         height: 65vw;
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            margin-top: 20px;
+            width: 41vw;
+            height: 43vw;
+        }
     }
 
     &__backdrop {
@@ -246,6 +299,18 @@
         @media (min-width: 481px) and (max-width: 540px) {
             top: 55px;
         }
+
+        @media screen and (min-width: 541px) {
+            display: none;
+        }
+    }
+
+    &__text{
+        margin-left: auto;
+        margin-right: 44px;
+        width: 40%;
+        letter-spacing: 0.05em;
+        line-height: 1.43;
     }
 }
 

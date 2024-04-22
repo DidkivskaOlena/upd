@@ -30,6 +30,10 @@
         height: 460px;
     }
 
+    @media (min-width: 541px) and (max-width: 768px) {
+        height: 500px;
+    }
+
     &__component {
         position: absolute;
         border-radius: 15px;
@@ -81,6 +85,12 @@
         @media (min-width: 511px) and (max-width: 540px) {
             top: 390px;
             width: 210px;
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            top: 420px;
+            width: 250px;
+            margin-left: 50px;
         }
     }
 
@@ -140,6 +150,11 @@
             font-size: 11px;
             margin-bottom: 6px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
     }
 
     &__title {
@@ -178,6 +193,11 @@
             font-size: 12px;
             margin-bottom: 6px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
     }
 
     &__comment {
@@ -206,6 +226,10 @@
 
         @media (min-width: 481px) and (max-width: 540px) {
             font-size: 12px;
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            font-size: 14px;
         }
     }
 
@@ -299,6 +323,16 @@
             letter-spacing: 0.05em;
             line-height: 1.63;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            font-size: 16px;
+            margin-left: auto;
+            margin-right: 40px;
+            color: #3E434A;
+            width: 40%;
+            letter-spacing: 0.05em;
+            line-height: 1.43;
+        }
     }
 
     &__btn {
@@ -368,6 +402,13 @@
             font-size: 10px;
             padding: 6px 15px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            margin-top: 11px;
+            margin-left: 460px;
+            font-size: 12px;
+            padding: 8px 17px;
+        }
     }
 }
 
@@ -423,6 +464,11 @@
         width: 190px;
         height: 50px;
     }
+
+    @media (min-width: 541px) and (max-width: 768px) {
+        width: 230px;
+        height: 90px;
+    }
     
 }
 
@@ -456,6 +502,11 @@
         width: 190px;
         height: 50px;
     }
+
+    @media (min-width: 541px) and (max-width: 768px) {
+        width: 230px;
+        height: 90px;
+    }
 }
 
 .bi-sunset{
@@ -487,6 +538,11 @@
     @media (min-width: 481px) and (max-width: 540px) {
         width: 190px;
         height: 50px;
+    }
+
+    @media (min-width: 541px) and (max-width: 768px) {
+        width: 230px;
+        height: 90px;
     }
 }
 

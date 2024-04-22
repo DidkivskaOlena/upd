@@ -1,7 +1,10 @@
 .page-header {
-    background-image: url(/background-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 540px) {
+        background-image: url(/background-mobile.jpg);
+    }
 
     @media screen and (max-width: 280px) {
         height: 320px;
@@ -25,6 +28,11 @@
 
     @media (min-width: 481px) and (max-width: 540px) {
         height: 500px;
+    }
+
+    @media (min-width: 541px) and (max-width: 768px) {
+        background-image: url(/public/background-tablet.jpg);
+        height: 595px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -77,6 +85,11 @@
             height: 60px;
             padding: 0px 35px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            height: 120px;
+            padding: 10px 35px 0;
+        }
     }
 
     &__button{
@@ -85,46 +98,16 @@
         background-color: rgba(0, 0, 0, 0);
         z-index: 9;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 541px) {
             display: none;
         }
     }
 
-    // &__button.is-open{
-    //     // position: fixed;
-    //     // top: 10px;
-    //     // right: 10px;
-    // }
-
-    // &__links{
-    //     @media screen and (max-width: 767px) {
-    //         display: flex;
-    //         flex-wrap: wrap;
-    //         // background-color: $color-bk-primary;
-    //     }
-
-    //     @media screen and (min-width: $tablet) {
-    //         display: none;
-    //     }
-    // }
-
-    // &__link {
-    //     display: inline-block;
-    //     text-decoration: none;
-    //     @include font (500, 18px, 1.22, 0.02em);
-    //     margin-bottom: 10px;
-        
-    //     // color: $color-accent;
-        
-    // }
-
-    // &__link--after::after {
-    //     content: '';
-    //     border: 1px solid rgba(33, 33, 33, 0.2);
-    //     transform: rotate(90deg);
-    //     margin-right: 10px;
-    //     margin-left: 10px;
-    // }
+    &__links{
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
 }
 
 .page-header__button.is-open .page-header__icon-menu {
@@ -140,7 +123,7 @@
 }
 
 .page-header__menu{
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 540px) {
         display: none;
         position: fixed;
         top: 0;
@@ -160,11 +143,11 @@
         // }
     }
 
-    // @media screen and (min-width: $tablet) {
-    //     display: flex;
-    //     align-items: center;
-    //     width: 100%;
-    // }
+    @media screen and (min-width: 540px) {
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+    }
 
     // @media screen and (min-width: $desktop) {
     //     justify-content: space-between;
@@ -182,4 +165,5 @@
     padding: 0;
     vertical-align: calc(.4px + .2465em - .4rem);
     margin-top: 25px;
+}
 }

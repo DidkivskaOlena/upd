@@ -7,9 +7,9 @@
     }
 
     &__list {
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 541px) {
             display: flex;
-            margin-left: 88px;
+            margin-left: 40px;
         }
 
         @media screen and (min-width: $desktop) {
@@ -31,40 +31,25 @@
 .nav-site__link {
     text-decoration: none;
     display: block;
-    // color: $color-title-primary;
-    // @include transition(color);
+    color: #FCFAFF;
 
     @media screen and (max-width: 767px) {
         @include font (500, 40px, 1.18, 0.02em);
     }
 
     @media screen and (min-width: $tablet) {
-        @include font (500, 14px, 1.14, 0.02em);
+        @include font (500, 12px, 1.14, 0.02em);
         position: relative;
         padding-top: 32px;
         padding-bottom: 32px;
     }
 
     &--current {
-        // color: $color-accent;
-    }
-
-    &--current::after {
-        @media screen and (min-width: $tablet) {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 4px;
-            left: 0;
-            bottom: -1px;
-
-            // background: $color-accent;
-            border-radius: 2px;
-        }
+        color: #FF9900;
     }
 
     &:hover,
     &:focus {
-        // color: $color-accent;
+        color: #FF9900;
     }
 }
