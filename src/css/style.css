@@ -293,10 +293,12 @@ img {
   margin-top: 25px;
 }
 
+.nav-site {
+  font-size: 14px;
+}
 @media screen and (max-width: 767px) {
   .nav-site {
     max-width: 480px;
-    margin-bottom: 150px;
   }
 }
 @media screen and (min-width: 541px) {
@@ -313,9 +315,10 @@ img {
 @media screen and (max-width: 767px) {
   .nav-site__item:not(:last-child) {
     margin-bottom: 32px;
+    margin-right: 40px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 541px) {
   .nav-site__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -326,7 +329,7 @@ img {
   display: block;
   color: #FCFAFF;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 540px) {
   .nav-site__link {
     font-weight: 500;
     font-size: 40px;
@@ -334,15 +337,13 @@ img {
     letter-spacing: 0.02em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 541px) {
   .nav-site__link {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 .nav-site__link--current {
@@ -354,7 +355,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .contact-list {
-    margin-bottom: 64px;
     margin-top: auto;
   }
 }
@@ -687,6 +687,7 @@ img {
   font-size: 14px;
   width: 250px;
   margin-top: 40px;
+  line-height: 2em;
 }
 @media screen and (max-width: 540px) {
   .hero__textbottom-tablet {
@@ -750,6 +751,11 @@ img {
   width: 40%;
   letter-spacing: 0.05em;
   line-height: 1.43;
+}
+@media screen and (max-width: 540px) {
+  .hero__text {
+    display: none;
+  }
 }
 
 .modal {
@@ -849,7 +855,7 @@ img {
 }
 @media (min-width: 541px) and (max-width: 768px) {
   .about {
-    height: 500px;
+    height: 680px;
   }
 }
 .about__component {
@@ -1269,7 +1275,7 @@ img {
 @media (min-width: 541px) and (max-width: 768px) {
   .about__btn {
     margin-top: 11px;
-    margin-left: 460px;
+    margin-left: 380px;
     font-size: 12px;
     padding: 8px 17px;
   }
@@ -1336,7 +1342,7 @@ img {
 @media (min-width: 541px) and (max-width: 768px) {
   .bi-command {
     width: 230px;
-    height: 90px;
+    height: 105px;
   }
 }
 
@@ -1379,7 +1385,7 @@ img {
 @media (min-width: 541px) and (max-width: 768px) {
   .bi-activity {
     width: 230px;
-    height: 90px;
+    height: 105px;
   }
 }
 
@@ -1422,7 +1428,7 @@ img {
 @media (min-width: 541px) and (max-width: 768px) {
   .bi-sunset {
     width: 230px;
-    height: 90px;
+    height: 105px;
   }
 }
 
@@ -1488,6 +1494,81 @@ img {
   100% {
     left: 600px;
   } /* From 96% to 100% = for 1 second enter image*/
+}
+@keyframes cycletablet {
+  0% {
+    left: 67%;
+    scale: 1.5;
+  } /* When you start the slide, the first image is already visible */
+  4% {
+    left: 85%;
+    scale: 1;
+  } /* When you start the slide, the first image is already visible */
+  8% {
+    left: 85%;
+  } /* Original Position */
+  17% {
+    left: 85%;
+    opacity: 1;
+  } /* Original Position */
+  21% {
+    left: 1300px;
+    opacity: 0;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  34% {
+    left: -150px;
+    scale: 1;
+    opacity: 0;
+  } /* From 16% to 20% = for 1 second exit image */
+  38% {
+    left: 5%;
+    scale: 1;
+    opacity: 1;
+  } /* From 16% to 20% = for 1 second exit image */
+  42% {
+    left: 5%;
+    scale: 1;
+  } /* From 16% to 20% = for 1 second exit image */
+  51% {
+    left: 5%;
+    scale: 1;
+  }
+  55% {
+    left: 25%;
+    scale: 1.5;
+  }
+  59% {
+    left: 25%;
+    scale: 1.5;
+  }
+  68% {
+    left: 25%;
+    scale: 1.5;
+  }
+  72% {
+    left: 50%;
+    scale: 2;
+  }
+  76% {
+    left: 50%;
+    scale: 2;
+  }
+  85% {
+    left: 50%;
+    scale: 2;
+  }
+  89% {
+    left: 67%;
+    scale: 1.5;
+  }
+  93% {
+    left: 67%;
+    scale: 1.5;
+  }
+  100% {
+    left: 67%;
+    scale: 1.5;
+  }
 }
 @keyframes cycletwo {
   0% {
@@ -1562,6 +1643,80 @@ img {
   }
   100% {
     left: 600px;
+  }
+}
+@keyframes cycletablettwo {
+  0% {
+    left: 45%;
+    scale: 2;
+  } /* When you start the slide, the first image is already visible */
+  4% {
+    left: 67%;
+    scale: 1.5;
+  } /* When you start the slide, the first image is already visible */
+  8% {
+    left: 67%;
+    scale: 1.5;
+  } /* Original Position */
+  17% {
+    left: 67%;
+    scale: 1.5;
+  } /* Original Position */
+  21% {
+    left: 85%;
+    scale: 1;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  25% {
+    left: 85%;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  35% {
+    left: 85%;
+    opacity: 1;
+  } /* From 16% to 20% = for 1 second exit image */
+  39% {
+    left: 1300px;
+    opacity: 0;
+  } /* From 16% to 20% = for 1 second exit image */
+  51% {
+    left: -150px;
+    opacity: 0;
+  }
+  55% {
+    left: 5%;
+    scale: 1;
+    opacity: 1;
+  }
+  59% {
+    left: 5%;
+    scale: 1;
+  }
+  68% {
+    left: 5%;
+    scale: 1;
+  }
+  72% {
+    left: 25%;
+    scale: 1.5;
+  }
+  76% {
+    left: 25%;
+    scale: 1.5;
+  }
+  85% {
+    left: 25%;
+    scale: 1.5;
+  }
+  89% {
+    left: 45%;
+    scale: 2;
+  }
+  93% {
+    left: 45%;
+    scale: 2;
+  }
+  100% {
+    left: 45%;
+    scale: 2;
   }
 }
 @keyframes cyclethree {
@@ -1645,6 +1800,81 @@ img {
     opacity: 0;
   }
 }
+@keyframes cycletabletthree {
+  0% {
+    left: 30%;
+    scale: 1.5;
+  } /* When you start the slide, the first image is already visible */
+  4% {
+    left: 48%;
+    scale: 2;
+  } /* When you start the slide, the first image is already visible */
+  8% {
+    left: 48%;
+    scale: 2;
+  } /* Original Position */
+  17% {
+    left: 48%;
+    scale: 2;
+  } /* Original Position */
+  21% {
+    left: 72%;
+    scale: 1.5;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  25% {
+    left: 72%;
+    scale: 1.5;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  34% {
+    left: 72%;
+    scale: 1.5;
+  } /* From 16% to 20% = for 1 second exit image */
+  38% {
+    left: 90%;
+    scale: 1;
+  } /* From 16% to 20% = for 1 second exit image */
+  42% {
+    left: 90%;
+    opacity: 1;
+  } /* From 16% to 20% = for 1 second exit image */
+  51% {
+    left: 90%;
+    opacity: 1;
+  }
+  55% {
+    left: 1300px;
+    opacity: 0;
+  }
+  68% {
+    left: -150px;
+    opacity: 0;
+  }
+  72% {
+    left: 5%;
+    scale: 1;
+    opacity: 1;
+  }
+  76% {
+    left: 5%;
+    scale: 1;
+  }
+  85% {
+    left: 5%;
+    scale: 1;
+  }
+  89% {
+    left: 25%;
+    scale: 1.5;
+  }
+  93% {
+    left: 25%;
+    scale: 1.5;
+  }
+  100% {
+    left: 25%;
+    scale: 1.5;
+  }
+}
 @keyframes cyclefour {
   0% {
     left: -150px;
@@ -1723,6 +1953,82 @@ img {
     scale: 1;
   }
 }
+@keyframes cycletabletfour {
+  0% {
+    left: 4%;
+    scale: 1;
+    opacity: 1;
+  } /* When you start the slide, the first image is already visible */
+  4% {
+    left: 23%;
+    scale: 1.5;
+    opacity: 1;
+  } /* When you start the slide, the first image is already visible */
+  8% {
+    left: 23%;
+    scale: 1.5;
+  } /* Original Position */
+  17% {
+    left: 23%;
+    scale: 1.5;
+  } /* Original Position */
+  21% {
+    left: 45%;
+    scale: 2;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  25% {
+    left: 45%;
+    scale: 2;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  34% {
+    left: 45%;
+    scale: 2;
+  } /* From 16% to 20% = for 1 second exit image */
+  38% {
+    left: 70%;
+    scale: 1.5;
+  } /* From 16% to 20% = for 1 second exit image */
+  42% {
+    left: 70%;
+    scale: 1.5;
+  } /* From 16% to 20% = for 1 second exit image */
+  51% {
+    left: 70%;
+    scale: 1.5;
+  }
+  55% {
+    left: 85%;
+    scale: 1;
+  }
+  59% {
+    left: 85%;
+  }
+  68% {
+    left: 85%;
+    opacity: 1;
+  }
+  72% {
+    left: 1300px;
+    opacity: 0;
+  }
+  85% {
+    left: -150px;
+    opacity: 0;
+  }
+  89% {
+    left: 4%;
+    scale: 1;
+    opacity: 1;
+  }
+  93% {
+    left: 4%;
+    scale: 1;
+  }
+  100% {
+    left: 4%;
+    scale: 1;
+  }
+}
 @keyframes cyclefive {
   0% {
     left: -150px;
@@ -1790,6 +2096,79 @@ img {
     scale: 1.6;
   }
 }
+@keyframes cycletabletfive {
+  0% {
+    left: -150px;
+    scale: 1;
+  } /* When you start the slide, the first image is already visible */
+  4% {
+    left: 5%;
+    scale: 1;
+    opacity: 1;
+  } /* When you start the slide, the first image is already visible */
+  8% {
+    left: 5%;
+    scale: 1;
+  } /* Original Position */
+  17% {
+    left: 5%;
+    scale: 1;
+  } /* Original Position */
+  21% {
+    left: 25%;
+    scale: 1.5;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  25% {
+    left: 25%;
+    scale: 1.5;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  34% {
+    left: 25%;
+    scale: 1.5;
+  } /* From 16% to 20% = for 1 second exit image */
+  38% {
+    left: 50%;
+    scale: 2;
+  } /* From 16% to 20% = for 1 second exit image */
+  42% {
+    left: 50%;
+    scale: 2;
+  } /* From 16% to 20% = for 1 second exit image */
+  51% {
+    left: 50%;
+    scale: 2;
+  }
+  55% {
+    left: 70%;
+    scale: 1.5;
+  }
+  59% {
+    left: 70%;
+    scale: 1.5;
+  }
+  68% {
+    left: 70%;
+    scale: 1.5;
+  }
+  72% {
+    left: 90%;
+    scale: 1;
+  }
+  76% {
+    left: 90%;
+    opacity: 1;
+  }
+  85% {
+    left: 90%;
+    opacity: 1;
+  }
+  89% {
+    left: 1300px;
+  }
+  100% {
+    left: 1300px;
+  }
+}
 @keyframes cyclesix {
   0% {
     left: -150px;
@@ -1842,22 +2221,107 @@ img {
     opacity: 0;
   }
 }
+@keyframes cycletabletsix {
+  0% {
+    left: -150px;
+    scale: 1;
+  } /* When you start the slide, the first image is already visible */
+  17% {
+    left: -150px;
+    scale: 1;
+  } /* Original Position */
+  21% {
+    left: 5%;
+    scale: 1;
+    opacity: 1;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  25% {
+    left: 5%;
+    scale: 1;
+  } /* From 4% to 16 % = for 3 seconds the image is visible */
+  34% {
+    left: 5%;
+    scale: 1;
+  } /* From 16% to 20% = for 1 second exit image */
+  38% {
+    left: 25%;
+    scale: 1.5;
+  } /* From 16% to 20% = for 1 second exit image */
+  42% {
+    left: 25%;
+    scale: 1.5;
+  } /* From 16% to 20% = for 1 second exit image */
+  51% {
+    left: 25%;
+    scale: 1.5;
+  }
+  55% {
+    left: 45%;
+    scale: 2;
+  }
+  59% {
+    left: 45%;
+    scale: 2;
+  }
+  68% {
+    left: 45%;
+    scale: 2;
+  }
+  72% {
+    left: 67%;
+    scale: 1.5;
+  }
+  76% {
+    left: 67%;
+    scale: 1.5;
+  }
+  85% {
+    left: 67%;
+    scale: 1.5;
+  }
+  89% {
+    left: 85%;
+    scale: 1;
+  }
+  93% {
+    left: 85%;
+    opacity: 1;
+  }
+  97% {
+    left: 85%;
+    opacity: 1;
+  }
+  100% {
+    left: 1300px;
+  }
+}
 #slider {
-  height: 300px;
+  height: 350px;
   max-width: 540px;
   overflow: visible;
   position: relative;
 }
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider {
+    margin: 80px auto 0;
+    max-width: 1200px;
+  }
+}
 
 #mask {
   overflow: hidden;
-  height: 250px;
+  height: 300px;
 }
 
 #slider ul {
   margin: 10px;
   padding: 10px;
   position: relative;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider ul {
+    padding: 0 50px 0 20px;
+  }
 }
 
 #slider li {
@@ -1873,25 +2337,55 @@ img {
 #slider li.firstanimation {
   animation: cycle 49s linear infinite;
 }
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider li.firstanimation {
+    animation: cycletablet 30s linear infinite;
+  }
+}
 
 #slider li.secondanimation {
   animation: cycletwo 49s linear infinite;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider li.secondanimation {
+    animation: cycletablettwo 30s linear infinite;
+  }
 }
 
 #slider li.thirdanimation {
   animation: cyclethree 49s linear infinite;
 }
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider li.thirdanimation {
+    animation: cycletabletthree 30s linear infinite;
+  }
+}
 
 #slider li.fourthanimation {
   animation: cyclefour 49s linear infinite;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider li.fourthanimation {
+    animation: cycletabletfour 30s linear infinite;
+  }
 }
 
 #slider li.fifthanimation {
   animation: cyclefive 49s linear infinite;
 }
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider li.fifthanimation {
+    animation: cycletabletfive 30s linear infinite;
+  }
+}
 
 #slider li.sixanimation {
   animation: cyclesix 49s linear infinite;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+  #slider li.sixanimation {
+    animation: cycletabletsix 30s linear infinite;
+  }
 }
 
 .slide__text-top {
@@ -1973,6 +2467,11 @@ img {
     width: 70px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .firstimg {
+    width: 65px;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .secondimg {
@@ -1997,6 +2496,11 @@ img {
 @media (min-width: 481px) and (max-width: 540px) {
   .secondimg {
     width: 75px;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .secondimg {
+    width: 70px;
   }
 }
 
@@ -2025,6 +2529,11 @@ img {
     width: 67px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .thirdimg {
+    width: 62px;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .fourimg {
@@ -2049,6 +2558,11 @@ img {
 @media (min-width: 481px) and (max-width: 540px) {
   .fourimg {
     width: 80px;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .fourimg {
+    width: 75px;
   }
 }
 
@@ -2077,6 +2591,11 @@ img {
     width: 65px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .fifthimg {
+    width: 60px;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .sixtimg {
@@ -2101,6 +2620,11 @@ img {
 @media (min-width: 481px) and (max-width: 540px) {
   .sixtimg {
     width: 90px;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .sixtimg {
+    width: 85px;
   }
 }
 
@@ -2295,20 +2819,19 @@ img {
   background-size: auto;
   padding: 28px 19px;
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .feature {
+    padding: 50px 40px;
+  }
+}
 .feature__component {
   background-color: rgba(34, 39, 63, 0.8);
   padding: 15px 14px;
   border-radius: 15px;
 }
-@media screen and (min-width: 768px) {
-  .feature {
-    display: flex;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .feature {
-    flex-wrap: wrap;
-    margin: -15px;
+@media (min-width: 541px) and (max-width: 768px) {
+  .feature__component {
+    padding: 30px;
   }
 }
 .feature__field-img {
@@ -2317,7 +2840,7 @@ img {
   background: #ECF0F3;
   padding: 15px 10px;
   align-content: center;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 @media (min-width: 291px) and (max-width: 320px) {
   .feature__field-img {
@@ -2332,6 +2855,11 @@ img {
 @media (min-width: 421px) and (max-width: 480px) {
   .feature__field-img {
     padding: 20px 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .feature__field-img {
+    padding: 25px 25px;
   }
 }
 .feature__field-img-r {
@@ -2340,7 +2868,7 @@ img {
   background: #ECF0F3;
   padding: 15px 10px;
   align-content: center;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 @media (min-width: 291px) and (max-width: 320px) {
   .feature__field-img-r {
@@ -2357,7 +2885,7 @@ img {
     padding: 20px 20px;
   }
 }
-@media (min-width: 481px) and (max-width: 540px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .feature__field-img-r {
     padding: 25px 25px;
   }
@@ -2391,22 +2919,9 @@ img {
     font-size: 14px;
   }
 }
-.feature__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-@media screen and (max-width: 767px) {
-  .feature__container {
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature__container {
-    max-width: 270px;
+@media (min-width: 541px) and (max-width: 768px) {
+  .feature__title {
+    font-size: 16px;
   }
 }
 .feature__item {
@@ -2464,6 +2979,11 @@ img {
     font-size: 14px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .feature__text {
+    font-size: 18px;
+  }
+}
 .feature__img {
   color: #03091D;
 }
@@ -2492,13 +3012,23 @@ img {
     width: 120px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .feature__img {
+    width: 160px;
+  }
+}
 
 .footer {
   background-color: #191C26;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 540px) {
   .footer {
     text-align: center;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .footer {
+    text-align: start;
   }
 }
 .footer__address {
@@ -2519,6 +3049,12 @@ img {
 @media (min-width: 421px) and (max-width: 540px) {
   .footer__address {
     height: 300px;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .footer__address {
+    height: 240px;
+    padding: 120px 40px;
   }
 }
 .footer__newsletter {
@@ -2549,6 +3085,12 @@ img {
     font-size: 26px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .footer__newsletter {
+    height: 290px;
+    padding: 95px 40px;
+  }
+}
 .footer__title {
   margin-bottom: 30px;
   color: #FFFFFF;
@@ -2564,9 +3106,10 @@ img {
     margin-bottom: 60px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 541px) and (max-width: 768px) {
   .footer__title {
-    display: flex;
+    font-size: 42px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2577,32 +3120,6 @@ img {
 @media (min-width: 1200px) {
   .footer__title {
     align-items: center;
-  }
-}
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-.footer__icon {
-  fill: currentColor;
-}
-.footer__text {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 1199px) {
-  .footer__text {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer__social-links {
-    margin-bottom: 60px;
   }
 }
 
@@ -2623,18 +3140,23 @@ img {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 540px) {
   .address__item:not(:last-child) {
     margin-bottom: 8px;
   }
 }
+@media (min-width: 540px) and (max-width: 768px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .address__list {
   text-align: start;
-  margin-left: 40px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 540px) {
   .address__list {
     margin-bottom: 60px;
+    margin-left: 40px;
   }
 }
 .address__svg {
@@ -2683,11 +3205,17 @@ img {
     margin-bottom: 15px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .address__link {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
 .address__link:hover, .address__link:focus {
   color: #FFFFFF;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 541px) and (max-width: 1200px) {
   .newsletter {
     text-align: center;
   }
@@ -2727,16 +3255,8 @@ img {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) {
-  .newsletter__input {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .newsletter__input {
-    width: 358px;
-    margin-right: 12px;
-  }
+.newsletter__input:not(:last-child) {
+  width: 330px;
 }
 .newsletter__icon {
   margin-left: 10px;
@@ -2858,6 +3378,11 @@ img {
   background-color: #ECF0F3;
   padding: 50px 22px;
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact {
+    padding: 55px 40px;
+  }
+}
 .charact__pretitle {
   display: flex;
   align-items: flex-start;
@@ -2891,6 +3416,11 @@ img {
 @media (min-width: 481px) and (max-width: 540px) {
   .charact__pretitle {
     font-size: 12px;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__pretitle {
+    display: none;
   }
 }
 .charact__pretitle::before {
@@ -2956,9 +3486,20 @@ img {
     font-size: 26px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__title {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    margin-left: 15px;
+  }
+}
 .charact__item {
   display: flex;
   justify-content: space-between;
+}
+.charact__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 .charact__posttitle {
   text-transform: uppercase;
@@ -2992,6 +3533,13 @@ img {
     margin-left: 22px;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__posttitle {
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 22px;
+  }
+}
 .charact__component {
   background-color: #F9F9FF;
   border-radius: 15px;
@@ -3004,12 +3552,10 @@ img {
     padding: 30px 20px;
   }
 }
-.charact__comment {
-  padding: 20px 24px;
-}
-@media screen and (max-width: 767px) {
-  .charact__comment {
-    max-width: 450px;
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__component {
+    margin-bottom: 22px;
+    padding: 40px 20px;
   }
 }
 @media screen and (max-width: 290px) {
@@ -3048,6 +3594,14 @@ img {
   .charact__text {
     font-weight: 600;
     font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__text {
+    font-weight: 600;
+    font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.05em;
   }
@@ -3095,6 +3649,14 @@ img {
     letter-spacing: 0.05em;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__value {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.2em;
+  }
+}
 @media screen and (max-width: 360px) {
   .charact__span {
     font-weight: 400;
@@ -3127,6 +3689,14 @@ img {
     letter-spacing: 0.05em;
   }
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+  }
+}
 .charact__line {
   flex-grow: 1;
   border-top: 1px solid #9DA4BD;
@@ -3144,6 +3714,11 @@ img {
 @media (min-width: 481px) and (max-width: 540px) {
   .charact__line {
     margin: 14px 9px 0;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .charact__line {
+    margin: 19px 12px 0;
   }
 }
 

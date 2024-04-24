@@ -1,9 +1,9 @@
 .nav-site {
+    font-size: 14px;
 
     @media screen and (max-width: 767px) {
         // background-color: $color-bk-primary;
         max-width: 480px;
-        margin-bottom: 150px;
     }
 
     &__list {
@@ -20,9 +20,10 @@
     &__item:not(:last-child) {
         @media screen and (max-width: 767px) {
             margin-bottom: 32px;
+            margin-right: 40px;
         }
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 541px) {
             margin-right: 50px;
         }
     }
@@ -33,15 +34,13 @@
     display: block;
     color: #FCFAFF;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 540px) {
         @include font (500, 40px, 1.18, 0.02em);
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 541px) {
         @include font (500, 12px, 1.14, 0.02em);
         position: relative;
-        padding-top: 32px;
-        padding-bottom: 32px;
     }
 
     &--current {

@@ -31,7 +31,7 @@
     }
 
     @media (min-width: 541px) and (max-width: 768px) {
-        height: 500px;
+        height: 680px;
     }
 
     &__component {
@@ -405,7 +405,7 @@
 
         @media (min-width: 541px) and (max-width: 768px) {
             margin-top: 11px;
-            margin-left: 460px;
+            margin-left: 380px;
             font-size: 12px;
             padding: 8px 17px;
         }
@@ -467,7 +467,7 @@
 
     @media (min-width: 541px) and (max-width: 768px) {
         width: 230px;
-        height: 90px;
+        height: 105px;
     }
     
 }
@@ -505,7 +505,7 @@
 
     @media (min-width: 541px) and (max-width: 768px) {
         width: 230px;
-        height: 90px;
+        height: 105px;
     }
 }
 
@@ -542,7 +542,7 @@
 
     @media (min-width: 541px) and (max-width: 768px) {
         width: 230px;
-        height: 90px;
+        height: 105px;
     }
 }
 
@@ -566,6 +566,27 @@
     77%{ left: 600px; opacity: 0; }
     100% { left: 600px; } /* From 96% to 100% = for 1 second enter image*/
  }
+
+ @keyframes cycletablet {
+    0%  { left: 67%; scale: 1.5;} /* When you start the slide, the first image is already visible */
+    4%  { left: 85%; scale: 1;} /* When you start the slide, the first image is already visible */
+    8%  { left: 85%; } /* Original Position */
+    17%  { left: 85%; opacity: 1;} /* Original Position */
+    21% { left: 1300px; opacity: 0;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: -150px; scale: 1; opacity: 0;} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 5%;   scale: 1; opacity: 1;} /* From 16% to 20% = for 1 second exit image */
+    42% { left: 5%;   scale: 1;} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 5%;  scale: 1;}
+    55% { left: 25%;  scale: 1.5;}
+    59% { left: 25%; scale: 1.5; }
+    68%{ left: 25%; scale: 1.5; }
+    72%{ left: 50%;  scale: 2;}
+    76%{ left: 50%; scale: 2; }
+    85%{ left: 50%; scale: 2; }
+    89%{ left: 67%; scale: 1.5; }
+    93%{ left: 67%; scale: 1.5; }
+    100%{ left: 67%; scale: 1.5; }
+ }
  
  @keyframes cycletwo {
     0%  { left: 40%;  scale: 1.6; opacity: 1;} /* When you start the slide, the first image is already visible */
@@ -587,6 +608,27 @@
     86%{ left: 75%; opacity: 1; }
     88%{ left: 600px; opacity: 0; }
     100% { left: 600px; }
+ }
+
+ @keyframes cycletablettwo {
+    0%  { left: 45%;  scale: 2;} /* When you start the slide, the first image is already visible */
+    4%  { left: 67%;  scale: 1.5;} /* When you start the slide, the first image is already visible */
+    8%  { left: 67%;  scale: 1.5;} /* Original Position */
+    17%  { left: 67%;  scale: 1.5;} /* Original Position */
+    21% { left: 85%; scale: 1; } /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 85%;  } /* From 4% to 16 % = for 3 seconds the image is visible */
+    35% { left: 85%; opacity: 1; } /* From 16% to 20% = for 1 second exit image */
+    39% { left: 1300px; opacity: 0;} /* From 16% to 20% = for 1 second exit image */
+    51% { left: -150px; opacity: 0; }
+    55%{ left: 5%; scale: 1; opacity: 1; }
+    59%{ left: 5%;  scale: 1;}
+    68%{ left: 5%; scale: 1;}
+    72%{ left: 25%; scale: 1.5;  }
+    76%{ left: 25%; scale: 1.5;}
+    85%{ left: 25%; scale: 1.5;}
+    89%{ left: 45%;  scale: 2;}
+    93%{ left: 45%; scale: 2;}
+    100%{ left: 45%; scale: 2; }
  }
  
  @keyframes cyclethree {
@@ -612,6 +654,27 @@
     97%{ left: 80%;  opacity: 1; }
     100% { left: 600px; opacity: 0; }
  }
+
+ @keyframes cycletabletthree {
+    0%  { left: 30%; scale: 1.5;} /* When you start the slide, the first image is already visible */
+    4%  { left: 48%; scale: 2;} /* When you start the slide, the first image is already visible */
+    8%  { left: 48%;  scale: 2;} /* Original Position */
+    17%  { left: 48%;  scale: 2;} /* Original Position */
+    21% { left: 72%;  scale: 1.5;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 72%;  scale: 1.5; } /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 72%;  scale: 1.5;} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 90%; scale: 1;  } /* From 16% to 20% = for 1 second exit image */
+    42% { left: 90%;  opacity: 1; } /* From 16% to 20% = for 1 second exit image */
+    51% { left: 90%; opacity: 1; }
+    55% { left: 1300px; opacity: 0; }
+    68% { left: -150px; opacity: 0; }
+    72%{ left: 5%; scale: 1; opacity: 1; }
+    76%{ left: 5%;  scale: 1;}
+    85%{ left: 5%; scale: 1;}
+    89%{ left: 25%; scale: 1.5;  }
+    93%{ left: 25%; scale: 1.5;}
+    100%{ left: 25%; scale: 1.5; }
+ }
  
  @keyframes cyclefour {
     0%  { left: -150px; } /* When you start the slide, the first image is already visible */
@@ -636,6 +699,27 @@
     100% { left: 70%; scale: 1 }
  }
 
+ @keyframes cycletabletfour {
+    0%  { left: 4%; scale: 1; opacity: 1;} /* When you start the slide, the first image is already visible */
+    4%  { left: 23%; scale: 1.5; opacity: 1;} /* When you start the slide, the first image is already visible */
+    8%  { left: 23%; scale: 1.5; } /* Original Position */
+    17%  { left: 23%; scale: 1.5; } /* Original Position */
+    21% { left: 45%; scale: 2;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 45%;  scale: 2;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 45%;  scale: 2;} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 70%;   scale: 1.5;} /* From 16% to 20% = for 1 second exit image */
+    42% { left: 70%;   scale: 1.5;} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 70%;  scale: 1.5;}
+    55% { left: 85%; scale: 1; }
+    59% { left: 85%; }
+    68%{ left: 85%; opacity: 1; }
+    72%{ left: 1300px; opacity: 0;}
+    85% { left: -150px; opacity: 0; }
+    89%{ left: 4%; scale: 1; opacity: 1;}
+    93%{ left: 4%; scale: 1;}
+    100%{ left: 4%; scale: 1; }
+ }
+
  @keyframes cyclefive {
     0%  { left: -150px;; scale: 1;} /* When you start the slide, the first image is already visible */
     20% { left: -150px;  opacity: 0;} /* From 4% to 16 % = for 3 seconds the image is visible */
@@ -656,6 +740,27 @@
     100% { left: 40%; scale: 1.6;}
  }
 
+ @keyframes cycletabletfive {
+    0%  { left: -150px; scale: 1; } /* When you start the slide, the first image is already visible */
+    4%  { left: 5%; scale: 1; opacity: 1;} /* When you start the slide, the first image is already visible */
+    8%  { left: 5%; scale: 1; } /* Original Position */
+    17%  { left: 5%; scale: 1; } /* Original Position */
+    21% { left: 25%; scale: 1.5;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 25%;  scale: 1.5} /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 25%; scale: 1.5} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 50%;  scale: 2} /* From 16% to 20% = for 1 second exit image */
+    42% { left: 50%;  scale: 2} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 50%; scale: 2;}
+    55% { left: 70%; scale: 1.5;}
+    59% { left: 70%; scale: 1.5;}
+    68%{ left: 70%;  scale: 1.5;}
+    72%{ left: 90%; scale: 1; }
+    76%{ left: 90%; opacity: 1; }
+    85%{ left: 90%; opacity: 1; }
+    89%{ left: 1300px;  }
+    100% { left: 1300px; }
+ }
+
  @keyframes cyclesix {
     0%  { left: -150px;; scale: 1;} /* When you start the slide, the first image is already visible */
     31% { left: -150px; opacity: 0;} /* From 16% to 20% = for 1 second exit image */
@@ -672,23 +777,52 @@
     100% { left: -150px; opacity: 0; }
  }
 
+ @keyframes cycletabletsix {
+    0%  { left: -150px; scale: 1;} /* When you start the slide, the first image is already visible */
+    17%  { left: -150px; scale: 1;  } /* Original Position */
+    21% { left: 5%; scale: 1; opacity: 1;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 5%;  scale: 1} /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 5%; scale: 1} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 25%;  scale: 1.5} /* From 16% to 20% = for 1 second exit image */
+    42% { left: 25%;  scale: 1.5} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 25%; scale: 1.5;}
+    55% { left: 45%; scale: 2;}
+    59% { left: 45%; scale: 2;}
+    68%{ left: 45%;  scale: 2;}
+    72%{ left: 67%; scale: 1.5; }
+    76%{ left: 67%; scale: 1.5; }
+    85%{ left: 67%; scale: 1.5; }
+    89%{ left: 85%; scale: 1 }
+    93%{left: 85%; opacity: 1;}
+    97%{left: 85%; opacity: 1;}
+    100%{ left: 1300px; }
+ }
+
     #slider {
-        height: 300px;
+        height: 350px;
         max-width: 540px;
-        // margin: 40px auto 0;
         overflow: visible;
         position: relative;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            margin: 80px auto 0;
+            max-width: 1200px;
+        }
     }
     
     #mask {
         overflow: hidden;
-        height: 250px;
+        height: 300px;
      }
 
      #slider ul {
         margin: 10px;
         padding: 10px;
         position: relative;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            padding: 0 50px 0 20px;
+        }
      }
      
      #slider li {
@@ -705,29 +839,53 @@
      #slider li.firstanimation {
         // margin-top: 15px;
         animation: cycle 49s linear infinite;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            animation: cycletablet 30s linear infinite;
+        }
      }
      
      #slider li.secondanimation {
         animation: cycletwo 49s linear infinite;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            animation: cycletablettwo 30s linear infinite;
+        }
      }
      
      #slider li.thirdanimation {
         // margin-top: 10px;
         animation: cyclethree 49s linear infinite;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            animation: cycletabletthree 30s linear infinite;
+        }
      }
      
      #slider li.fourthanimation {
         // margin-top: 10px;
         animation: cyclefour 49s linear infinite;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            animation: cycletabletfour 30s linear infinite;
+        }
      }
      
      #slider li.fifthanimation {
         // margin-top: 13px;
         animation: cyclefive 49s linear infinite;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            animation: cycletabletfive 30s linear infinite;
+        }
      }
 
      #slider li.sixanimation {
         animation: cyclesix 49s linear infinite;
+
+        @media (min-width: 541px) and (max-width: 1200px) {
+            animation: cycletabletsix 30s linear infinite;
+        }
      };
 
      .slide__text-top{
@@ -795,6 +953,11 @@
         @media (min-width: 481px) and (max-width: 540px) {
             width: 70px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            width: 65px;
+        }
+        
      }
 
      .secondimg{
@@ -816,6 +979,10 @@
 
         @media (min-width: 481px) and (max-width: 540px) {
             width: 75px;
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            width: 70px;
         }
      }
 
@@ -839,6 +1006,10 @@
         @media (min-width: 481px) and (max-width: 540px) {
             width: 67px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            width: 62px;
+        }
      }
 
      .fourimg{
@@ -860,6 +1031,10 @@
 
         @media (min-width: 481px) and (max-width: 540px) {
             width: 80px;
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            width: 75px;
         }
      }
 
@@ -883,6 +1058,10 @@
         @media (min-width: 481px) and (max-width: 540px) {
             width: 65px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            width: 60px;
+        }
      }
 
      .sixtimg{
@@ -904,5 +1083,9 @@
 
         @media (min-width: 481px) and (max-width: 540px) {
             width: 90px;
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            width: 85px;
         }
      }

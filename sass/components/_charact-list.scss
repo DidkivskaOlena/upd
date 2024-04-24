@@ -2,6 +2,10 @@
     background-color: #ECF0F3;
     padding: 50px 22px;
 
+    @media (min-width: 541px) and (max-width: 768px) {
+        padding: 55px 40px;
+    }
+
     &__pretitle{
         display: flex;
         align-items: flex-start;
@@ -27,6 +31,10 @@
 
         @media (min-width: 481px) and (max-width: 540px) {
             font-size: 12px;
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            display: none;
         }
     }
 
@@ -84,11 +92,22 @@
         @media (min-width: 481px) and (max-width: 540px) {
             font-size: 26px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 50px;
+            margin-top: 0;
+            margin-left: 15px;
+        }
     }
 
     &__item {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
     }
 
     &__posttitle {
@@ -115,6 +134,12 @@
             font-size: 12px;
             margin-left: 22px;
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            font-size: 16px;
+            margin-left: 15px;
+            margin-bottom: 22px;
+        }
     }
 
     &__component {
@@ -127,14 +152,10 @@
         @media (min-width: 361px) and (max-width: 540px) {
             padding: 30px 20px;
         }
-    }
 
-    &__comment {
-        padding: 20px 24px;
-        
-        
-        @media screen and (max-width: 767px) {
-            max-width: 450px;
+        @media (min-width: 541px) and (max-width: 768px) {
+            margin-bottom: 22px;
+            padding: 40px 20px;
         }
     }
 
@@ -157,6 +178,10 @@
 
         @media (min-width: 481px) and (max-width: 540px) {
             @include font (600, 12px, 1.7, 0.05em);
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            @include font (600, 16px, 1.7, 0.05em);
         }
     }
 
@@ -181,6 +206,10 @@
         @media (min-width: 481px) and (max-width: 540px) {
             @include font (600, 13px, 1.7, 0.05em);
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            @include font (600, 18px, 1.7, 0.2em);
+        }
     }
 
     &__span{
@@ -199,6 +228,10 @@
         @media (min-width: 481px) and (max-width: 540px) {
             @include font (400, 12px, 1.7, 0.05em);
         }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            @include font (400, 16px, 1.7, 0.05em);
+        }
     }
 
     &__line {
@@ -215,6 +248,10 @@
 
         @media (min-width: 481px) and (max-width: 540px) {
             margin: 14px 9px 0;
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) {
+            margin: 19px 12px 0;
         }
     }
 }

@@ -1,5 +1,5 @@
 .newsletter {
-    @media (min-width: $tablet) and (max-width: 1199px) {
+    @media (min-width: 541px) and (max-width: 1200px) {
         text-align: center;
     }
 
@@ -37,15 +37,10 @@
         @media screen and (max-width: 1199px) {
             margin-bottom: 20px;
         }
+    }
 
-        @media screen and (min-width: $tablet) {
-            width: 450px;
-        }
-
-        @media screen and (min-width: $desktop) {
-            width: 358px;
-            margin-right: 12px;
-        }
+    &__input:not(:last-child){
+      width: 330px;
     }
 
     // &__button {

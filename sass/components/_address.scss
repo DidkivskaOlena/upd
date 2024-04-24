@@ -17,17 +17,22 @@
     }
 
     &__item:not(:last-child) {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 540px) {
             margin-bottom: 8px;
+        }
+
+        @media (min-width: 540px) and (max-width: 768px) {
+            margin-bottom: 20px;
         }
         
     }
 
     &__list{
         text-align: start;
-        margin-left: 40px;
-        @media screen and (max-width:767px) {
+        
+        @media screen and (max-width:540px) {
             margin-bottom: 60px;
+            margin-left: 40px;
         }
     }
 
@@ -67,6 +72,11 @@
 
     @media (min-width: 421px) and (max-width: 540px) {
         font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 541px) and (max-width: 768px) {
+        font-size: 18px;
         margin-bottom: 15px;
     }
 
