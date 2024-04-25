@@ -3313,6 +3313,12 @@ img {
 .feature__content {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .feature__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .footer {
   background-color: #191C26;
