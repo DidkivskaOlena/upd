@@ -36,15 +36,9 @@
     }
 
     @media screen and (min-width: 769px) {
-        max-width: 2400px;
         background-image: url(/public/background-desktop.jpg);
-        height: 613px;
+        height: 40vw;
         border-bottom: 2px solid #FF9900;
-
-        @media (min-width: 1600px) {
-            height: 1000px;
-            padding: 0px 16px;
-        }
     }
 
     &__container {
@@ -90,11 +84,23 @@
         }
 
         @media screen and (min-width: 769px) {
-            padding: 38px 98px 30px 125px;
+            padding: 25px 25px 0;
         }
 
-        @media screen and (min-width: 1600px) {
-            padding: 80px 98px 80px 125px;
+        @media screen and (min-width: 951px) {
+            padding: 30px 60px 30px 40px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 40px 80px 30px 90px;
+        }
+
+        @media screen and (min-width: 1500px) {
+            padding: 50px 100px 30px 110px;
+        }
+
+        @media screen and (min-width: 1900px) {
+            padding: 60px 130px 30px 150px;
         }
     }
 

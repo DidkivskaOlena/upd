@@ -35,9 +35,14 @@
     }
 
     @media (min-width: 769px) {
-        height: 680px;
-        padding: 179px 30px 30px;
+        height: 45vw;
+        padding: 100px 30px 30px;
         background-image: url(/public/background-about.jpg);
+        background-size: cover;
+    }
+
+    @media (min-width: 1001px) {
+        height: 40vw;
     }
 
     &__component {
@@ -101,16 +106,10 @@
 
         @media (min-width: 769px) {
             display: flex;
-            height: 199px;
-            width: 670px;
-            top: 514px;
-            left: 15vw;
-            padding: 12px 20px;
-            background-color: #F7F7F7;
-        }
-
-        @media (min-width: 1600px) {
-            top: 880px;
+            justify-content: space-between;
+            height: 11vw;
+            width: 43vw;
+            top: 33.5vw;
             left: 15vw;
             padding: 12px 20px;
             background-color: #F7F7F7;
@@ -124,9 +123,9 @@
 
         @media (min-width: 769px) {
             background-color: #F7F7F7;
-            padding: 0px 20px;
             border-right: 1px solid #BABABA;
             border-bottom: none;
+            padding: 0 10px;
         }
     }
 
@@ -137,12 +136,12 @@
         padding: 10px;
 
         @media (min-width: 769px) {
-            padding: 0px 25px;
             border-right: 1px solid #BABABA;
             border-bottom: none;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             border-top-right-radius: 0px;
+            padding: 0 10px 0 0;
         }
     }
 
@@ -154,12 +153,12 @@
 
         @media (min-width: 769px) {
             background-color: #F7F7F7;
-            padding: 0px 20px;
             border-bottom: none;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 15px;
             border-top-right-radius: 15px;
             border-bottom-left-radius: 0px;
+            padding: 0 0 0 10px;
         }
     }
 
@@ -206,9 +205,31 @@
         }
 
         @media (min-width: 769px) {
-            font-size: 18px;
-            margin-bottom: 25px;
+            font-size: 10px;
+            margin-bottom: 5px;
             
+        }
+
+        @media (min-width: 1100px) {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        @media (min-width: 1400px) {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 1800px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 2000px) {
+            font-size: 20px;
         }
     }
 
@@ -255,9 +276,32 @@
         }
 
         @media (min-width: 769px) {
-            font-size: 18px;
-            margin-bottom: 25px;
+            font-size: 10px;
+            margin-bottom: 5px;
             color: #2C3049;
+        }
+
+        @media (min-width: 1100px) {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        @media (min-width: 1400px) {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 1800px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 2000px) {
+            font-size: 20px;
         }
     }
 
@@ -291,6 +335,30 @@
 
         @media (min-width: 541px) {
             font-size: 14px;
+        }
+
+        @media (min-width: 769px) {
+            font-size: 9px;
+        }
+
+        @media (min-width: 1100px) {
+            font-size: 12px;
+        }
+
+        @media (min-width: 1400px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 17px;
+        }
+
+        @media (min-width: 1800px) {
+            font-size: 19px;
+        }
+
+        @media (min-width: 2000px) {
+            font-size: 21px;
         }
     }
 
@@ -494,6 +562,11 @@
         @media (min-width: 769px) {
             font-size: 11px;
         }
+
+        @media (min-width: 1301px) {
+            margin-top: 30px;
+            font-size: 14px;
+        }
     }
     
     &__pretitle::before {
@@ -502,10 +575,16 @@
         border-bottom: 1px solid #FF6C00;
         margin-bottom: 4px;
         margin-right: 10px;
-        margin-left: 100px;
 
         @media (min-width: 769px) {
+            margin-left: 50px;
             height: 11px;
+            width: 50px;
+        }
+
+        @media (min-width: 1301px) {
+            margin-left: 80px;
+            height: 13px;
             width: 70px;
         }
     }
@@ -513,7 +592,6 @@
     &__title-main{
         font-weight: 600;
         letter-spacing: 0.05em;
-        margin-left: 95px;
         margin-top: 24px;
         margin-bottom: 20px;
     
@@ -522,8 +600,15 @@
         }
 
         @media (min-width: 769px) {
-            font-size: 42px;
+            margin-left: 48px;
+            font-size: 24px;
             color: #303030;
+        }
+
+        @media (min-width: 1301px) {
+            margin-left: 79px;
+            font-size: 32px;
+            margin-top: 30px;
         }
     }
 }
@@ -566,9 +651,9 @@
     }
     
     @media (min-width: 769px) {
-        width: 180px;
-        margin-bottom: 15px;
-        height: 105px;
+        width: 13vw;
+        margin-bottom: 5px;
+        height: 6vw;
     }
 }
 
@@ -610,9 +695,9 @@
 
     @media (min-width: 769px) {
         fill: #2C3049;
-        width: 180px;
-        margin-bottom: 15px;
-        height: 105px;
+        width: 13vw;
+        margin-bottom: 5px;
+        height: 6vw;
     }
 }
 
@@ -654,9 +739,9 @@
 
     @media (min-width: 769px) {
         fill: #2C3049;
-        width: 180px;
-        margin-bottom: 15px;
-        height: 105px;
+        width: 13vw;
+        margin-bottom: 5px;
+        height: 6vw;
     }
 }
 
@@ -910,9 +995,9 @@
     93%{left: 85%; opacity: 1;}
     100%{ left: 85%; opacity: 1;}
  }
-
+ 
     #slider {
-        height: 350px;
+        height: 28vw;
         max-width: 540px;
         overflow: visible;
         position: relative;
@@ -922,15 +1007,20 @@
             max-width: 1200px;
         }
 
-        @media (min-width: 1201px) and (max-width: 2400px) {
-            margin: 110px auto 0;
+        @media (min-width: 769px)  {
+            margin: 30px auto 0;
+            max-width: 2400px;
+        }
+
+        @media (min-width: 1300px)  {
+            margin: 50px auto 0;
             max-width: 2400px;
         }
     }
     
     #mask {
         overflow: hidden;
-        height: 500px;
+        height: 28vw;
      }
 
      #slider ul {
@@ -1036,6 +1126,10 @@
         @media (min-width: 541px) {
             font-size: 18px;
         }
+
+        @media (min-width: 769px) {
+            font-size: 14px;
+        }
      }
 
      .slide__text{
@@ -1061,9 +1155,14 @@
         @media (min-width: 541px) {
             font-size: 14px;
         }
+
+        @media (min-width: 769px) {
+            font-size: 10px;
+        }
      }
 
      .firstimg{
+        margin: auto;
         @media screen and (max-width: 320px) {
             width: 50px;
         }
@@ -1089,12 +1188,14 @@
         }
 
         @media (min-width: 769px) {
-            width: 100px;
+            
+            width: 7vw;
         }
         
      }
 
      .secondimg{
+        margin: auto;
         @media screen and (max-width: 320px) {
             width: 55px;
         }
@@ -1120,11 +1221,12 @@
         }
 
         @media (min-width: 769px) {
-            width: 105px;
+            width: 8vw;
         }
      }
 
      .thirdimg{
+        margin: auto;
         @media screen and (max-width: 320px) {
             width: 47px;
         }
@@ -1150,11 +1252,12 @@
         }
 
         @media (min-width: 769px) {
-            width: 97px;
+            width: 6vw;
         }
      }
 
      .fourimg{
+        margin: auto;
         @media screen and (max-width: 320px) {
             width: 60px;
         }
@@ -1180,11 +1283,12 @@
         }
 
         @media (min-width: 769px) {
-            width: 110px;
+            width: 9vw;
         }
      }
 
      .fifthimg{
+        margin: auto;
         @media screen and (max-width: 320px) {
             width: 45px;
         }
@@ -1210,11 +1314,12 @@
         }
 
         @media (min-width: 769px) {
-            width: 95px;
+            width: 5vw;
         }
      }
 
      .sixtimg{
+        margin: auto;
         @media screen and (max-width: 320px) {
             width: 70px;
         }
@@ -1240,6 +1345,6 @@
         }
 
         @media (min-width: 769px) {
-            width: 120px;
+            width: 9vw;
         }
      }

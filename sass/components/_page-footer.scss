@@ -9,9 +9,9 @@
         text-align: start;
     }
 
-    // @media (min-width: 541px) and (max-width: 768px) {
-    //     display: flex;
-    // }
+    @media (min-width: 769px) {
+        display: flex;
+    }
 
     &__address {
         padding: 60px 0;
@@ -34,6 +34,10 @@
         @media (min-width: 541px) and (max-width: 768px) {
             height: 240px;
             padding: 120px 40px;
+        }
+
+        @media (min-width: 769px) {
+            width: 50vw;
         }
     }
 
@@ -63,6 +67,10 @@
         @media (min-width: 541px) and (max-width: 768px) {
             height: 290px;
             padding: 95px 40px;
+        }
+
+        @media (min-width: 769px) {
+            width: 50vw;
         }
     }
 

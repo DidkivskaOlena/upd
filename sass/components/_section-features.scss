@@ -54,8 +54,20 @@
 
         @media (min-width: 769px) {
             margin-right: 0;
-            margin-left: 110px;
+            margin-left: 40px;
             padding: 20px;
+            width: 70px;
+            height: 70px;
+        }
+
+        @media (min-width: 1001px) {
+
+            width: 80px;
+            height: 80px;
+            margin-left: 70px;
+        }
+
+        @media (min-width: 1301px) {
             width: 115px;
             height: 115px;
         }
@@ -86,8 +98,20 @@
         }
 
         @media (min-width: 769px) {
-            margin-left: 110px;
+            margin-left: 40px;
             padding: 20px;
+            width: 70px;
+            height: 70px;
+        }
+
+        @media (min-width: 1001px) {
+
+            width: 80px;
+            height: 80px;
+            margin-left: 70px;
+        }
+
+        @media (min-width: 1301px) {
             width: 115px;
             height: 115px;
         }
@@ -121,8 +145,21 @@
         }
 
         @media (min-width: 769px) {
-            font-size: 20px;
-            width: 27vw;
+            padding-right: 20px;
+            font-size: 10px;
+            width: 21vw;
+        }
+
+        @media (min-width: 1001px) {
+            font-size: 12px;
+        }
+
+        @media (min-width: 1301px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 1901px) {
+            font-size: 18px;
         }
     }
 
@@ -132,6 +169,12 @@
         border-top: 1px solid #3E434A;
 
         @media (min-width: 769px) {
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        @media (min-width: 1901px) {
             flex-direction: row-reverse;
             justify-content: space-around;
             padding: 30px 0;
@@ -189,7 +232,21 @@
         }
 
         @media (min-width: 769px) {
-            width: 41vw;
+            font-size: 10px;
+            width: 33vw;
+        }
+
+        @media (min-width: 1001px) {
+            font-size: 12px;
+            width: 37vw;
+        }
+
+        @media (min-width: 1301px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 1901px) {
+            font-size: 18px;
         }
     }
 
@@ -221,6 +278,14 @@
         }
 
         @media (min-width: 769px) {
+            width: 75px;
+        }
+
+        @media (min-width: 1001px) {
+            width: 85px;
+        }
+
+        @media (min-width: 1301px) {
             width: 110px;
         }
     }
