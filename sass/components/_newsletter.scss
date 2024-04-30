@@ -43,6 +43,10 @@
       width: 330px;
     }
 
+    &__top{
+      width: 47%;
+    }
+
     // &__button {
     //     width: 140px;
     //     height: 45px;
@@ -80,14 +84,14 @@
         font-size: 12px;
     }
 
-    @media screen and (min-width: $tablet) {
-        width: 450px;
-    }
+    // @media screen and (min-width: 768px) {
+    //   padding: 20px 40px;
+    // }
 
-    @media screen and (min-width: $desktop) {
-        width: 358px;
-        margin-right: 12px;
-    }
+    // @media screen and (min-width: 1200) {
+    //     width: 358px;
+    //     margin-right: 12px;
+    // }
   }
 
   .login-box a:hover {
@@ -177,5 +181,12 @@
     }
     50%,100% {
       bottom: 100%;
+    }
+  }
+
+  .user-box{
+    @media screen and (min-width:540px){
+      display: flex;
+      justify-content: space-between;
     }
   }

@@ -1,13 +1,6 @@
 .address {
-    @media (min-width: $tablet) and (max-width: $desktop) {
-        display: inline-block;
-        margin-right: 165px;
-        margin-left: 76px;
-        text-align: center;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-right: 70px;
+    @media screen and (min-width: 540px){
+        margin-left: 30px;
     }
 
     &__item {
@@ -20,11 +13,6 @@
         @media screen and (max-width: 540px) {
             margin-bottom: 8px;
         }
-
-        @media (min-width: 540px) and (max-width: 768px) {
-            margin-bottom: 20px;
-        }
-        
     }
 
     &__list{
@@ -75,7 +63,7 @@
         margin-bottom: 15px;
     }
 
-    @media (min-width: 541px) and (max-width: 768px) {
+    @media (min-width: 541px) {
         font-size: 18px;
         margin-bottom: 15px;
     }

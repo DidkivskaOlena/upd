@@ -31,13 +31,13 @@
                 <nav class="nav-site">
                     <ul class="nav-site__list">
                         <li class="nav-site__item">
-                            <a href="./index.html" class="nav-site__link nav-site__link--current">Все про товар</a>
+                            <a href="#about" class="nav-site__link nav-site__link--current">Все про товар</a>
                         </li>
                         <li class="nav-site__item">
-                            <a href="./portfolio.html" class="nav-site__link">Характеристики</a>
+                            <a href="#charact" class="nav-site__link" >Характеристики</a>
                         </li>
                         <li class="nav-site__item">
-                            <a href="" class="nav-site__link">Контакти</a>
+                            <a href="#contacts" class="nav-site__link" >Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -126,7 +126,7 @@
     <main>
        
         <!--Особенности компании-->
-        <section class="about">
+        <section class="about" id="about">
             
                 <div class="about__component">
                     <div class="about__block-hero">
@@ -362,7 +362,7 @@
             </div>
         </section>
         <!--Наша команда-->
-        <section class="charact">
+        <section class="charact" id="charact">
             <h3 class="charact__pretitle">На латинском языке “барба” означает “борода”</h3>
             <h2 class="charact__title">Характеристики</h2>
             <ul class="charact__list">
@@ -376,7 +376,7 @@
                         <div class="charact__item">
                             <p class="charact__text">ПОТУЖНІСТЬ, <span class="charact__span">Вт</span></p>
                             <div class="charact__line"></div>
-                            <p class="charact__value">до 1000 <br> <span class="charact__span">довготривале навантаження</span></p>
+                            <p class="charact__value">до 1000 <span class="charact__span">довготривале навантаження</span></p>
                         </div>
                         <div class="charact__item">
                             <p class="charact__text">ГАБАРИТНІ РОЗМІРИ, <span class="charact__span">мм</span></p>
@@ -388,11 +388,6 @@
                             <div class="charact__line"></div>
                             <p class="charact__value">24,5</p>
                         </div>
-                    </div>
-                </li>
-                <li class="charact__item-desktop">
-                    <h4 class="charact__posttitle">АКУМУЛЯТОР</h4>
-                    <div class="charact__component">
                         <h4 class="charact__posttitle-desktop">АКУМУЛЯТОР</h4>
                         <div class="charact__item">
                             <p class="charact__text">ХІМІЧНИЙ СКЛАД ЕЛЕМЕНТА </p>
@@ -404,11 +399,6 @@
                             <div class="charact__line"></div>
                             <p class="charact__value">4000/500 <span class="charact__span">циклів</span></p>
                         </div>
-                    </div>
-                </li>
-                <li class="charact__item-desktop">
-                    <h4 class="charact__posttitle">ВИХІДНІ ПОРТИ</h4>
-                    <div class="charact__component height">
                         <h4 class="charact__posttitle-desktop">ВИХІДНІ ПОРТИ</h4>
                         <div class="charact__item">
                             <p class="charact__text">220 В, 50 Гц</p>
@@ -430,11 +420,6 @@
                             <div class="charact__line"></div>
                             <p class="charact__value"><span class="charact__span">клеми</span></p>
                         </div>
-                    </div>
-                </li>
-                <li class="charact__item-desktop">
-                    <h4 class="charact__posttitle">ВХІДНІ ПОРТИ</h4>
-                    <div class="charact__component height">
                         <h4 class="charact__posttitle-desktop">ВХІДНІ ПОРТИ</h4>
                         <div class="charact__item">
                             <p class="charact__text">220 В, 50 Гц</p>
@@ -446,11 +431,6 @@
                             <div class="charact__line"></div>
                             <p class="charact__value"><span class="charact__span">клеми</span></p>
                         </div>
-                    </div>
-                </li>
-                <li class="charact__item-desktop">
-                    <h4 class="charact__posttitle">РОБОЧА ТЕМПЕРАТУРА НАВКОЛИШНЬОГО СЕРЕДОВИЩА</h4>
-                    <div class="charact__component">
                         <h4 class="charact__posttitle-desktop">РОБОЧА ТЕМПЕРАТУРА НАВКОЛИШНЬОГО СЕРЕДОВИЩА</h4>
                         <div class="charact__item">
                             <p class="charact__text">ОПТИМАЛЬНА РОБОЧА ТЕМПЕРАТУРА</p>
@@ -462,11 +442,6 @@
                             <div class="charact__line"></div>
                             <p class="charact__value"><span class="charact__span">від -20°C до 45°C (оптимально: від 15°C до 30°C)</span></p>
                         </div>
-                    </div>
-                </li>
-                <li class="charact__item-desktop">
-                    <h4 class="charact__posttitle">ДОДАТКОВІ ВІДОМОСТІ</h4>
-                    <div class="charact__component">
                         <h4 class="charact__posttitle-desktop">ДОДАТКОВІ ВІДОМОСТІ</h4>
                         <div class="charact__item">
                             <p class="charact__text">ЗОВНІШНІЙ АКУМУЛЯТОР</p>
@@ -485,19 +460,18 @@
         </section>
     </main>
     <!--Футер-->
-    <footer class="footer">      
+    <footer class="footer" id="contacts">      
             <div class="footer__newsletter login-box">
-                <h2 class="footer__title">Ваші запитання</h2>
+                <h2 class="footer__title footer__firsttitle">Ваші запитання</h2>
                 <form>
                     <div class="user-box">
-                        <label>
+                        <label class="newsletter__top">
                             <input type="text" name="name" placeholder="Ім'я" class="newsletter__input" />
                         </label>
+                        <label class="newsletter__top">
+                            <input type="phone" name="phone" placeholder="Телефон" class="newsletter__input" />
+                        </label>
                     </div>
-                    
-                    <label>
-                        <input type="phone" name="phone" placeholder="Телефон" class="newsletter__input" />
-                    </label>
                     <label>
                         <input type="email" name="email" placeholder="Повідомлення" class="newsletter__input" />
                     </label>
