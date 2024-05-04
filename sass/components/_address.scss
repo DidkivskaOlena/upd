@@ -10,9 +10,13 @@
     }
 
     &__item:not(:last-child) {
-        @media screen and (max-width: 540px) {
+        @media screen and (max-width: 768px) {
             margin-bottom: 8px;
         }
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 12px;
+    }
 
         @media screen and (min-width: 1401px) {
             margin-bottom: 22px;
@@ -25,6 +29,17 @@
     @media screen and (max-width:540px) {
         margin-bottom: 60px;
         margin-left: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: auto;
+        margin-left: auto;
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-right: auto;
+        width: 350px;
     }
 
     @media screen and (min-width: 1401px) {
@@ -42,6 +57,10 @@
 
     @media (min-width: 420px) and (max-width: 540px) {
         margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 22px;
     }
 
     @media screen and (min-width: 1401px) {
@@ -83,7 +102,7 @@
         margin-bottom: 15px;
     }
 
-    @media screen and (min-width: 1401px) {
+    @media screen and (min-width: 1024px) {
             margin-bottom: 0;
     }
 

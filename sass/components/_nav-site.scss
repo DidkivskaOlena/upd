@@ -7,12 +7,13 @@
     }
 
     &__list {
+        display: flex;
+
         @media screen and (min-width: 541px) {
-            display: flex;
             margin-left: 40px;
         }
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 1024px) {
             margin-left: 0px;
         }     
     }
@@ -27,11 +28,15 @@
             margin-right: 50px;
         }
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 768px) {
             margin-right: 60px;
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: 1024px) {
+            margin-right: 70px;
+        }
+
+        @media (min-width: 1401px) {
             margin-right: 90px;
         }
     }
@@ -53,15 +58,10 @@
     }
 
     @media screen and (min-width: 769px) {
-        @include font (500, 13px, 1.14, 0.1em);
-        position: relative;
+        @include font (500, 12px, 1.14, 0.1em);
     }
 
-    @media (min-width: 1100px) {
-        @include font (500, 15px, 1.14, 0.1em);
-    }
-
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
         @include font (500, 14px, 1.14, 0.1em);
     }
 
