@@ -45,8 +45,21 @@
         height: 40vw;
     }
 
+    @media (min-width: 1401px) {
+        padding: 0;
+        height: 705px;
+    }
+
+    &__container{
+        @media screen and (min-width: 1401px) {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     &__component {
-        position: absolute;
+        position: relative;
         border-radius: 15px;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 
@@ -114,6 +127,17 @@
             padding: 12px 20px;
             background-color: #F7F7F7;
         }
+
+        @media (min-width: 1401px) {
+            display: flex;
+            justify-content: space-between;
+            height: 176px;
+            width: 600px;
+            top: -105px;
+            left: 145px;
+            padding: 12px 20px;
+            background-color: #F7F7F7;
+        }
     }
 
     &__block {
@@ -125,7 +149,7 @@
             background-color: #F7F7F7;
             border-right: 1px solid #BABABA;
             border-bottom: none;
-            padding: 0 10px;
+            padding: 0 20px;
         }
     }
 
@@ -141,7 +165,7 @@
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             border-top-right-radius: 0px;
-            padding: 0 10px 0 0;
+            padding: 0 20px 0 0;
         }
     }
 
@@ -158,14 +182,14 @@
             border-bottom-left-radius: 15px;
             border-top-right-radius: 15px;
             border-bottom-left-radius: 0px;
-            padding: 0 0 0 10px;
+            padding: 0 0 0 5px;
         }
     }
 
     &__title-hero {
+        font-family: math;
         text-align: center;
         text-transform: uppercase;
-        font-family: "Open sans";
         font-weight: 600;
         color: #2C3049;
 
@@ -215,28 +239,17 @@
             margin-bottom: 7px;
         }
 
-        @media (min-width: 1400px) {
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        @media (min-width: 1600px) {
+        @media (min-width: 1401px) {
             font-size: 16px;
-        }
-
-        @media (min-width: 1800px) {
-            font-size: 18px;
-        }
-
-        @media (min-width: 2000px) {
-            font-size: 20px;
+            letter-spacing: 0.1em;
+            margin-bottom: 25px;
         }
     }
 
     &__title {
         text-align: center;
         text-transform: uppercase;
-        font-family: "Open sans";
+        font-family: math;
         font-weight: 600;
         color: #F7F7F7;
 
@@ -286,26 +299,15 @@
             margin-bottom: 7px;
         }
 
-        @media (min-width: 1400px) {
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        @media (min-width: 1600px) {
+        @media (min-width: 1401px) {
             font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        @media (min-width: 1800px) {
-            font-size: 18px;
-        }
-
-        @media (min-width: 2000px) {
-            font-size: 20px;
+            margin-bottom: 25px;
+            letter-spacing: 0.1em;
         }
     }
 
     &__comment {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
         color: #FF6C00;
 
@@ -345,20 +347,9 @@
             font-size: 12px;
         }
 
-        @media (min-width: 1400px) {
+        @media (min-width: 1401px) {
             font-size: 14px;
-        }
-
-        @media (min-width: 1600px) {
-            font-size: 17px;
-        }
-
-        @media (min-width: 1800px) {
-            font-size: 19px;
-        }
-
-        @media (min-width: 2000px) {
-            font-size: 21px;
+            letter-spacing: 0.1em;
         }
     }
 
@@ -549,6 +540,7 @@
     }
 
     &__pretitle{
+        font-family: math;
         display: flex;
         align-items: flex-start;
         text-transform: uppercase;
@@ -563,9 +555,9 @@
             font-size: 11px;
         }
 
-        @media (min-width: 1301px) {
-            margin-top: 30px;
-            font-size: 14px;
+        @media (min-width: 1401px) {
+            margin-top: -20px;
+            font-size: 11px;
         }
     }
     
@@ -582,16 +574,17 @@
             width: 50px;
         }
 
-        @media (min-width: 1301px) {
-            margin-left: 80px;
-            height: 13px;
-            width: 70px;
+        @media (min-width: 1401px) {
+            margin-left: 0;
+            height: 11px;
+            width: 69px;
         }
     }
     
     &__title-main{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: 600;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.1em;
         margin-top: 24px;
         margin-bottom: 20px;
     
@@ -605,10 +598,10 @@
             color: #303030;
         }
 
-        @media (min-width: 1301px) {
-            margin-left: 79px;
-            font-size: 32px;
-            margin-top: 30px;
+        @media (min-width: 1401px) {
+            margin-left: 0;
+            font-size: 42px;
+            margin-top: 25px;
         }
     }
 }
@@ -650,10 +643,10 @@
         height: 105px;
     }
     
-    @media (min-width: 769px) {
-        width: 13vw;
-        margin-bottom: 5px;
-        height: 6vw;
+    @media (min-width: 1401px) {
+        width: 170px;
+        margin-bottom: 15px;
+        height: 85px;
     }
 }
 
@@ -699,6 +692,12 @@
         margin-bottom: 5px;
         height: 6vw;
     }
+
+    @media (min-width: 1401px) {
+        width: 170px;
+        margin-bottom: 15px;
+        height: 85px;
+    }
 }
 
 .bi-sunset{
@@ -743,6 +742,12 @@
         margin-bottom: 5px;
         height: 6vw;
     }
+
+    @media (min-width: 1401px) {
+        width: 170px;
+        margin-bottom: 15px;
+        height: 85px;
+    }
 }
 
 /* ANIMATION */
@@ -767,24 +772,24 @@
  }
 
  @keyframes cycletablet {
-    0%  { left: 67%; scale: 1.5;} /* When you start the slide, the first image is already visible */
-    4%  { left: 85%; scale: 1;} /* When you start the slide, the first image is already visible */
-    8%  { left: 85%; } /* Original Position */
-    17%  { left: 85%; opacity: 1;} /* Original Position */
+    0%  { left: 70%; scale: 1.3;} /* When you start the slide, the first image is already visible */
+    4%  { left: 90%; scale: 1; } /* When you start the slide, the first image is already visible */
+    8%  { left: 90%; opacity: 1; } /* Original Position */
+    17%  { left: 90%; opacity: 0;} /* Original Position */
     21% { left: 2400px; opacity: 0;} /* From 4% to 16 % = for 3 seconds the image is visible */
     34% { left: -150px; scale: 1; opacity: 0;} /* From 16% to 20% = for 1 second exit image */
-    38% { left: 5%;   scale: 1; opacity: 1;} /* From 16% to 20% = for 1 second exit image */
-    42% { left: 5%;   scale: 1;} /* From 16% to 20% = for 1 second exit image */
-    51% { left: 5%;  scale: 1;}
-    55% { left: 25%;  scale: 1.5;}
-    59% { left: 25%; scale: 1.5; }
-    68%{ left: 25%; scale: 1.5; }
-    72%{ left: 50%;  scale: 2;}
-    76%{ left: 50%; scale: 2; }
-    85%{ left: 50%; scale: 2; }
-    89%{ left: 67%; scale: 1.5; }
-    93%{ left: 67%; scale: 1.5; }
-    100%{ left: 67%; scale: 1.5; }
+    38% { left: 0%;   scale: 1; opacity: 0;} /* From 16% to 20% = for 1 second exit image */
+    42% { left: 0%;   scale: 1; opacity: 1;} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 0%;  scale: 1;}
+    55% { left: 20%;  scale: 1.3;}
+    59% { left: 20%; scale: 1.3; }
+    68%{ left: 20%; scale: 1.3; }
+    72%{ left: 45%;  scale: 1.6;}
+    76%{ left: 45%; scale: 1.6; }
+    85%{ left: 45%; scale: 1.6; }
+    89%{ left: 70%; scale: 1.3; }
+    93%{ left: 70%; scale: 1.3; }
+    100%{ left: 70%; scale: 1.3; }
  }
  
  @keyframes cycletwo {
@@ -810,24 +815,24 @@
  }
 
  @keyframes cycletablettwo {
-    0%  { left: 45%;  scale: 2;} /* When you start the slide, the first image is already visible */
-    4%  { left: 67%;  scale: 1.5;} /* When you start the slide, the first image is already visible */
-    8%  { left: 67%;  scale: 1.5;} /* Original Position */
-    17%  { left: 67%;  scale: 1.5;} /* Original Position */
-    21% { left: 85%; scale: 1; } /* From 4% to 16 % = for 3 seconds the image is visible */
-    25% { left: 85%; scale: 1; } /* From 4% to 16 % = for 3 seconds the image is visible */
-    35% { left: 85%; opacity: 1; } /* From 16% to 20% = for 1 second exit image */
+    0%  { left: 45%;  scale: 1.6;} /* When you start the slide, the first image is already visible */
+    4%  { left: 69%;  scale: 1.3;} /* When you start the slide, the first image is already visible */
+    8%  { left: 69%;  scale: 1.3;} /* Original Position */
+    17%  { left: 69%;  scale: 1.3;} /* Original Position */
+    21% { left: 90%; scale: 1; } /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 90%; scale: 1; opacity: 1; } /* From 4% to 16 % = for 3 seconds the image is visible */
+    35% { left: 90%; opacity: 0; } /* From 16% to 20% = for 1 second exit image */
     39% { left: 2400px; opacity: 0;} /* From 16% to 20% = for 1 second exit image */
     51% { left: -150px; opacity: 0; }
-    55%{ left: 5%; scale: 1; opacity: 1; }
-    59%{ left: 5%;  scale: 1;}
-    68%{ left: 5%; scale: 1;}
-    72%{ left: 25%; scale: 1.5;  }
-    76%{ left: 25%; scale: 1.5;}
-    85%{ left: 25%; scale: 1.5;}
-    89%{ left: 45%;  scale: 2;}
-    93%{ left: 45%; scale: 2;}
-    100%{ left: 45%; scale: 2; }
+    55%{ left: 0%; scale: 1; opacity: 0; }
+    59%{ left: 0%;  scale: 1; opacity: 1;}
+    68%{ left: 0%; scale: 1;}
+    72%{ left: 20%; scale: 1.3;  }
+    76%{ left: 20%; scale: 1.3;}
+    85%{ left: 20%; scale: 1.3;}
+    89%{ left: 45%;  scale: 1.6;}
+    93%{ left: 45%; scale: 1.6;}
+    100%{ left: 45%; scale: 1.6; }
  }
  
  @keyframes cyclethree {
@@ -855,24 +860,24 @@
  }
 
  @keyframes cycletabletthree {
-    0%  { left: 25%; scale: 1.5;} /* When you start the slide, the first image is already visible */
-    4%  { left: 48%; scale: 2;} /* When you start the slide, the first image is already visible */
-    8%  { left: 48%;  scale: 2;} /* Original Position */
-    17%  { left: 48%;  scale: 2;} /* Original Position */
-    21% { left: 72%;  scale: 1.5;} /* From 4% to 16 % = for 3 seconds the image is visible */
-    25% { left: 72%;  scale: 1.5; } /* From 4% to 16 % = for 3 seconds the image is visible */
-    34% { left: 72%;  scale: 1.5;} /* From 16% to 20% = for 1 second exit image */
+    0%  { left: 23%; scale: 1.3;} /* When you start the slide, the first image is already visible */
+    4%  { left: 45%; scale: 1.6;} /* When you start the slide, the first image is already visible */
+    8%  { left: 45%;  scale: 1.6;} /* Original Position */
+    17%  { left: 45%;  scale: 1.6;} /* Original Position */
+    21% { left: 69%;  scale: 1.3;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 69%;  scale: 1.3; } /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 69%;  scale: 1.3;} /* From 16% to 20% = for 1 second exit image */
     38% { left: 90%; scale: 1;  } /* From 16% to 20% = for 1 second exit image */
-    42% { left: 90%; scale: 1;  } /* From 16% to 20% = for 1 second exit image */
-    51% { left: 90%; scale: 1;  opacity: 1; }
+    42% { left: 90%; scale: 1; opacity: 1; } /* From 16% to 20% = for 1 second exit image */
+    51% { left: 90%; scale: 1;  opacity: 0; }
     55% { left: 2400px; opacity: 0; }
     68% { left: -150px; opacity: 0; }
-    72%{ left: 5%; scale: 1; opacity: 1; }
-    76%{ left: 5%;  scale: 1;}
-    85%{ left: 5%; scale: 1;}
-    89%{ left: 25%; scale: 1.5;  }
-    93%{ left: 25%; scale: 1.5;}
-    100%{ left: 25%; scale: 1.5; }
+    72%{ left: 0%; scale: 1; opacity: 0; }
+    76%{ left: 0%;  scale: 1; opacity: 1;}
+    85%{ left: 0%; scale: 1;}
+    89%{ left: 23%; scale: 1.3;  }
+    93%{ left: 23%; scale: 1.3;}
+    100%{ left: 23%; scale: 1.3; }
  }
  
  @keyframes cyclefour {
@@ -899,24 +904,24 @@
  }
 
  @keyframes cycletabletfour {
-    0%  { left: 4%; scale: 1; opacity: 1;} /* When you start the slide, the first image is already visible */
-    4%  { left: 23%; scale: 1.5; opacity: 1;} /* When you start the slide, the first image is already visible */
-    8%  { left: 23%; scale: 1.5; } /* Original Position */
-    17%  { left: 23%; scale: 1.5; } /* Original Position */
-    21% { left: 45%; scale: 2;} /* From 4% to 16 % = for 3 seconds the image is visible */
-    25% { left: 45%;  scale: 2;} /* From 4% to 16 % = for 3 seconds the image is visible */
-    34% { left: 45%;  scale: 2;} /* From 16% to 20% = for 1 second exit image */
-    38% { left: 70%;   scale: 1.5;} /* From 16% to 20% = for 1 second exit image */
-    42% { left: 70%;   scale: 1.5;} /* From 16% to 20% = for 1 second exit image */
-    51% { left: 70%;  scale: 1.5;}
-    55% { left: 85%; scale: 1; }
-    59% { left: 85%; }
-    68%{ left: 85%; opacity: 1; }
+    0%  { left: 0%; scale: 1; opacity: 1;} /* When you start the slide, the first image is already visible */
+    4%  { left: 20%; scale: 1.3; } /* When you start the slide, the first image is already visible */
+    8%  { left: 20%; scale: 1.3; } /* Original Position */
+    17%  { left: 20%; scale: 1.3; } /* Original Position */
+    21% { left: 42%; scale: 1.6;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 42%;  scale: 1.6;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 42%;  scale: 1.6;} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 67%;   scale: 1.3;} /* From 16% to 20% = for 1 second exit image */
+    42% { left: 67%;   scale: 1.3;} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 67%;  scale: 1.3;}
+    55% { left: 90%; scale: 1; }
+    59% { left: 90%; opacity: 1; }
+    68%{ left: 90%; opacity: 0; }
     72%{ left: 2400px; opacity: 0;}
     85% { left: -150px; opacity: 0; }
-    89%{ left: 4%; scale: 1; opacity: 1;}
-    93%{ left: 4%; scale: 1;}
-    100%{ left: 4%; scale: 1; }
+    89%{ left: 0%; scale: 1; opacity: 0;}
+    93%{ left: 0%; scale: 1; opacity: 1;}
+    100%{ left: 0%; scale: 1; opacity: 1; }
  }
 
  @keyframes cyclefive {
@@ -941,21 +946,21 @@
 
  @keyframes cycletabletfive {
     0%  { left: -150px; scale: 1; } /* When you start the slide, the first image is already visible */
-    4%  { left: 5%; scale: 1; opacity: 1;} /* When you start the slide, the first image is already visible */
-    8%  { left: 5%; scale: 1; } /* Original Position */
-    17%  { left: 5%; scale: 1; } /* Original Position */
-    21% { left: 25%; scale: 1.5;} /* From 4% to 16 % = for 3 seconds the image is visible */
-    25% { left: 25%;  scale: 1.5} /* From 4% to 16 % = for 3 seconds the image is visible */
-    34% { left: 25%; scale: 1.5} /* From 16% to 20% = for 1 second exit image */
-    38% { left: 50%;  scale: 2} /* From 16% to 20% = for 1 second exit image */
-    42% { left: 50%;  scale: 2} /* From 16% to 20% = for 1 second exit image */
-    51% { left: 50%; scale: 2;}
-    55% { left: 70%; scale: 1.5;}
-    59% { left: 70%; scale: 1.5;}
-    68%{ left: 70%;  scale: 1.5;}
+    4%  { left: 0%; scale: 1; opacity: 0;} /* When you start the slide, the first image is already visible */
+    8%  { left: 0%; scale: 1; opacity: 1; } /* Original Position */
+    17%  { left: 0%; scale: 1; } /* Original Position */
+    21% { left: 18%; scale: 1.3;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 18%;  scale: 1.3} /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 18%; scale: 1.3} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 42%;  scale: 1.6} /* From 16% to 20% = for 1 second exit image */
+    42% { left: 42%;  scale: 1.6} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 42%; scale: 1.6;}
+    55% { left: 70%; scale: 1.3;}
+    59% { left: 70%; scale: 1.3;}
+    68%{ left: 70%;  scale: 1.3;}
     72%{ left: 90%; scale: 1; }
     76%{ left: 90%; opacity: 1; }
-    85%{ left: 90%; opacity: 1; }
+    85%{ left: 90%; opacity: 0; }
     89%{ left: 2400px;  }
     100% { left: 2400px; }
  }
@@ -979,25 +984,25 @@
  @keyframes cycletabletsix {
     0%  { left: -150px; scale: 1; opacity: 0;} /* When you start the slide, the first image is already visible */
     17%  { left: -150px; scale: 1;  } /* Original Position */
-    21% { left: 5%; scale: 1; opacity: 1;} /* From 4% to 16 % = for 3 seconds the image is visible */
-    25% { left: 5%;  scale: 1} /* From 4% to 16 % = for 3 seconds the image is visible */
-    34% { left: 5%; scale: 1} /* From 16% to 20% = for 1 second exit image */
-    38% { left: 25%;  scale: 1.5} /* From 16% to 20% = for 1 second exit image */
-    42% { left: 25%;  scale: 1.5} /* From 16% to 20% = for 1 second exit image */
-    51% { left: 25%; scale: 1.5;}
-    55% { left: 45%; scale: 2;}
-    59% { left: 45%; scale: 2;}
-    68%{ left: 45%;  scale: 2;}
-    72%{ left: 67%; scale: 1.5; }
-    76%{ left: 67%; scale: 1.5; }
-    85%{ left: 67%; scale: 1.5; }
-    89%{ left: 85%; scale: 1 }
-    93%{left: 85%; opacity: 1;}
-    100%{ left: 85%; opacity: 1;}
+    21% { left: 0%; scale: 1; opacity: 0;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    25% { left: 0%;  scale: 1; opacity: 1;} /* From 4% to 16 % = for 3 seconds the image is visible */
+    34% { left: 0%; scale: 1} /* From 16% to 20% = for 1 second exit image */
+    38% { left: 18%;  scale: 1.3} /* From 16% to 18% = for 1 second exit image */
+    42% { left: 18%;  scale: 1.3} /* From 16% to 20% = for 1 second exit image */
+    51% { left: 18%; scale: 1.3;}
+    55% { left: 45%; scale: 1.6;}
+    59% { left: 45%; scale: 1.6;}
+    68%{ left: 45%;  scale: 1.6;}
+    72%{ left: 70%; scale: 1.3; }
+    76%{ left: 70%; scale: 1.3; }
+    85%{ left: 70%; scale: 1.3; }
+    89%{ left: 90%; scale: 1 }
+    93%{left: 90%; opacity: 1;}
+    100%{ left: 90%; opacity: 0;}
  }
  
     #slider {
-        height: 28vw;
+        // height: 28vw;
         max-width: 540px;
         overflow: visible;
         position: relative;
@@ -1012,9 +1017,9 @@
             max-width: 2400px;
         }
 
-        @media (min-width: 1300px)  {
+        @media (min-width: 1401px)  {
             margin: 50px auto 0;
-            max-width: 2400px;
+            max-width: 1200px;
         }
     }
     
@@ -1032,7 +1037,7 @@
             padding: 0 50px 0 20px;
         }
 
-        @media (min-width: 1201px) and (max-width: 2400px) {
+        @media screen and (min-width: 1401px) {
             padding: 0 30px;
         }
      }
@@ -1040,7 +1045,7 @@
      #slider li {
         height: 33%; /* Height Image */
         position: absolute;
-        left: -150px; /* Original Position - Outside of the Slider */
+        left: -350px; /* Original Position - Outside of the Slider */
         list-style: none;
 
         :hover{
@@ -1052,7 +1057,7 @@
         // margin-top: 15px;
         animation: cycle 49s linear infinite;
 
-        @media (min-width: 541px) and (max-width: 2400px) {
+        @media screen and (min-width: 541px) {
             animation: cycletablet 30s linear infinite;
         }
      }
@@ -1060,7 +1065,7 @@
      #slider li.secondanimation {
         animation: cycletwo 49s linear infinite;
 
-        @media (min-width: 541px) and (max-width: 2400px) {
+        @media screen and (min-width: 541px)  {
             animation: cycletablettwo 30s linear infinite;
         }
      }
@@ -1069,7 +1074,7 @@
         // margin-top: 10px;
         animation: cyclethree 49s linear infinite;
 
-        @media (min-width: 541px) and (max-width: 2400px) {
+        @media screen and (min-width: 541px)  {
             animation: cycletabletthree 30s linear infinite;
         }
      }
@@ -1078,7 +1083,7 @@
         // margin-top: 10px;
         animation: cyclefour 49s linear infinite;
 
-        @media (min-width: 541px) and (max-width: 2400px) {
+        @media screen and (min-width: 541px)  {
             animation: cycletabletfour 30s linear infinite;
         }
      }
@@ -1087,7 +1092,7 @@
         // margin-top: 13px;
         animation: cyclefive 49s linear infinite;
 
-        @media (min-width: 541px) and (max-width: 2400px) {
+        @media screen and (min-width: 541px)  {
             animation: cycletabletfive 30s linear infinite;
         }
      }
@@ -1095,7 +1100,7 @@
      #slider li.sixanimation {
         animation: cyclesix 49s linear infinite;
 
-        @media (min-width: 541px) and (max-width: 2400px) {
+        @media screen and (min-width: 541px)  {
             animation: cycletabletsix 30s linear infinite;
         }
      };
@@ -1130,6 +1135,10 @@
         @media (min-width: 769px) {
             font-size: 14px;
         }
+
+        @media (min-width: 1401px) {
+            font-size: 18px;
+        }
      }
 
      .slide__text{
@@ -1158,6 +1167,10 @@
 
         @media (min-width: 769px) {
             font-size: 10px;
+        }
+
+        @media (min-width: 1401px) {
+            font-size: 14px;
         }
      }
 
@@ -1191,6 +1204,10 @@
             
             width: 7vw;
         }
+
+        @media screen and (min-width: 1401px) {
+            width: 100px;
+        }
         
      }
 
@@ -1223,6 +1240,10 @@
         @media (min-width: 769px) {
             width: 8vw;
         }
+
+        @media screen and (min-width: 1401px) {
+            width: 117px;
+        }
      }
 
      .thirdimg{
@@ -1253,6 +1274,10 @@
 
         @media (min-width: 769px) {
             width: 6vw;
+        }
+
+        @media screen and (min-width: 1401px) {
+            width: 100px;
         }
      }
 
@@ -1285,6 +1310,10 @@
         @media (min-width: 769px) {
             width: 9vw;
         }
+
+        @media screen and (min-width: 1401px) {
+            width: 130px;
+        }
      }
 
      .fifthimg{
@@ -1316,6 +1345,10 @@
         @media (min-width: 769px) {
             width: 5vw;
         }
+
+        @media screen and (min-width: 1401px) {
+            width: 90px;
+        }
      }
 
      .sixtimg{
@@ -1346,5 +1379,9 @@
 
         @media (min-width: 769px) {
             width: 9vw;
+        }
+
+        @media screen and (min-width: 1401px) {
+            width: 130px;
         }
      }

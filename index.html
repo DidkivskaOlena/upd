@@ -127,7 +127,7 @@
        
         <!--Особенности компании-->
         <section class="about" id="about">
-            
+            <div class="about__container">
                 <div class="about__component">
                     <div class="about__block-hero">
                         <svg xmlns="http://www.w3.org/2000/svg" fill=#2C3049 class="bi bi-command" viewBox="0 0 16 16">
@@ -169,14 +169,16 @@
                                         </div>
                                       </li>
                                       <li id="second" class="secondanimation">
-                                        <a href="#"><img src="/public/drill1.png" class="secondimg" width="90px"></a>
+                                        <a href="#"><img src="/public/fridge1.png" class="thirdimg" width="70px"></a>
+                                        
                                         <div class="tooltip">
                                             <p class="slide__text-top">1 година</p>
                                             <p class="slide__text">800 Вт</p>
                                         </div>
                                       </li>
                                       <li id="third" class="thirdanimation">
-                                        <a href="#"><img src="/public/fridge1.png" class="thirdimg" width="70px"></a>
+                                        <a href="#"><img src="/public/phone1.png" class="fifthimg" width="70px"></a>
+                                        
                                         <div class="tooltip">
                                             <p class="slide__text-top">1 година</p>
                                             <p class="slide__text">800 Вт</p>
@@ -190,14 +192,14 @@
                                         </div>
                                       </li>
                                       <li id="fifth" class="fifthanimation">
-                                        <a href="#"><img src="/public/phone1.png" class="fifthimg" width="70px"></a>
+                                        <a href="#"><img src="/public/tv1.png" class="sixtimg" width="110px"></a>
                                         <div class="tooltip">
                                             <p class="slide__text-top">1 година</p>
                                             <p class="slide__text">800 Вт</p>
                                         </div>
                                       </li>
                                       <li id="six" class="sixanimation">
-                                        <a href="#"><img src="/public/tv1.png" class="sixtimg" width="110px"></a>
+                                        <a href="#"><img src="/public/drill1.png" class="secondimg" width="90px"></a>
                                         <div class="tooltip">
                                             <p class="slide__text-top">1 година</p>
                                             <p class="slide__text">800 Вт</p>
@@ -208,8 +210,7 @@
                               <div class="progress-bar"></div>
                             </div>
                           </div>
-            
-
+            </div>
         </section>
         <!--Занятия компании-->
         <section class="feature">
@@ -363,32 +364,37 @@
         </section>
         <!--Наша команда-->
         <section class="charact" id="charact">
-            <h3 class="charact__pretitle">На латинском языке “барба” означает “борода”</h3>
-            <h2 class="charact__title">Характеристики</h2>
+            <div class="charact__container">
+                <h3 class="charact__pretitle">На латинском языке “барба” означает “борода”</h3>
+                <h2 class="charact__title">Характеристики</h2>
+            </div>
             <ul class="charact__list">
                 <li class="charact__item-desktop">
                     <div class="charact__component">
-                        <div class="charact__item">
-                            <p class="charact__text">ЄМНІСТЬ, <span class="charact__span">А•год</span></p>
-                            <div class="charact__line"></div>
-                            <p class="charact__value">100</p>
+                        <div>
+                            <div class="charact__item">
+                                <p class="charact__text">ЄМНІСТЬ, <span class="charact__span">А•год</span></p>
+                                <div class="charact__line"></div>
+                                <p class="charact__value">100</p>
+                            </div>
+                            <div class="charact__item">
+                                <p class="charact__text">ПОТУЖНІСТЬ, <span class="charact__span">Вт</span></p>
+                                <div class="charact__line"></div>
+                                <p class="charact__value">до 1000 <span class="charact__span">довготривале навантаження</span></p>
+                            </div>
+                            <div class="charact__item">
+                                <p class="charact__text">ГАБАРИТНІ РОЗМІРИ, <span class="charact__span">мм</span></p>
+                                <div class="charact__line"></div>
+                                <p class="charact__value">305×360×445</p>
+                            </div>
+                            <div class="charact__item">
+                                <p class="charact__text">МАСА, <span class="charact__span">кг, не більше</span></p>
+                                <div class="charact__line"></div>
+                                <p class="charact__value">24,5</p>
+                            </div>
                         </div>
-                        <div class="charact__item">
-                            <p class="charact__text">ПОТУЖНІСТЬ, <span class="charact__span">Вт</span></p>
-                            <div class="charact__line"></div>
-                            <p class="charact__value">до 1000 <span class="charact__span">довготривале навантаження</span></p>
-                        </div>
-                        <div class="charact__item">
-                            <p class="charact__text">ГАБАРИТНІ РОЗМІРИ, <span class="charact__span">мм</span></p>
-                            <div class="charact__line"></div>
-                            <p class="charact__value">305×360×445</p>
-                        </div>
-                        <div class="charact__item">
-                            <p class="charact__text">МАСА, <span class="charact__span">кг, не більше</span></p>
-                            <div class="charact__line"></div>
-                            <p class="charact__value">24,5</p>
-                        </div>
-                        <h4 class="charact__posttitle-desktop">АКУМУЛЯТОР</h4>
+                        <div>
+                            <h4 class="charact__posttitle-desktop">АКУМУЛЯТОР</h4>
                         <div class="charact__item">
                             <p class="charact__text">ХІМІЧНИЙ СКЛАД ЕЛЕМЕНТА </p>
                             <div class="charact__line"></div>
@@ -399,7 +405,9 @@
                             <div class="charact__line"></div>
                             <p class="charact__value">4000/500 <span class="charact__span">циклів</span></p>
                         </div>
-                        <h4 class="charact__posttitle-desktop">ВИХІДНІ ПОРТИ</h4>
+                        </div>
+                        <div>
+                            <h4 class="charact__posttitle-desktop">ВИХІДНІ ПОРТИ</h4>
                         <div class="charact__item">
                             <p class="charact__text">220 В, 50 Гц</p>
                             <div class="charact__line"></div>
@@ -420,7 +428,9 @@
                             <div class="charact__line"></div>
                             <p class="charact__value"><span class="charact__span">клеми</span></p>
                         </div>
-                        <h4 class="charact__posttitle-desktop">ВХІДНІ ПОРТИ</h4>
+                        </div>
+                        <div>
+                            <h4 class="charact__posttitle-desktop">ВХІДНІ ПОРТИ</h4>
                         <div class="charact__item">
                             <p class="charact__text">220 В, 50 Гц</p>
                             <div class="charact__line"></div>
@@ -431,7 +441,9 @@
                             <div class="charact__line"></div>
                             <p class="charact__value"><span class="charact__span">клеми</span></p>
                         </div>
-                        <h4 class="charact__posttitle-desktop">РОБОЧА ТЕМПЕРАТУРА НАВКОЛИШНЬОГО СЕРЕДОВИЩА</h4>
+                        </div>
+                        <div>
+                            <h4 class="charact__posttitle-desktop">РОБОЧА ТЕМПЕРАТУРА НАВКОЛИШНЬОГО СЕРЕДОВИЩА</h4>
                         <div class="charact__item">
                             <p class="charact__text">ОПТИМАЛЬНА РОБОЧА ТЕМПЕРАТУРА</p>
                             <div class="charact__line"></div>
@@ -442,7 +454,9 @@
                             <div class="charact__line"></div>
                             <p class="charact__value"><span class="charact__span">від -20°C до 45°C (оптимально: від 15°C до 30°C)</span></p>
                         </div>
-                        <h4 class="charact__posttitle-desktop">ДОДАТКОВІ ВІДОМОСТІ</h4>
+                        </div>
+                        <div>
+                            <h4 class="charact__posttitle-desktop">ДОДАТКОВІ ВІДОМОСТІ</h4>
                         <div class="charact__item">
                             <p class="charact__text">ЗОВНІШНІЙ АКУМУЛЯТОР</p>
                             <div class="charact__line"></div>
@@ -452,6 +466,7 @@
                             <p class="charact__text">СОНЯЧНА БАТАРЕЯ</p>
                             <div class="charact__line"></div>
                             <p class="charact__value"><span class="charact__span">підтримується (не постачається)</span></p>
+                        </div>
                         </div>
                     </div>
                 </li>

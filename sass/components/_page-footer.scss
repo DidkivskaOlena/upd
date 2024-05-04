@@ -37,8 +37,8 @@
         }
 
         @media (min-width: 769px) {
-            width: 50%;
             padding: 60px 30px;
+            margin-right: auto;
         }
     }
 
@@ -74,9 +74,15 @@
             padding: 60px 30px;
             width: 50vw;
         }
+
+        @media screen  and (min-width: 1401px) {
+            margin-left: auto;
+            width: 540px;
+        }
     }
 
     &__title {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin-bottom: 30px;
         color: #FFFFFF;
 
@@ -98,8 +104,9 @@
             margin-left: 35px;
         }
 
-        @media (min-width: $desktop) {
-            align-items: center;
+        @media (min-width: 1401px) {
+            width: 500px;
+            margin-right: auto;
         }
     }
 

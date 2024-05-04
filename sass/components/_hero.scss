@@ -1,7 +1,12 @@
 .hero {
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 12px 25px 25px;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: 1401px) {
+        width: 1300px;
+        padding: 0;
+    }
 
     &__container {
         align-content: end;
@@ -15,6 +20,8 @@
     }
 
     &__titletop{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
         @media screen and (max-width: 540px) {
             display: none;
         }
@@ -35,24 +42,15 @@
         }
 
         @media screen and (min-width: 1200px) {
-            font-size: 15px;
-        }
-
-        @media (min-width: 1500px) {
             font-size: 16px;
-         }
-
-         @media (min-width: 1900px) {
-            font-size: 17px;
-         }
-        
+        }        
     }
 
     &__title {
         position: absolute;
         font-weight: 600;
         text-transform: uppercase;
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         @media screen and (max-width: 540px) {
             right: 30px;
@@ -98,6 +96,7 @@
     }
 
     &__title-tablet {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         @media screen and (max-width: 540px) {
             display: none;
         }
@@ -119,26 +118,8 @@
         }
 
         @media screen and (min-width: 1200px) {
-            @include font (600, 56px, 1.36, 0.05em);
+            @include font (600, 74px, 1.36, 0.05em);
         }
-
-        @media (min-width: 1500px) {
-            font-size: 60px;
-         }
-
-         @media (min-width: 1700px) {
-            margin-top: 40px;
-         }
-
-         @media (min-width: 1900px) {
-            font-size: 64px;
-         }
-
-         @media (min-width: 2100px) {
-            margin-top: 70px;
-         }
-
-         
     }
 
     &__texttop {
@@ -199,7 +180,7 @@
         width: 98px;
 
         @include font (400, 10px, 2, 0.02em);
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         @media screen and (max-width: 280px) {
             padding: 50px 0 50px 0;
@@ -242,6 +223,7 @@
         font-size: 14px;
         width: 250px;
         line-height: 2em;
+        font-family: math;
 
         @media screen and (min-width: 769px) {
             font-size: 13px;
@@ -256,22 +238,8 @@
         }
 
         @media screen and (min-width: 1200px) {
-            font-size: 17px;
+            font-size: 16px;
         }
-
-        @media (min-width: 1500px) {
-            font-size: 18px;
-            width: 350px;
-         }
-
-         @media (min-width: 1500px) {
-            font-size: 19px;
-            width: 400px;
-         }
-
-         @media (min-width: 2400px) {
-            margin-top: 30px;
-         }
     }
 
     &__img {
@@ -291,12 +259,8 @@
             margin-right: 20px;
         }
 
-        @media screen and (min-width: 1250px) {
-            margin-top: 20px;
-        }
-
-        @media screen and (min-width: 1500px) {
-            margin-top: 0;
+        @media screen and (min-width: 1200px) {
+            margin: 0;
             width: 30vw;
             height: 31vw;
         }
@@ -314,9 +278,10 @@
             margin-bottom: 10px;
         }
 
-        @media screen and (min-width: 1500px) {
+        @media screen and (min-width: 1200px) {
             width: 24vw;
             height: 22vw;
+            margin: 0;
         }
     }
 
