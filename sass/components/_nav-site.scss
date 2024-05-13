@@ -1,5 +1,5 @@
 .nav-site {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
 
     @media screen and (max-width: 767px) {
@@ -62,7 +62,7 @@
     }
 
     @media (min-width: 1024px) {
-        @include font (500, 14px, 1.14, 0.1em);
+        @include font (400, 14px, 1.14, 0.1em);
     }
 
     &--current {

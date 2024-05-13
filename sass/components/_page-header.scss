@@ -1,45 +1,100 @@
 .page-header {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    z-index: 1;
 
-    @media screen and (max-width: 540px) {
-        background-image: url(/background-mobile.jpg);
-    }
+    background: 
+    linear-gradient(
+        to bottom,
+        #071232 14%,
+        #272B45 37%,
+        #081130 56%,
+        #BEC0C7 83%,
+        #E6E6E7 98%), ;
 
-    @media screen and (max-width: 280px) {
-        height: 320px;
-    }
+    // @media screen and (max-width: 540px) {
+    //     background-image: url(/background-mobile.jpg);
 
-    @media (min-width: 281px) and (max-width: 320px) {
-        height: 360px;
-    }
+    //     @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //         background-image: url(/background-mobile@2x.jpg);
+    //     }
+    // }
 
-    @media (min-width: 321px) and (max-width: 360px) {
-        height: 400px;
-    }
+    // @media screen and (max-width: 280px) {
+    //     height: 320px;
+    // }
 
-    @media (min-width: 361px) and (max-width: 420px) {
-        height: 440px;
-    }
+    // @media (min-width: 281px) and (max-width: 320px) {
+    //     height: 360px;
+    // }
 
-    @media (min-width: 421px) and (max-width: 480px) {
-        height: 500px;
-    }
+    // @media (min-width: 321px) and (max-width: 360px) {
+    //     height: 400px;
+    // }
 
-    @media (min-width: 481px) and (max-width: 540px) {
-        height: 500px;
-    }
+    // @media (min-width: 361px) and (max-width: 420px) {
+    //     height: 440px;
+    // }
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-        background-image: url(/public/background-tablet.jpg);
-        height: 595px;
-    }
+    // @media (min-width: 421px) and (max-width: 480px) {
+    //     height: 500px;
+    // }
+
+    // @media (min-width: 481px) and (max-width: 540px) {
+    //     height: 500px;
+    // }
+
+    // @media (min-width: 768px) and (max-width: 1023px) {
+    //     margin: 0 auto;
+    //     background-image: url(/public/background-tablet.jpg);
+    //     height: 595px;
+
+    //     @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //         background-image: url(/public/background-tablet@2x.jpg);
+    //     }
+    // }
 
     @media screen and (min-width: 1024px) {
-        background-image: url(/public/background-desktop.jpg);
         height: 40vw;
+        max-height: 495px;
         border-bottom: 2px solid #FF9900;
+        
     }
+
+    @media screen and (min-width: 1440px) {
+        max-height: 610px;
+        
+    }
+
+    @media screen and (min-width: 1850px) {
+        max-height: 783px;
+        
+    }
+
+    @media screen and (min-width: 2200px) {
+        max-height: 1080px;
+        
+    }
+
+    &__back{
+        position: absolute;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+        mix-blend-mode: color-dodge;
+    }
+
+    &__backimg{
+        height: 20vw;
+        width: 100%;
+        
+    }
+
 
     &__container {
         display: flex;
@@ -47,6 +102,7 @@
         justify-content: space-between;
         position: relative;
         padding: 0px 26px;
+        z-index: 3;
 
         @media screen and (max-width: 280px) {
             height: 54px;
@@ -92,11 +148,22 @@
         @media screen and (min-width: 1024px) {
             margin: 0 auto;
             width: 880px;
-            padding: 30px 0 30px 0;
+            padding: 30px 0 0 0;
+            
         }
 
         @media screen and (min-width: 1401px) {
             width: 1200px;
+            padding: 40px 0 30px 0;
+        }
+
+        @media screen and (min-width: 1851px) {
+            width: 1585px;
+            padding: 40px 0 30px 0;
+        }
+
+        @media screen and (min-width: 2201px) {
+            width: 1885px;
             padding: 40px 0 30px 0;
         }
     }

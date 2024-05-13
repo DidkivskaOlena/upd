@@ -13,7 +13,10 @@
   <body>
       <!--Шапка сайта-->
       <header class="page-header">
-        <div class="container page-header__container">
+        <div class="page-header__back">
+            <img src="./public/back.png" alt="back" class="page-header__backimg">
+        </div>
+        <div class="page-header__container">
             <button 
                 type="button" 
                 aria-expanded="false"
@@ -55,16 +58,26 @@
          <section class="hero">
           <div class="container hero__container">
                 
-                <img src="./public/backdrop-mobile.png" alt="backdrop" class="hero__backdrop"/>
+                <div class="hero__backdrop-container">
+                    <img src="./public/backdrop-mobile.png" alt="backdrop" class="hero__backdrop"/>
+                </div>
                 <div class="hero__content">
-                    <img src="./public/upd-front.png" alt="upd" class="hero__img-desktop"/>
+                    <img loading="lazy"
+                        srcset="./public/upd-front.png 1x, ./public/upd-front@2x.png 2x, ./public/upd-front@3x.png 3x, ./public/upd-front@4x.png 4x"
+                        class="hero__img-desktop"
+                        src="./public/upd-front.png" 
+                        alt="upd" />
                     <div class="hero__content-title">
                         <p class="hero__titletop">Пристрій безперебійного живлення</p>
                         <h1 class="hero__title-tablet" style="padding-top: 0rem;">UPD-1600</h1>
                         <p class="hero__textbottom-tablet">Надійний як годинник,<br>безперебійний як власне дихання.</p>
                     </div>
                     <p class="hero__textbottom">Надійний як годинник,<br>безперебійний як власне дихання.</p>
-                    <img src="./public/upd_mobile.png" alt="upd" class="hero__img"/>
+                    <img loading="lazy" 
+                    srcset="./public/upd.png 1x, ./public/upd@2x.png 2x, ./public/upd@3x.png 3x, ./public/upd@4x.png 4x"
+                        src="./public/upd.png" 
+                        alt="upd" 
+                        class="hero__img"/>
                 </div>
                   <!-- <div class="backdrop backdrop--is-hidden" data-modal>
                       <div class="modal">

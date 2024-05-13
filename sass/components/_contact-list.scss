@@ -15,7 +15,7 @@
     }
 
     &__link {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
         color: inherit;
         font-weight: 500;
@@ -43,7 +43,7 @@
     cursor: pointer;
 
     @media screen and (min-width: 541px) {
-        color: #DEE3EB;
+        color: #eff2f7;
         display: flex;
         align-items: center;
         margin: auto;

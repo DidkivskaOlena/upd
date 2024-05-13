@@ -2,6 +2,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 25px;
+    z-index: 3;
 
     @media (min-width: 768px) and (max-width: 1023px){
         max-width: 768px;
@@ -34,7 +35,7 @@
     }
 
     &__titletop{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 
         @media screen and (max-width: 540px) {
             display: none;
@@ -64,7 +65,7 @@
         position: absolute;
         font-weight: 600;
         text-transform: uppercase;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 
         @media screen and (max-width: 540px) {
             right: 30px;
@@ -110,7 +111,7 @@
     }
 
     &__title-tablet {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
         @media screen and (max-width: 540px) {
             display: none;
         }
@@ -127,8 +128,7 @@
         }
 
         @media screen and (min-width: 1024px) {
-            @include font (600, 64px, 1.36, 0.05em);
-            margin-top: 20px;
+            @include font (500, 64px, 1.36, 0.05em);
         }
 
         @media screen and (min-width: 1400px) {
@@ -184,6 +184,7 @@
 
         @media screen and (min-width: 768px) {
             margin-left: 10px;
+            margin-top: 30px;
         }
     }
 
@@ -236,7 +237,7 @@
         font-size: 14px;
         width: 250px;
         line-height: 2em;
-        font-family: math;
+        font-family: 'Arial Narrow', Arial, sans-serif;
 
         @media (min-width: 768px) and (max-width: 1023px) {
             font-size: 14px;
@@ -245,9 +246,11 @@
         }
 
         @media screen and (min-width: 1024px) {
-            font-size: 15px;
+            font-size: 13px;
             width: 300px;
-            margin-top: 10px;
+            font-weight: 300;
+            line-height: 1.7em;
+            letter-spacing: 0.08em;
         }
 
         @media screen and (min-width: 1400px) {
@@ -259,6 +262,7 @@
         
         width: 61vw;
         height: 65vw;
+        z-index: 3;
 
         @media (min-width: 541px) and (max-width: 768px) {
             margin-top: 20px;
@@ -275,14 +279,16 @@
 
         @media screen and (min-width: 1024px) {
             margin: 0;
-            width: 27vw;
-            height: 28vw;
+            width: 33vw;
+            height: 32vw;
+            max-width: 410px;
+            max-height: 400px;
         }
 
         @media screen and (min-width: 1401px) {
             margin: 0;
             width: 30vw;
-            height: 31vw;
+            height: 29vw;
         }
     }
 
@@ -293,20 +299,34 @@
 
 
         @media screen and (min-width: 1024px) {
-            width: 20vw;
+            z-index: 3;
+            width: 18vw;
             height: 18vw;
             margin: 0;
         }
 
         @media screen and (min-width: 1401px) {
-            width: 24vw;
-            height: 22vw;
+            width: 18vw;
+            height: 18vw;
             margin: 0;
         }
     }
 
+    &__backdrop-container{
+        margin: 0 auto;
+        @media screen and (min-width: 1024px) {
+            width: 980px;
+            padding: 0;
+        }
+    
+        @media screen and (min-width: 1401px) {
+            width: 1300px;
+            padding: 0;
+        }
+    }
+
     &__backdrop {
-        position: absolute;
+        position:absolute;
         top: 34px;
         width: 90vw;
 
@@ -335,7 +355,22 @@
         }
 
         @media (min-width: 541px) {
-            display: none;
+            // display: none;
+        }
+
+        @media (min-width: 1024px) {
+            width: 45%;
+            left: 50%;
+        }
+
+        @media (min-width: 1150px) {
+            width: 45%;
+            left: 48%;
+        }
+
+        @media (min-width: 1440px) {
+            width: 45%;
+            left: 48%;
         }
     }
 
