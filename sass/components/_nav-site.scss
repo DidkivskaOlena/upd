@@ -39,6 +39,14 @@
         @media (min-width: 1401px) {
             margin-right: 90px;
         }
+
+        @media screen and (min-width: 1851px) {
+            margin-right: 110px;
+        }
+
+        @media screen and (min-width: 2201px) {
+            margin-right: 130px;
+        }
     }
 }
 
@@ -63,6 +71,18 @@
 
     @media (min-width: 1024px) {
         @include font (400, 14px, 1.14, 0.1em);
+    }
+
+    @media (min-width: 1401px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1851px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 2201px) {
+        font-size: 20px;
     }
 
     &--current {
