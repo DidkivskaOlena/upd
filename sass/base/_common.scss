@@ -1,3 +1,10 @@
+:root {
+	--rotate-speed: 60;
+	--count: 11; /* Default count, the DOM element should override this */
+	--easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
+	--easing: cubic-bezier(0.000, 0.5, 1.000, 0.5);
+}
+
 html {
   scroll-behavior: smooth;
 }

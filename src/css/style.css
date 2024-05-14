@@ -1,3 +1,10 @@
+:root {
+  --rotate-speed: 60;
+  --count: 11; /* Default count, the DOM element should override this */
+  --easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
+  --easing: cubic-bezier(0.000, 0.5, 1.000, 0.5);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1148,6 +1155,7 @@ img {
 }
 @media (min-width: 1024px) {
   .about {
+    text-align: center;
     background-image: url(/public/background-about.jpg);
     background-size: cover;
     padding: 0;
@@ -1464,7 +1472,7 @@ img {
   }
 }
 .about__title-hero {
-  font-family: math;
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
@@ -1559,7 +1567,7 @@ img {
 .about__title {
   text-align: center;
   text-transform: uppercase;
-  font-family: math;
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
   color: #F7F7F7;
 }
@@ -1953,7 +1961,7 @@ img {
   }
 }
 .about__pretitle {
-  font-family: math;
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
   display: flex;
   align-items: flex-start;
   text-transform: uppercase;
@@ -2006,7 +2014,7 @@ img {
   }
 }
 .about__title-main {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.1em;
   margin-top: 24px;
@@ -2022,14 +2030,13 @@ img {
     color: #303030;
     margin-left: 0;
     font-size: 36px;
-    margin-top: 25px;
+    margin-top: 0;
   }
 }
 @media (min-width: 1401px) {
   .about__title-main {
     margin-left: 0;
     font-size: 42px;
-    margin-top: 25px;
   }
 }
 
@@ -2306,1045 +2313,10 @@ img {
 }
 
 /* ANIMATION */
-@keyframes cycle {
-  0% {
-    left: 75%;
-    scale: 1;
-  } /* When you start the slide, the first image is already visible */
-  2% {
-    left: 75%;
-  } /* When you start the slide, the first image is already visible */
-  9% {
-    left: 75%;
-    opacity: 1;
-  } /* Original Position */
-  11% {
-    left: 600px;
-    opacity: 0;
-  } /* Original Position */
-  42% {
-    left: -150px;
-    opacity: 0;
-  }
-  44% {
-    left: 5%;
-    opacity: 1;
-  }
-  46% {
-    left: 5%;
-  }
-  53% {
-    left: 5%;
-    scale: 1;
-  }
-  55% {
-    left: 45%;
-    scale: 1.6;
-  }
-  57% {
-    left: 45%;
-    scale: 1.6;
-  }
-  64% {
-    left: 45%;
-    scale: 1.6;
-  }
-  66% {
-    left: 75%;
-    scale: 1;
-  }
-  68% {
-    left: 75%;
-  }
-  75% {
-    left: 75%;
-    opacity: 1;
-  }
-  77% {
-    left: 600px;
-    opacity: 0;
-  }
-  100% {
-    left: 600px;
-  } /* From 96% to 100% = for 1 second enter image*/
-}
-@keyframes cycletablet {
-  0% {
-    left: 70%;
-    scale: 1.3;
-  } /* When you start the slide, the first image is already visible */
-  4% {
-    left: 90%;
-    scale: 1;
-  } /* When you start the slide, the first image is already visible */
-  8% {
-    left: 90%;
-    opacity: 1;
-  } /* Original Position */
-  17% {
-    left: 90%;
-    opacity: 0;
-  } /* Original Position */
-  21% {
-    left: 2400px;
-    opacity: 0;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  34% {
-    left: -150px;
-    scale: 1;
-    opacity: 0;
-  } /* From 16% to 20% = for 1 second exit image */
-  38% {
-    left: 0%;
-    scale: 1;
-    opacity: 0;
-  } /* From 16% to 20% = for 1 second exit image */
-  42% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  51% {
-    left: 0%;
-    scale: 1;
-  }
-  55% {
-    left: 20%;
-    scale: 1.3;
-  }
-  59% {
-    left: 20%;
-    scale: 1.3;
-  }
-  68% {
-    left: 20%;
-    scale: 1.3;
-  }
-  72% {
-    left: 45%;
-    scale: 1.6;
-  }
-  76% {
-    left: 45%;
-    scale: 1.6;
-  }
-  85% {
-    left: 45%;
-    scale: 1.6;
-  }
-  89% {
-    left: 70%;
-    scale: 1.3;
-  }
-  93% {
-    left: 70%;
-    scale: 1.3;
-  }
-  100% {
-    left: 70%;
-    scale: 1.3;
-  }
-}
-@keyframes cycletwo {
-  0% {
-    left: 40%;
-    scale: 1.6;
-    opacity: 1;
-  } /* When you start the slide, the first image is already visible */
-  2% {
-    left: 40%;
-    scale: 1.6;
-  } /* When you start the slide, the first image is already visible */
-  9% {
-    left: 40%;
-    scale: 1.6;
-  } /* Original Position */
-  11% {
-    left: 75%;
-    scale: 1;
-  } /* Original Position */
-  13% {
-    left: 75%;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  20% {
-    left: 75%;
-    opacity: 1;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  22% {
-    left: 600px;
-    opacity: 0;
-  } /* From 16% to 20% = for 1 second exit image */
-  53% {
-    left: -150px;
-    opacity: 0;
-  }
-  55% {
-    left: 5%;
-    opacity: 1;
-  }
-  57% {
-    left: 5%;
-  }
-  64% {
-    left: 5%;
-    scale: 1;
-  }
-  66% {
-    left: 40%;
-    scale: 1.6;
-  }
-  68% {
-    left: 40%;
-    scale: 1.6;
-  }
-  75% {
-    left: 40%;
-    scale: 1.6;
-  }
-  77% {
-    left: 75%;
-    scale: 1;
-  }
-  79% {
-    left: 75%;
-  }
-  86% {
-    left: 75%;
-    opacity: 1;
-  }
-  88% {
-    left: 600px;
-    opacity: 0;
-  }
-  100% {
-    left: 600px;
-  }
-}
-@keyframes cycletablettwo {
-  0% {
-    left: 45%;
-    scale: 1.6;
-  } /* When you start the slide, the first image is already visible */
-  4% {
-    left: 69%;
-    scale: 1.3;
-  } /* When you start the slide, the first image is already visible */
-  8% {
-    left: 69%;
-    scale: 1.3;
-  } /* Original Position */
-  17% {
-    left: 69%;
-    scale: 1.3;
-  } /* Original Position */
-  21% {
-    left: 90%;
-    scale: 1;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  25% {
-    left: 90%;
-    scale: 1;
-    opacity: 1;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  35% {
-    left: 90%;
-    opacity: 0;
-  } /* From 16% to 20% = for 1 second exit image */
-  39% {
-    left: 2400px;
-    opacity: 0;
-  } /* From 16% to 20% = for 1 second exit image */
-  51% {
-    left: -150px;
-    opacity: 0;
-  }
-  55% {
-    left: 0%;
-    scale: 1;
-    opacity: 0;
-  }
-  59% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  }
-  68% {
-    left: 0%;
-    scale: 1;
-  }
-  72% {
-    left: 20%;
-    scale: 1.3;
-  }
-  76% {
-    left: 20%;
-    scale: 1.3;
-  }
-  85% {
-    left: 20%;
-    scale: 1.3;
-  }
-  89% {
-    left: 45%;
-    scale: 1.6;
-  }
-  93% {
-    left: 45%;
-    scale: 1.6;
-  }
-  100% {
-    left: 45%;
-    scale: 1.6;
-  }
-}
-@keyframes cyclethree {
-  0% {
-    left: 5%;
-  } /* When you start the slide, the first image is already visible */
-  2% {
-    left: 5%;
-  } /* When you start the slide, the first image is already visible */
-  9% {
-    left: 5%;
-    scale: 1;
-  } /* Original Position */
-  11% {
-    left: 45%;
-    scale: 1.6;
-  } /* Original Position */
-  13% {
-    left: 45%;
-    scale: 1.6;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  20% {
-    left: 45%;
-    scale: 1.6;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  22% {
-    left: 80%;
-    scale: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  24% {
-    left: 80%;
-  } /* From 16% to 20% = for 1 second exit image */
-  31% {
-    left: 80%;
-    opacity: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  33% {
-    left: 600px;
-    opacity: 0;
-  }
-  64% {
-    left: -150px;
-    opacity: 0;
-  }
-  66% {
-    left: 5%;
-    opacity: 1;
-  }
-  68% {
-    left: 5%;
-  }
-  75% {
-    left: 5%;
-    scale: 1;
-  }
-  77% {
-    left: 45%;
-    scale: 1.6;
-  }
-  79% {
-    left: 45%;
-    scale: 1.6;
-  }
-  86% {
-    left: 45%;
-    scale: 1.6;
-  }
-  88% {
-    left: 80%;
-    scale: 1;
-  }
-  90% {
-    left: 80%;
-  }
-  97% {
-    left: 80%;
-    opacity: 1;
-  }
-  100% {
-    left: 600px;
-    opacity: 0;
-  }
-}
-@keyframes cycletabletthree {
-  0% {
-    left: 23%;
-    scale: 1.3;
-  } /* When you start the slide, the first image is already visible */
-  4% {
-    left: 45%;
-    scale: 1.6;
-  } /* When you start the slide, the first image is already visible */
-  8% {
-    left: 45%;
-    scale: 1.6;
-  } /* Original Position */
-  17% {
-    left: 45%;
-    scale: 1.6;
-  } /* Original Position */
-  21% {
-    left: 69%;
-    scale: 1.3;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  25% {
-    left: 69%;
-    scale: 1.3;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  34% {
-    left: 69%;
-    scale: 1.3;
-  } /* From 16% to 20% = for 1 second exit image */
-  38% {
-    left: 90%;
-    scale: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  42% {
-    left: 90%;
-    scale: 1;
-    opacity: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  51% {
-    left: 90%;
-    scale: 1;
-    opacity: 0;
-  }
-  55% {
-    left: 2400px;
-    opacity: 0;
-  }
-  68% {
-    left: -150px;
-    opacity: 0;
-  }
-  72% {
-    left: 0%;
-    scale: 1;
-    opacity: 0;
-  }
-  76% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  }
-  85% {
-    left: 0%;
-    scale: 1;
-  }
-  89% {
-    left: 23%;
-    scale: 1.3;
-  }
-  93% {
-    left: 23%;
-    scale: 1.3;
-  }
-  100% {
-    left: 23%;
-    scale: 1.3;
-  }
-}
-@keyframes cyclefour {
-  0% {
-    left: -150px;
-  } /* When you start the slide, the first image is already visible */
-  9% {
-    left: -150px;
-    opacity: 0;
-  } /* Original Position */
-  11% {
-    left: 5%;
-    opacity: 1;
-  } /* Original Position */
-  13% {
-    left: 5%;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  20% {
-    left: 5%;
-    scale: 1;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  22% {
-    left: 40%;
-    scale: 1.6;
-  } /* From 16% to 20% = for 1 second exit image */
-  24% {
-    left: 40%;
-    scale: 1.6;
-  } /* From 16% to 20% = for 1 second exit image */
-  31% {
-    left: 40%;
-    scale: 1.6;
-  } /* From 16% to 20% = for 1 second exit image */
-  33% {
-    left: 70%;
-    scale: 1;
-  }
-  35% {
-    left: 70%;
-  }
-  42% {
-    left: 70%;
-    opacity: 1;
-  }
-  44% {
-    left: 600px;
-    opacity: 0;
-  }
-  75% {
-    left: -150px;
-    opacity: 0;
-  }
-  77% {
-    left: 5%;
-    opacity: 1;
-  }
-  79% {
-    left: 5%;
-  }
-  86% {
-    left: 5%;
-    scale: 1;
-  }
-  88% {
-    left: 37%;
-    scale: 1.6;
-  }
-  90% {
-    left: 37%;
-    scale: 1.6;
-  }
-  97% {
-    left: 37%;
-    scale: 1.6;
-  }
-  100% {
-    left: 70%;
-    scale: 1;
-  }
-}
-@keyframes cycletabletfour {
-  0% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  } /* When you start the slide, the first image is already visible */
-  4% {
-    left: 20%;
-    scale: 1.3;
-  } /* When you start the slide, the first image is already visible */
-  8% {
-    left: 20%;
-    scale: 1.3;
-  } /* Original Position */
-  17% {
-    left: 20%;
-    scale: 1.3;
-  } /* Original Position */
-  21% {
-    left: 42%;
-    scale: 1.6;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  25% {
-    left: 42%;
-    scale: 1.6;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  34% {
-    left: 42%;
-    scale: 1.6;
-  } /* From 16% to 20% = for 1 second exit image */
-  38% {
-    left: 67%;
-    scale: 1.3;
-  } /* From 16% to 20% = for 1 second exit image */
-  42% {
-    left: 67%;
-    scale: 1.3;
-  } /* From 16% to 20% = for 1 second exit image */
-  51% {
-    left: 67%;
-    scale: 1.3;
-  }
-  55% {
-    left: 87%;
-    scale: 1;
-  }
-  59% {
-    left: 87%;
-    opacity: 1;
-  }
-  68% {
-    left: 87%;
-    opacity: 0;
-  }
-  72% {
-    left: 2400px;
-    opacity: 0;
-  }
-  85% {
-    left: -150px;
-    opacity: 0;
-  }
-  89% {
-    left: 0%;
-    scale: 1;
-    opacity: 0;
-  }
-  93% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  }
-  100% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  }
-}
-@keyframes cyclefive {
-  0% {
-    left: -150px;
-    scale: 1;
-  } /* When you start the slide, the first image is already visible */
-  20% {
-    left: -150px;
-    opacity: 0;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  22% {
-    left: 5%;
-    opacity: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  24% {
-    left: 5%;
-  } /* From 16% to 20% = for 1 second exit image */
-  31% {
-    left: 5%;
-    scale: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  33% {
-    left: 45%;
-    scale: 1.6;
-  }
-  35% {
-    left: 45%;
-    scale: 1.6;
-  }
-  42% {
-    left: 45%;
-    scale: 1.6;
-  }
-  44% {
-    left: 80%;
-    scale: 1;
-  }
-  46% {
-    left: 80%;
-  }
-  53% {
-    left: 80%;
-    opacity: 1;
-  }
-  55% {
-    left: 600px;
-    opacity: 0;
-  }
-  86% {
-    left: -150px;
-    opacity: 0;
-  }
-  88% {
-    left: 5%;
-    opacity: 1;
-  }
-  90% {
-    left: 5%;
-  }
-  97% {
-    left: 5%;
-    scale: 1;
-  }
-  100% {
-    left: 40%;
-    scale: 1.6;
-  }
-}
-@keyframes cycletabletfive {
-  0% {
-    left: -150px;
-    scale: 1;
-  } /* When you start the slide, the first image is already visible */
-  4% {
-    left: 0%;
-    scale: 1;
-    opacity: 0;
-  } /* When you start the slide, the first image is already visible */
-  8% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  } /* Original Position */
-  17% {
-    left: 0%;
-    scale: 1;
-  } /* Original Position */
-  21% {
-    left: 18%;
-    scale: 1.3;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  25% {
-    left: 18%;
-    scale: 1.3;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  34% {
-    left: 18%;
-    scale: 1.3;
-  } /* From 16% to 20% = for 1 second exit image */
-  38% {
-    left: 42%;
-    scale: 1.6;
-  } /* From 16% to 20% = for 1 second exit image */
-  42% {
-    left: 42%;
-    scale: 1.6;
-  } /* From 16% to 20% = for 1 second exit image */
-  51% {
-    left: 42%;
-    scale: 1.6;
-  }
-  55% {
-    left: 70%;
-    scale: 1.3;
-  }
-  59% {
-    left: 70%;
-    scale: 1.3;
-  }
-  68% {
-    left: 70%;
-    scale: 1.3;
-  }
-  72% {
-    left: 87%;
-    scale: 1;
-  }
-  76% {
-    left: 87%;
-    opacity: 1;
-  }
-  85% {
-    left: 87%;
-    opacity: 0;
-  }
-  89% {
-    left: 2400px;
-  }
-  100% {
-    left: 2400px;
-  }
-}
-@keyframes cyclesix {
-  0% {
-    left: -150px;
-    scale: 1;
-  } /* When you start the slide, the first image is already visible */
-  31% {
-    left: -150px;
-    opacity: 0;
-  } /* From 16% to 20% = for 1 second exit image */
-  33% {
-    left: 0%;
-    opacity: 1;
-  }
-  35% {
-    left: 0%;
-  }
-  42% {
-    left: 0ch;
-    scale: 1;
-  }
-  44% {
-    left: 40%;
-    scale: 1.6;
-  }
-  46% {
-    left: 40%;
-    scale: 1.6;
-  }
-  53% {
-    left: 40%;
-    scale: 1.6;
-  }
-  55% {
-    left: 70%;
-    scale: 1;
-  }
-  57% {
-    left: 70%;
-  }
-  64% {
-    left: 70%;
-    opacity: 1;
-  }
-  66% {
-    left: 600px;
-    opacity: 0;
-  }
-  100% {
-    left: -150px;
-    opacity: 0;
-  }
-}
-@keyframes cycletabletsix {
-  0% {
-    left: -150px;
-    scale: 1;
-    opacity: 0;
-  } /* When you start the slide, the first image is already visible */
-  17% {
-    left: -150px;
-    scale: 1;
-  } /* Original Position */
-  21% {
-    left: 0%;
-    scale: 1;
-    opacity: 0;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  25% {
-    left: 0%;
-    scale: 1;
-    opacity: 1;
-  } /* From 4% to 16 % = for 3 seconds the image is visible */
-  34% {
-    left: 0%;
-    scale: 1;
-  } /* From 16% to 20% = for 1 second exit image */
-  38% {
-    left: 18%;
-    scale: 1.3;
-  } /* From 16% to 18% = for 1 second exit image */
-  42% {
-    left: 18%;
-    scale: 1.3;
-  } /* From 16% to 20% = for 1 second exit image */
-  51% {
-    left: 18%;
-    scale: 1.3;
-  }
-  55% {
-    left: 45%;
-    scale: 1.6;
-  }
-  59% {
-    left: 45%;
-    scale: 1.6;
-  }
-  68% {
-    left: 45%;
-    scale: 1.6;
-  }
-  72% {
-    left: 70%;
-    scale: 1.3;
-  }
-  76% {
-    left: 70%;
-    scale: 1.3;
-  }
-  85% {
-    left: 70%;
-    scale: 1.3;
-  }
-  89% {
-    left: 90%;
-    scale: 1;
-  }
-  93% {
-    left: 90%;
-    opacity: 1;
-  }
-  100% {
-    left: 90%;
-    opacity: 0;
-  }
-}
-#slider {
-  max-width: 540px;
-  overflow: visible;
-  position: relative;
-}
-@media (min-width: 541px) and (max-width: 1200px) {
-  #slider {
-    margin: 80px auto 0;
-    max-width: 1200px;
-  }
-}
-@media (min-width: 768px) {
-  #slider {
-    margin: 60px auto 0;
-    max-width: 660px;
-  }
-}
-@media (min-width: 1024px) {
-  #slider {
-    margin: 50px auto 0;
-    max-width: 880px;
-  }
-}
-@media (min-width: 1401px) {
-  #slider {
-    margin: 50px auto 0;
-    max-width: 1200px;
-  }
-}
-
-#mask {
-  overflow: hidden;
-  height: 28vw;
-}
-@media (min-width: 1024px) and (max-width: 1400px) {
-  #mask {
-    height: 25vw;
-  }
-}
-
-#slider ul {
-  margin: 10px;
-  padding: 10px;
-  position: relative;
-}
-@media (min-width: 541px) and (max-width: 1200px) {
-  #slider ul {
-    padding: 0 50px 0 20px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  #slider ul {
-    padding: 0 30px;
-  }
-}
-
-#slider li {
-  height: 33%; /* Height Image */
-  position: absolute;
-  left: -350px; /* Original Position - Outside of the Slider */
-  list-style: none;
-}
-#slider li :hover {
-  animation-play-state: paused;
-}
-
-#slider li.firstanimation {
-  animation: cycle 49s linear infinite;
-}
-@media screen and (min-width: 541px) {
-  #slider li.firstanimation {
-    animation: cycletablet 30s linear infinite;
-  }
-}
-
-#slider li.secondanimation {
-  animation: cycletwo 49s linear infinite;
-}
-@media screen and (min-width: 541px) {
-  #slider li.secondanimation {
-    animation: cycletablettwo 30s linear infinite;
-  }
-}
-
-#slider li.thirdanimation {
-  animation: cyclethree 49s linear infinite;
-}
-@media screen and (min-width: 541px) {
-  #slider li.thirdanimation {
-    animation: cycletabletthree 30s linear infinite;
-  }
-}
-
-#slider li.fourthanimation {
-  animation: cyclefour 49s linear infinite;
-}
-@media screen and (min-width: 541px) {
-  #slider li.fourthanimation {
-    animation: cycletabletfour 30s linear infinite;
-  }
-}
-
-#slider li.fifthanimation {
-  animation: cyclefive 49s linear infinite;
-}
-@media screen and (min-width: 541px) {
-  #slider li.fifthanimation {
-    animation: cycletabletfive 30s linear infinite;
-  }
-}
-
-#slider li.sixanimation {
-  animation: cyclesix 49s linear infinite;
-}
-@media screen and (min-width: 541px) {
-  #slider li.sixanimation {
-    animation: cycletabletsix 30s linear infinite;
-  }
-}
-
-.slide__text-top {
-  text-align: center;
-}
-@media screen and (max-width: 320px) {
-  .slide__text-top {
-    font-size: 10px;
-  }
-}
-@media (min-width: 321px) and (max-width: 380px) {
-  .slide__text-top {
-    font-size: 11px;
-  }
-}
-@media (min-width: 381px) and (max-width: 440px) {
-  .slide__text-top {
-    font-size: 12px;
-  }
-}
-@media (min-width: 421px) and (max-width: 480px) {
-  .slide__text-top {
-    font-size: 14px;
-  }
-}
-@media (min-width: 481px) and (max-width: 540px) {
-  .slide__text-top {
-    font-size: 16px;
-  }
-}
-@media (min-width: 541px) {
-  .slide__text-top {
-    font-size: 18px;
-  }
-}
-@media (min-width: 769px) {
-  .slide__text-top {
-    font-size: 14px;
-  }
-}
-@media (min-width: 1401px) {
-  .slide__text-top {
-    font-size: 18px;
-  }
-}
-
 .slide__text {
   color: #FF6C00;
   text-align: center;
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
 }
 @media screen and (max-width: 320px) {
   .slide__text {
@@ -3383,299 +2355,114 @@ img {
 }
 
 .firstimg {
-  margin: auto;
-}
-@media screen and (max-width: 320px) {
-  .firstimg {
-    width: 50px;
-  }
-}
-@media (min-width: 321px) and (max-width: 380px) {
-  .firstimg {
-    width: 55px;
-  }
-}
-@media (min-width: 381px) and (max-width: 440px) {
-  .firstimg {
-    width: 60px;
-  }
-}
-@media (min-width: 441px) and (max-width: 480px) {
-  .firstimg {
-    width: 65px;
-  }
-}
-@media (min-width: 481px) and (max-width: 540px) {
-  .firstimg {
-    width: 70px;
-  }
-}
-@media (min-width: 541px) and (max-width: 768px) {
-  .firstimg {
-    width: 65px;
-  }
-}
-@media (min-width: 769px) {
-  .firstimg {
-    width: 7vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .firstimg {
-    width: 80px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .firstimg {
-    width: 100px;
-  }
+  margin-top: 2px;
 }
 
 .secondimg {
-  margin: auto;
-}
-@media screen and (max-width: 320px) {
-  .secondimg {
-    width: 55px;
-  }
-}
-@media (min-width: 321px) and (max-width: 380px) {
-  .secondimg {
-    width: 60px;
-  }
-}
-@media (min-width: 381px) and (max-width: 440px) {
-  .secondimg {
-    width: 65px;
-  }
-}
-@media (min-width: 441px) and (max-width: 480px) {
-  .secondimg {
-    width: 70px;
-  }
-}
-@media (min-width: 481px) and (max-width: 540px) {
-  .secondimg {
-    width: 75px;
-  }
-}
-@media (min-width: 541px) and (max-width: 768px) {
-  .secondimg {
-    width: 70px;
-  }
-}
-@media (min-width: 769px) {
-  .secondimg {
-    width: 8vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .secondimg {
-    width: 97px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .secondimg {
-    width: 117px;
-  }
+  margin-top: 40px;
 }
 
 .thirdimg {
-  margin: auto;
-}
-@media screen and (max-width: 320px) {
-  .thirdimg {
-    width: 47px;
-  }
-}
-@media (min-width: 321px) and (max-width: 380px) {
-  .thirdimg {
-    width: 52px;
-  }
-}
-@media (min-width: 381px) and (max-width: 440px) {
-  .thirdimg {
-    width: 57px;
-  }
-}
-@media (min-width: 421px) and (max-width: 480px) {
-  .thirdimg {
-    width: 62px;
-  }
-}
-@media (min-width: 481px) and (max-width: 540px) {
-  .thirdimg {
-    width: 67px;
-  }
-}
-@media (min-width: 541px) and (max-width: 768px) {
-  .thirdimg {
-    width: 62px;
-  }
-}
-@media (min-width: 769px) {
-  .thirdimg {
-    width: 6vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .thirdimg {
-    width: 80px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .thirdimg {
-    width: 100px;
-  }
-}
-
-.fourimg {
-  margin: auto;
-}
-@media screen and (max-width: 320px) {
-  .fourimg {
-    width: 60px;
-  }
-}
-@media (min-width: 321px) and (max-width: 380px) {
-  .fourimg {
-    width: 65px;
-  }
-}
-@media (min-width: 381px) and (max-width: 440px) {
-  .fourimg {
-    width: 70px;
-  }
-}
-@media (min-width: 421px) and (max-width: 480px) {
-  .fourimg {
-    width: 75px;
-  }
-}
-@media (min-width: 481px) and (max-width: 540px) {
-  .fourimg {
-    width: 80px;
-  }
-}
-@media (min-width: 541px) and (max-width: 768px) {
-  .fourimg {
-    width: 75px;
-  }
-}
-@media (min-width: 769px) {
-  .fourimg {
-    width: 9vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .fourimg {
-    width: 110px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .fourimg {
-    width: 130px;
-  }
+  margin-top: 15px;
 }
 
 .fifthimg {
-  margin: auto;
-}
-@media screen and (max-width: 320px) {
-  .fifthimg {
-    width: 45px;
-  }
-}
-@media (min-width: 321px) and (max-width: 380px) {
-  .fifthimg {
-    width: 50px;
-  }
-}
-@media (min-width: 381px) and (max-width: 440px) {
-  .fifthimg {
-    width: 55px;
-  }
-}
-@media (min-width: 421px) and (max-width: 480px) {
-  .fifthimg {
-    width: 60px;
-  }
-}
-@media (min-width: 481px) and (max-width: 540px) {
-  .fifthimg {
-    width: 65px;
-  }
-}
-@media (min-width: 541px) and (max-width: 768px) {
-  .fifthimg {
-    width: 60px;
-  }
-}
-@media (min-width: 769px) {
-  .fifthimg {
-    width: 5vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .fifthimg {
-    width: 70px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .fifthimg {
-    width: 90px;
-  }
+  margin-top: 15px;
 }
 
 .sixtimg {
   margin: auto;
 }
-@media screen and (max-width: 320px) {
-  .sixtimg {
-    width: 70px;
-  }
-}
-@media (min-width: 321px) and (max-width: 380px) {
-  .sixtimg {
-    width: 75px;
-  }
-}
-@media (min-width: 381px) and (max-width: 440px) {
-  .sixtimg {
-    width: 80px;
-  }
-}
-@media (min-width: 421px) and (max-width: 480px) {
-  .sixtimg {
-    width: 85px;
-  }
-}
-@media (min-width: 481px) and (max-width: 540px) {
-  .sixtimg {
-    width: 90px;
-  }
-}
-@media (min-width: 541px) and (max-width: 768px) {
-  .sixtimg {
-    width: 85px;
-  }
-}
-@media (min-width: 769px) {
-  .sixtimg {
-    width: 9vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .sixtimg {
-    width: 110px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .sixtimg {
-    width: 130px;
-  }
+
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
 }
 
+.section-title:after,
+.section-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+
+.section-title:after {
+  height: 2px;
+  background-color: rgba(252, 92, 15, 0.46);
+  left: 25%;
+  right: 25%;
+}
+
+.section-title:before {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  background-color: #fc5c0f;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: -9px;
+  z-index: 9;
+  border-radius: 50%;
+}
+
+/* CAROUSEL STARTS */
+.owl-carousel .item img {
+  width: 75%;
+  height: 75%;
+}
+
+.customer-feedback .owl-item img {
+  width: 85px;
+  height: 85px;
+}
+
+.feedback-slider-item {
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+  width: 60%;
+  height: 35%;
+}
+
+.owl-item {
+  text-align: center;
+}
+
+.thumb-next {
+  left: auto;
+  right: -90px;
+}
+
+.item-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+  .feedback-slider-item:after {
+    left: 30px;
+    right: 30px;
+  }
+  .customer-feedback .owl-nav [class*=owl-] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 45px;
+    bottom: auto;
+  }
+  .customer-feedback .owl-prev {
+    left: 0;
+  }
+  .customer-feedback .owl-next {
+    right: 0;
+  }
+}
 .checkbox {
   position: relative;
   text-align: center;
@@ -3861,7 +2648,6 @@ img {
 
 .feature {
   background-color: #03091D;
-  background-image: url(/public/backdrop-feature.png);
   background-blend-mode: color-dodge;
   background-repeat: repeat;
   background-size: cover;
@@ -3875,6 +2661,11 @@ img {
 @media screen and (min-width: 768px) {
   .feature {
     padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feature {
+    padding: 60px;
   }
 }
 .feature__component {
@@ -4146,13 +2937,11 @@ img {
 }
 @media (min-width: 1024px) {
   .feature__text {
-    width: 250px;
     font-size: 12px;
   }
 }
 @media (min-width: 1401px) {
   .feature__text {
-    width: 350px;
     font-size: 14px;
   }
 }
@@ -4221,6 +3010,46 @@ img {
   .feature__list {
     gap: 0 50px;
   }
+}
+
+.c {
+  position: relative;
+  top: 50px;
+  width: 1000px;
+  height: 200px;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -130px;
+}
+
+.c-item {
+  width: 25%;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  height: 200px;
+  opacity: 0;
+  padding-top: 40px;
+  text-align: center;
+  transition: 1s opacity;
+}
+
+.active {
+  opacity: 1;
+}
+
+.c-text {
+  font-family: sans-serif;
+  color: #646566;
+  line-height: 1.5em;
+}
+
+strong {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100px;
 }
 
 .footer {

@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UPD-1600</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
@@ -164,70 +167,89 @@
                       <p class="about__comment">15 Вт</p>
                     </div>
                 </div>
-                <p class="about__pretitle"> для настоящих ценителей атмосферы </p>
-                <h2 class="about__title-main">Технічні можливості пристрою</h2>
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <div>
+                            <h2 class="section-title about__title-main">Технічні можливості пристрою</h2>
+                        </div>
+                    </div><!-- /End col -->
+                </div><!-- /End row -->
                 <p class="about__text">Вбудована інвертнорна система з сучасним літій-залізо-фосфатним (LiFePO4) акумулятором утворює надійний вузол для забезпечення автономного живлення електроприладів квартир, офісів, магазинів, медичних та косметоглогічних кабінетів та інших місць, де потрібне просте, надійне та економічне рішення.</p>
                 <button class="about__btn">Детальніше</button>
-
-                        <!-- Slideshow container -->
-                        <div class="content-slider">
-                            <div id="slider">
-                              <div id="mask">
-                                <ul>
-                                    <li id="first" class="firstanimation">
-                                        <a href="#"><img src="/public/bulb1.png" class="firstimg" width="70px"></a>
-                                        <div class="tooltip">
-                                            <p class="slide__text-top">120 годин</p>
-                                            <p class="slide__text">7 Вт</p>
-                                        </div>
-                                      </li>
-                                      <li id="second" class="secondanimation">
-                                        <a href="#"><img src="/public/fridge1.png" class="thirdimg" width="70px"></a>
-                                        
-                                        <div class="tooltip">
-                                            <p class="slide__text-top">1 година</p>
-                                            <p class="slide__text">800 Вт</p>
-                                        </div>
-                                      </li>
-                                      <li id="third" class="thirdanimation">
-                                        <a href="#"><img src="/public/phone1.png" class="fifthimg" width="70px"></a>
-                                        
-                                        <div class="tooltip">
-                                            <p class="slide__text-top">1 година</p>
-                                            <p class="slide__text">800 Вт</p>
-                                        </div>
-                                      </li>
-                                      <li id="fourth" class="fourthanimation">
-                                        <a href="#"><img src="/public/laptop1.png" class="fourimg" width="100px"></a>
-                                        <div class="tooltip">
-                                            <p class="slide__text-top">10 годин</p>
-                                            <p class="slide__text">80 Вт</p>
-                                        </div>
-                                      </li>
-                                      <li id="fifth" class="fifthanimation">
-                                        <a href="#"><img src="/public/tv1.png" class="sixtimg" width="110px"></a>
-                                        <div class="tooltip">
-                                            <p class="slide__text-top">1 година</p>
-                                            <p class="slide__text">800 Вт</p>
-                                        </div>
-                                      </li>
-                                      <li id="six" class="sixanimation">
-                                        <a href="#"><img src="/public/drill1.png" class="secondimg" width="90px"></a>
-                                        <div class="tooltip">
-                                            <p class="slide__text-top">1 година</p>
-                                            <p class="slide__text">800 Вт</p>
-                                        </div>
-                                      </li>
-                                </ul>
-                              </div>
-                              <div class="progress-bar"></div>
-                            </div>
-                          </div>
+             
+            <div class="owl-carousel owl-theme">
+                <div class="feedback-slider-item">
+                    <div class="firstimg"><img src="/public/drill1.png" class="center-block img-circle"></div>
+                    <h4 class="item-title">1 година</h4>
+                    <p class="slide__text">800 Вт</p>
+                </div>
+                <div class="feedback-slider-item secondimg">
+                    <img src="/public/tv1.png" class="center-block img-circle" width="110px">
+                    <h4 class="item-title">1 година</h4>
+                    <p class="slide__text">800 Вт</p>
+                </div>
+                <div class="feedback-slider-item">
+                    <div class="thirdimg"><img src="/public/laptop1.png" class="center-block img-circle" width="100px"></div>
+                    <h4 class="item-title">10 годин</h4>
+                    <p class="slide__text">80 Вт</p>
+                </div>
+                <div class="feedback-slider-item">
+                    <img src="/public/fridge1.png" class="center-block img-circle" width="70px">
+                    <h4 class="item-title">1 година</h4>
+                    <p class="slide__text">800 Вт</p>
+                </div>
+                <div class="feedback-slider-item">
+                    <div class="fifthimg"><img src="/public/phone1.png" class="center-block img-circle" width="70px"></div>
+                    <h4 class="item-title">1 година</h4>
+                    <p class="slide__text">800 Вт</p>
+                </div>
+                <div class="feedback-slider-item">
+                    <img src="/public/bulb1.png" class="center-block img-circle" width="70px">
+                    <h4 class="item-title">120 годин</h4>
+                    <p class="slide__text">7 Вт</p>
+                </div>
+            </div>
             </div>
         </section>
         <!--Занятия компании-->
+        
         <section class="feature">
             <div class="feature__component">
+                <ul id="c" class="c"> 
+		
+                    <li class="c-item"><p><strong class="feature__title">1</strong></p><p class="c-text feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">2</strong></p><p class="c-text feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">3</strong></p><p class="c-text feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">4</strong></p><p class="c-text feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+            
+                    <li class="c-item"><p><strong class="feature__title">НАДІЙНІСТЬ ТА БЕЗПЕКА ПРИ РОБОТІ</strong></p><p class="c-text feature__text">Якісні компоненти та монтаж забезпечують надійну роботу пристрою на протязі його використання. Конструкція забезпечує електробезпеку при роботі.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">ЗАХИСТ ВІД КОЛИВАНЬ НАПРУГИ</strong></p><p class="c-text feature__text">Встановлення реле гарантує захист від стрибків напруги мережі підключених до пристрою приладів.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">ПОТУЖНИЙ ІНВЕРТОР</strong></p><p class="c-text feature__text">Може забезпечити довготривале навантаження в 1.5 кВ, та пікове до 3 кВ.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">LiFePO4 АКУМУЛЯТОР</strong></p><p class="c-text feature__text">Пристрій з LiFePO4 акумулятором має довший термін експлуатації та розряджається повільніше без навантаження. Також такі акумулятори можна швидко заряджати. LiFePO4 акумулятор термічно та хімічно стабільний, що істотно підвищує безпеку при експлуатації.</p></li> 
+            
+                    <li class="c-item"><p><strong class="feature__title">ВИСОКА ПОТУЖНІСТЬ</strong></p><p class="c-text feature__text">Можна одночасно заживити електроприлади загальною потужністю до 1,5 кВ.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">РОБОТА ВІД ЗОВНІШНЬОГО АКУМУЛЯТОРУ</strong></p><p class="c-text feature__text">Є можливість приєднання додаткового акумулятору, що підвищує ємність UPD-1600, що дозволяє збільшити час автономної роботи.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">ЗАРЯДКА ВІД СОНЯЧНОЇ БАТАРЕЇ/АВТОМОБІЛЮ</strong></p><p class="c-text feature__text">Можна заряджати не тільки від мережі, а й від автомобільного акумулятору та сонячної панелі.</p></li>
+                    <li class="c-item"><p><strong class="feature__title">АВТОМАТИЧНА РОБОТА</strong></p><p class="c-text feature__text">Не доведеться розбиратися в тому, як його підключити - на відміну від генератора пристрій не передбачає ніяких складнощів в цьому питанні. Працює за принципом "ввімкнув і забув". Може бути вбудований в мережу приміщення.</p></li> 
+            
+                </ul>
+            </div>
+            <!-- <div class="void" id="void">
+                <div class="crop">
+                <ul id="card-list" class="card-list" style="--count: 6;">
+                    <li class="card-item"><div class="card"><a href="" class="card-a"><span class="model-name feature__title">НАДІЙНІСТЬ ТА БЕЗПЕКА ПРИ РОБОТІ</span><span class="feature__text">Якісні компоненти та монтаж забезпечують надійну роботу пристрою на протязі його використання. Конструкція забезпечує електробезпеку при роботі.</span></a></div></li>
+                
+                    <li class="card-item"><div class="card"><a href="" class="card-a"><span class="model-name feature__title">МОДУЛЬНА СТРУКТУРА</span><span class="feature__text">Створити пристрій за вашими потребами: необхідною ємністю аккумулятора за довготривалим та піковим навантаженням та інше.</span></a></div></li>
+                    <li class="card-item"><div class="card"><a href="" class="card-a"><span class="model-name feature__title">БАГАТОПОРТОВИЙ ВИХІД</span><span class="feature__text">Цей пристрій є потужним павербанком. Але він не обмежується лише зарядкою телефонів, планшетів та ноутбуків. Він дозволяє підключити різноманітні побутові прилади.</span></a></div></li>
+                    <li class="card-item"><div class="card"><a href="" class="card-a"><span class="model-name feature__title">МЕТАЛЕВИЙ КОРПУС</span><span class="feature__text">Випускається у міцному металевому корпусі, який надійно захищає складові частини UPD-1600 від механічних пошкоджень.</span></a></div></li>
+                </ul>
+                <div class="last-circle"></div>
+                <div class="second-circle"></div>
+                </div>
+                <div class="mask"></div>
+                <div class="center-circle"></div>
+            <div> -->
+            <!-- <div class="feature__component">
                 <ul class="feature__list">
                     <li class="feature__item">
                         <div class="feature__field-img">
@@ -254,7 +276,7 @@
                                 <h3 class="feature__title">НАДІЙНІСТЬ ТА БЕЗПЕКА ПРИ РОБОТІ</h3>
                                 <p class="feature__text">Якісні компоненти та монтаж забезпечують надійну роботу пристрою на протязі його використання. Конструкція забезпечує електробезпеку при роботі.</p>
                             </div>
-                        </li>
+                    </li>
                     <li class="feature__item">
                                 <div class="feature__field-img">
                                     <img loading="lazy"
@@ -373,7 +395,7 @@
                             </div>
                         </li>                     
                 </ul>
-            </div>
+            </div> -->
         </section>
         <!--Наша команда-->
         <section class="charact" id="charact">
@@ -535,6 +557,11 @@
             
         </div>
     </footer>
-    <script></script>
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js">
+            
+        </script>
   </body>
 </html>
