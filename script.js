@@ -20,7 +20,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-var timer = 4000;
+var timer = 15000;
 
 var i = 0;
 var max = $('#c > li').length;

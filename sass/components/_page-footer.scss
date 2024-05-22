@@ -86,6 +86,14 @@
             margin-left: auto;
             width: 540px;
         }
+
+        @media screen and (min-width: 1851px) {
+            width: 710px;
+        }
+
+        @media screen and (min-width: 2201px) {
+            width: 850px;
+        }
     }
 
     &__title {
@@ -123,6 +131,14 @@
         @media (min-width: 1401px) {
             width: 500px;
             margin-right: auto;
+        }
+
+        @media screen and (min-width: 1851px) {
+            width: 660px;
+        }
+
+        @media screen and (min-width: 2201px) {
+            width: 785px;
         }
     }
 
