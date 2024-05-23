@@ -69,13 +69,13 @@
         }
 
         @media screen and (min-width: 1024px) {
-            max-width: 880px;
+            width: 880px;
             margin-left: auto;
             margin-right: auto;
         }
 
         @media screen and (min-width: 1401px) {
-            max-width: 1200px;
+            max-width: 1300px;
         }
 
         @media screen and (min-width: 1851px) {
@@ -172,7 +172,7 @@
             height: 130px;
             width: 440px;
             top: -85px;
-            left: 70px;
+            left: 0px;
             padding: 12px 20px;
             background-color: #F7F7F7;
         }
@@ -183,7 +183,7 @@
             height: 140px;
             width: 550px;
             top: -85px;
-            left: 145px;
+            left: 0px;
             padding: 12px 20px;
             background-color: #F7F7F7;
         }
@@ -194,7 +194,7 @@
             height: 176px;
             width: 600px;
             top: -105px;
-            left: 105px;
+            left: -20px;
             padding: 12px 20px;
             background-color: #F7F7F7;
         }
@@ -203,14 +203,14 @@
             height: 200px;
             width: 750px;
             top: -115px;
-            left: 185px;
+            left: -130px;
         }
     
         @media screen and (min-width: 2201px) {
             height: 230px;
             width: 850px;
             top: -125px;
-            left: 210px;
+            left: -210px;
         }
     }
 
@@ -1060,17 +1060,23 @@
             font-size: 10px;
         }
 
-        @media (min-width: 1401px) {
+        @media (min-width: 1024px) {
             font-size: 14px;
+        }
+
+        @media (min-width: 1401px) {
+            font-size: 16px;
         }
      }
 
      .firstimg{
         margin-top: 2px;
+        width: 100px;
      }
 
      .secondimg{
         margin-top: 40px;
+        width: 100px;
         
      }
 
@@ -1090,9 +1096,6 @@
         margin: auto;
         
      }
-
-
-
 
      .section-title {
         margin-left: auto;
@@ -1130,8 +1133,8 @@
 
 /* CAROUSEL STARTS */
 .owl-carousel .item img {
-	width: 75%;
-	height: 75%;
+	width: 40px;
+	height: 40px;
 }
 
 .customer-feedback .owl-item img {
@@ -1143,8 +1146,8 @@
 	position: relative;
 	padding: 10px;
 	margin-top: 20px;
-    width: 60%;
-	height: 35%;
+    width: 200px;
+	height: 250px;
 }
 
 .owl-item{
