@@ -203,6 +203,11 @@
         }
     }
 
+    &__item:hover { 
+        border-top: 1px solid #68d4ff;
+        transition: 2s cubic-bezier(0.4, 0, 0.2, 1);;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
     // &__item span {
     //     position: relative;
     //     display: block;
@@ -210,7 +215,7 @@
     //     left: 0%;
     //     width: 50%;
     //     height: 2px;
-    //     background: linear-gradient(90deg, transparent, #68d4ff);
+        // background: linear-gradient(90deg, transparent, #68d4ff);
     //     animation: btn-anim1 10s linear infinite;
     //   }
     //   }

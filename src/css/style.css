@@ -1204,10 +1204,9 @@ img {
 @media (min-width: 1024px) {
   .about {
     text-align: center;
-    background-image: url(/public/background-about.jpg);
     background-size: cover;
     padding: 0;
-    height: 555px;
+    height: 655px;
   }
 }
 @media (min-width: 1401px) {
@@ -1218,12 +1217,7 @@ img {
 }
 @media screen and (min-width: 1851px) {
   .about {
-    height: 930px;
-  }
-}
-@media screen and (min-width: 2201px) {
-  .about {
-    height: 1100px;
+    height: 800px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1396,6 +1390,11 @@ img {
     width: 850px;
     top: -125px;
     left: -210px;
+  }
+}
+@media (min-width: 1024px) {
+  .about__component:hover .overlay {
+    opacity: 1;
   }
 }
 .about__block {
@@ -2062,6 +2061,28 @@ img {
   }
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 39, 63, 0.9);
+  color: white;
+  border-radius: 15px;
+  font-size: 14px;
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  opacity: 0;
+  transition: opacity 0.5s;
+  padding: 5px 15px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (max-width: 290px) {
   .bi-command {
     width: 80px;
@@ -2381,28 +2402,6 @@ img {
   }
 }
 
-.firstimg {
-  margin-top: 2px;
-  width: 100px;
-}
-
-.secondimg {
-  margin-top: 40px;
-  width: 100px;
-}
-
-.thirdimg {
-  margin-top: 15px;
-}
-
-.fifthimg {
-  margin-top: 15px;
-}
-
-.sixtimg {
-  margin: auto;
-}
-
 .section-title {
   margin-left: auto;
   margin-right: auto;
@@ -2440,11 +2439,6 @@ img {
 }
 
 /* CAROUSEL STARTS */
-.owl-carousel .item img {
-  width: 40px;
-  height: 40px;
-}
-
 .customer-feedback .owl-item img {
   width: 85px;
   height: 85px;
@@ -2453,9 +2447,17 @@ img {
 .feedback-slider-item {
   position: relative;
   padding: 10px;
-  margin-top: 20px;
-  width: 200px;
-  height: 250px;
+  width: 125px;
+  height: 300px;
+  align-content: center;
+  text-align: center;
+}
+
+.feedback-slider-item:hover {
+  transform: scale(1.1);
+  transform: translateY(-10px);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .owl-item {
@@ -2880,6 +2882,11 @@ img {
   .feature__item {
     padding: 30px 0;
   }
+}
+.feature__item:hover {
+  border-top: 1px solid #68d4ff;
+  transition: 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feature__item:nth-child(even) {
   flex-direction: row-reverse;
