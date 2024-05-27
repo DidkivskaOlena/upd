@@ -1,7 +1,7 @@
 .hero {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
     z-index: 3;
 
     @media (min-width: 768px) and (max-width: 1023px){
@@ -84,29 +84,38 @@
         font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 
         @media screen and (max-width: 540px) {
-            right: 30px;
             color: #0B1535;
         }
 
-        @media screen and (max-width: 290px) {
+        @media screen and (max-width: 280px) {
+            left: 120px;
             font-size: 24px;
         }
 
-        @media (min-width: 291px) and (max-width: 320px) {
+        @media (min-width: 281px) and (max-width: 320px) {
+            left: 140px;
             font-size: 26px;
         }
 
-        @media (min-width: 321px) and (max-width: 360px) {
+        @media (min-width: 321px) and (max-width: 340px) {
+            left: 160px;
             font-size: 28px;
+            top: 290px;
         }
 
-        @media (min-width: 361px) and (max-width: 420px) {
+        @media (min-width: 341px) and (max-width: 380px) {
+            left: 165px;
             font-size: 32px;
         }
 
-        @media (min-width: 421px) and (max-width: 450px) {
+        @media (min-width: 381px) and (max-width: 480px) {
+            top: 325px;
+            left: 190px;
             font-size: 36px;
-            margin-right: 14px;
+        }
+
+        @media (min-width: 421px) and (max-width: 480px) {
+            top: 350px;
         }
 
         @media (min-width: 451px) and (max-width: 480px) {
@@ -115,6 +124,8 @@
         }
 
         @media (min-width: 481px) and (max-width: 540px) {
+            top: 70vw;
+            left: 225px;
             font-size: 42px;
             margin-right: 20px;
         }
@@ -222,6 +233,7 @@
 
         @media screen and (max-width: 280px) {
             padding: 50px 0 50px 0;
+            line-height: 1.5;
         }
 
         @media (min-width: 281px) and (max-width: 320px) {
@@ -356,8 +368,9 @@
     }
 
     &__backdrop-container{
-        margin: 0 auto;
+        margin: -20px auto;
         @media screen and (min-width: 1024px) {
+            margin: 0 auto;
             width: 980px;
             padding: 0;
         }
@@ -370,19 +383,16 @@
 
     &__backdrop {
         position:absolute;
-        top: 34px;
-        width: 90vw;
-
-        @media screen and (max-width: 280px) {
-            top: 64px;
-        }
+        top: 24px;
+        width: 90%;
+        right: 5px;
 
         @media (min-width: 281px) and (max-width: 320px) {
-            top: 75px;
+            top: 35px;
         }
 
         @media (min-width: 321px) and (max-width: 360px) {
-            top: 74px;
+            top: 44px;
         }
 
         @media (min-width: 361px) and (max-width: 420px) {

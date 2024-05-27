@@ -90,9 +90,12 @@
     }
 
     &__backimg{
-        height: 20vw;
+        height: 50vw;
         width: 100%;
-        
+
+        @media screen and (min-width: 1024px) {
+            height: 20vw;
+        }
     }
 
 
