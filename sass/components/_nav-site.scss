@@ -2,15 +2,11 @@
     font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
 
-    @media screen and (max-width: 767px) {
-        max-width: 480px;
-    }
-
     &__list {
         display: flex;
 
         @media screen and (min-width: 541px) {
-            margin-left: 40px;
+            margin-left: 20px;
         }
 
         @media screen and (min-width: 1024px) {

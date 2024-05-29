@@ -21,7 +21,7 @@
         font-weight: 500;
         
         @media (min-width: 541px) and (max-width: 767px) {
-            @include font (600, 14px, 1.17, 0.02em);
+            @include font (400, 13px, 1.17, 0.02em);
             margin-bottom: 20px;
         }
 
@@ -62,14 +62,8 @@
     }
 
     &:not(:last-child) {
-        @media (min-width: 541px) and (max-width: 1023px) {
-            margin-bottom: 35px;
-        }
-    }
-
-    &:not(:last-child) {
         @media screen and (min-width: 541px) {
-            margin-right: 30px;
+            margin-right: 10px;
         }
 
         @media screen and (min-width: 768px) {

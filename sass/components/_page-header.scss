@@ -12,52 +12,6 @@
         #BEC0C7 83%,
         #E6E6E7 98%), ;
 
-    // @media screen and (max-width: 540px) {
-    //     background-image: url(/background-mobile.jpg);
-
-    //     @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //         background-image: url(/background-mobile@2x.jpg);
-    //     }
-    // }
-
-    // @media screen and (max-width: 280px) {
-    //     height: 320px;
-    // }
-
-    // @media (min-width: 281px) and (max-width: 320px) {
-    //     height: 360px;
-    // }
-
-    // @media (min-width: 321px) and (max-width: 360px) {
-    //     height: 400px;
-    // }
-
-    // @media (min-width: 361px) and (max-width: 420px) {
-    //     height: 440px;
-    // }
-
-    // @media (min-width: 421px) and (max-width: 480px) {
-    //     height: 500px;
-    // }
-
-    // @media (min-width: 481px) and (max-width: 540px) {
-    //     height: 500px;
-    // }
-
-    // @media (min-width: 768px) and (max-width: 1023px) {
-    //     margin: 0 auto;
-    //     background-image: url(/public/background-tablet.jpg);
-    //     height: 595px;
-
-    //     @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //         background-image: url(/public/background-tablet@2x.jpg);
-    //     }
-    // }
-
     @media screen and (min-width: 1024px) {
         height: 40vw;
         max-height: 495px;
@@ -138,8 +92,10 @@
         }
 
         @media (min-width: 541px) and (max-width: 768px) {
-            height: 120px;
-            padding: 10px 35px 0;
+            padding: 20px 20px 0;
+            width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {
@@ -182,13 +138,6 @@
         }
     }
 
-    &__links{
-        @media screen and (max-width: 767px) {
-            display: flex;
-            flex-wrap: wrap;
-        }
-}
-
 .page-header__button.is-open .page-header__icon-menu {
     display: none;
 }
@@ -222,7 +171,7 @@
         // }
     }
 
-    @media screen and (min-width: 540px) {
+    @media screen and (min-width: 541px) {
         display: flex;
         align-items: baseline;
         width: 100%;
