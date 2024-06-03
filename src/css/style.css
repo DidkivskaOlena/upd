@@ -53,6 +53,11 @@ h3 {
   line-height: 1.5;
   font-size: 9px;
 }
+@media (min-width: 541px) and (max-width: 768px) {
+  h3 {
+    font-size: 14px;
+  }
+}
 @media (min-width: 1024px) {
   h3 {
     font-size: 12px;
@@ -3757,7 +3762,7 @@ img {
 }
 @media (min-width: 541px) and (max-width: 768px) {
   .charact__posttitle-desktop {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 769px) {
