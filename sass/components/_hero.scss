@@ -49,7 +49,7 @@
 
     &__titletop{
         font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
-
+        letter-spacing: 0.05em;
         @media screen and (max-width: 540px) {
             display: none;
         }
@@ -150,7 +150,7 @@
 
         margin-top: 25px;
         font-size: 48px;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.05em;
         font-weight: 600;
         color: #FFFFFF;
 
@@ -183,7 +183,7 @@
         text-transform: uppercase;
 
         @include font (500, 10px, 1.88, 0.06em);
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 
         @media screen and (max-width: 280px) {
             font-size: 8px;
@@ -278,8 +278,9 @@
         display: block;
         font-size: 14px;
         width: 250px;
+        letter-spacing: 0.05em;
         line-height: 2em;
-        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 
         @media (min-width: 768px) and (max-width: 1023px) {
             font-size: 14px;
@@ -315,10 +316,9 @@
         height: 65vw;
         z-index: 3;
 
-        @media (min-width: 541px) and (max-width: 768px) {
-            margin-top: 20px;
-            width: 41vw;
-            height: 43vw;
+        @media (min-width: 541px) and (max-width: 767px) {
+            width: 45vw;
+            height: 45vw;
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {
@@ -414,7 +414,9 @@
         }
 
         @media (min-width: 541px) {
-            // display: none;
+            right: 10px;
+            top: 70px;
+            width: 65%;
         }
 
         @media (min-width: 1024px) {
@@ -438,11 +440,14 @@
             display: none;
         }
 
-        margin-left: auto;
-        margin-right: 44px;
-        width: 40%;
+        position: relative;
+        left: 50%;
+        width: 50%;
         letter-spacing: 0.05em;
         line-height: 1.43;
+        font-size: 13px;
+        padding-bottom: 15px;
+        font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
 
         @media (min-width: 1024px) {
             display: none;
