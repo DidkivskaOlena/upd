@@ -2380,6 +2380,7 @@ img {
   .owl-carousel {
     position: relative;
     top: -320px;
+    left: 5%;
     margin: 0 auto;
     width: 500px;
   }
