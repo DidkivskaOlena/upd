@@ -999,7 +999,7 @@
         }
 
         @media (min-width: 541px) {
-            font-size: 13px;
+            font-size: 11px;
         }
 
         @media (min-width: 769px) {
@@ -1063,8 +1063,8 @@
 
     @media (min-width: 541px) and (max-width: 767px) {
         position: relative;
-        top: -320px;
-        left: 5%;
+        top: -270px;
+        // left: 5%;
         margin: 0 auto;
         width: 500px;
     }
@@ -1099,11 +1099,16 @@
 	    height: 150px;
     }
 
-    @media (min-width: 481px) and (max-width: 1023px) {
+    @media (min-width: 481px) and (max-width: 540px) {
         width: 85px;
 	    height: 180px;
     }
     
+
+    @media (min-width: 541px) and (max-width: 1023px) {
+        width: 60px;
+	    height: 140px;
+    }
 }
 
 .feedback-slider-item:hover { 
@@ -1158,7 +1163,7 @@
     }
 
     @media (min-width: 541px) and (max-width: 767px) {
-        font-size: 13px;
+        font-size: 11px;
         margin-top: 10px;
     }
 }
