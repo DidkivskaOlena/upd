@@ -24,7 +24,6 @@
 
     @media (min-width: 768px) {
         height: 634px;
-        padding: 0;
     }
 
     @media (min-width: 1024px) {
@@ -44,17 +43,7 @@
         height: 800px;
     }
 
-    // @media screen and (min-width: 2201px) {
-    //     height: 1100px;
-    // }
-
     &__container{
-
-        @media screen and (min-width: 768px) {
-            max-width: 768px;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
         @media screen and (min-width: 1024px) {
             width: 880px;
@@ -115,11 +104,9 @@
         }
 
         @media (min-width: 768px) {
-            
-            height: 530px;
-            width: 240px;
-            top: -176px;
-            left: 80px;
+            width: 200px;
+            top: -154px;
+            left: 13%;
             background-color: #F7F7F7;
         }
 
@@ -327,8 +314,8 @@
         }
 
         @media (min-width: 768px) {
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-size: 15px;
+            margin-bottom: 10px;
             letter-spacing: 0.1em;
         }
 
@@ -398,8 +385,8 @@
         }
 
         @media (min-width: 768px) {
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-size: 15px;
+            margin-bottom: 10px;
             letter-spacing: 0.1em;
         }
 
@@ -576,14 +563,13 @@
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {
-            font-size: 16px;
-            margin-left: auto;
-            margin-right: 40px;
+            font-size: 15px;
+            left: 50%;
             color: #3E434A;
-            width: 330px;
+            width: 45%;
             letter-spacing: 0.05em;
             line-height: 1.6;
-            margin-top: -490px;
+            margin-top: -150px;
         }
 
         @media (min-width: 1024px) {
@@ -661,7 +647,7 @@
 
         @media (min-width: 768px) and (max-width: 1023px) {
             margin-top: 19px;
-            margin-left: 391px;
+            margin-left: 50%;
             font-size: 12px;
             padding: 8px 17px;
             width: 160px;
@@ -781,9 +767,9 @@
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        width: 215px;
-        margin-bottom: 10px;
-        height: 83px;
+        width: 195px;
+        margin-bottom: 7px;
+        height: 75px;
     }
 
     @media (min-width: 1024px) {
@@ -856,9 +842,9 @@
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        width: 215px;
-        margin-bottom: 10px;
-        height: 83px;
+        width: 195px;
+        margin-bottom: 7px;
+        height: 75px;
     }
 
     @media (min-width: 1024px) {
@@ -932,9 +918,9 @@
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        width: 215px;
-        margin-bottom: 10px;
-        height: 83px;
+        width: 195px;
+        margin-bottom: 7px;
+        height: 75px;
     }
 
     @media (min-width: 1024px) {
@@ -1002,8 +988,8 @@
             font-size: 11px;
         }
 
-        @media (min-width: 769px) {
-            font-size: 10px;
+        @media (min-width: 768px) {
+            font-size: 12px;
         }
 
         @media (min-width: 1024px) {
@@ -1068,6 +1054,14 @@
         margin: 0 auto;
         width: 500px;
     }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        position: relative;
+        top: -150px;
+        left: 5%;
+        margin: 0 auto;
+        width: 740px;
+    }
 }
 
 .customer-feedback .owl-item img {
@@ -1105,9 +1099,14 @@
     }
     
 
-    @media (min-width: 541px) and (max-width: 1023px) {
+    @media (min-width: 541px) and (max-width: 767px) {
         width: 60px;
 	    height: 140px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 70px;
+	    height: 160px;
     }
 }
 
@@ -1164,6 +1163,11 @@
 
     @media (min-width: 541px) and (max-width: 767px) {
         font-size: 11px;
+        margin-top: 10px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 13px;
         margin-top: 10px;
     }
 }
