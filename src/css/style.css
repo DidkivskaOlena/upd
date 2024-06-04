@@ -336,21 +336,26 @@ img {
 .page-header .page-header__icon-cross {
   display: none;
 }
-.page-header__button.is-open .page-header .page-header__icon-cross {
+.page-header .page-header__button.is-open .page-header__icon-cross {
   display: block;
 }
 @media screen and (max-width: 540px) {
   .page-header .page-header__menu {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50vw;
     padding: 48px 40px 38px;
-    height: 100%;
-    z-index: 1;
+    height: 90vh;
+    z-index: 5;
     overflow-y: scroll;
-    background-color: #FFFFFF;
+    background-color: rgba(34, 39, 63, 0.9254901961);
+  }
+  .page-header .page-header__menu.is-open {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 541px) {
@@ -377,12 +382,10 @@ img {
   font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
 }
-.nav-site__list {
-  display: flex;
-}
 @media screen and (min-width: 541px) {
   .nav-site__list {
     margin-left: 20px;
+    display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -390,7 +393,10 @@ img {
     margin-left: 0px;
   }
 }
-@media screen and (max-width: 767px) {
+.nav-site__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (min-width: 541px) and (max-width: 767px) {
   .nav-site__item:not(:last-child) {
     margin-bottom: 32px;
     margin-right: 40px;
@@ -436,7 +442,7 @@ img {
 @media screen and (max-width: 540px) {
   .nav-site__link {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 24px;
     line-height: 1.18;
     letter-spacing: 0.02em;
   }
@@ -488,7 +494,7 @@ img {
   color: #FF9900;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 541px) and (max-width: 767px) {
   .contact-list {
     margin-top: auto;
   }
@@ -563,10 +569,11 @@ img {
 
 .contact-list__item {
   cursor: pointer;
+  color: #eff2f7;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 541px) {
   .contact-list__item {
-    color: #eff2f7;
     display: flex;
     align-items: center;
     margin: auto;
@@ -959,7 +966,7 @@ img {
 .hero__img {
   width: 61vw;
   height: 65vw;
-  z-index: 3;
+  z-index: 2;
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .hero__img {

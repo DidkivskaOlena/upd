@@ -153,31 +153,31 @@
 
 .page-header__icon-cross{
     display: none;
+}
 
-    .page-header__button.is-open &{
-        display: block;
-    }
+.page-header__button.is-open .page-header__icon-cross {
+    display: block;
 }
 
 .page-header__menu{
     @media screen and (max-width: 540px) {
         display: none;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 50vw;
         padding: 48px 40px 38px;
-        height: 100%;
-        z-index: 1;
+        height: 90vh;
+        z-index: 5;
         overflow-y: scroll;
 
-        background-color: #FFFFFF;
+        background-color: #22273fec;
 
-        // &.is-open {
-        //     display: flex;
-        //     justify-content: space-between;
-        //     flex-direction: column;
-        // }
+        &.is-open {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
     }
 
     @media screen and (min-width: 541px) {

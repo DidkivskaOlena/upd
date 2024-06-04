@@ -24,13 +24,10 @@
                 type="button" 
                 aria-expanded="false"
                 class="page-header__button page-header__button--is-open" data-menu-button aria-controls="page-header__menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill=#FFFFFF class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                <svg width="30" height="30" aria-label="Переключатель мобильного меню">
+                    <use class="page-header__icon-cross" href="./public/sprite.svg#close_24px"></use>
+                    <use class="page-header__icon-menu" href="./public/sprite.svg#menu_24px"></use>
                 </svg>
-                <!-- <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="page-header__icon-cross" href="menu_24px.png"></use>
-                    <use class="page-header__icon-menu" href="./public/menu_24px.png"></use>
-                </svg> -->
             </button>
             <p class="hero__texttop">Пристрій безперебійного живлення</p>
             <div class="page-header__menu" id="page-header__menu" data-menu>
@@ -540,8 +537,7 @@
         <!-- jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="script.js" type="module">
-            
-        </script>
+        <script src="script.js" type="module"></script>
+        <script src="menu.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 .contact-list {
     
-    @media screen and (max-width: 767px) {
+    @media (min-width: 541px) and (max-width: 767px) {
         margin-top: auto;
     }
 
@@ -54,9 +54,10 @@
 
 .contact-list__item {
     cursor: pointer;
+    color: #eff2f7;
+    margin-bottom: 20px;
 
     @media screen and (min-width: 541px) {
-        color: #eff2f7;
         display: flex;
         align-items: center;
         margin: auto;
