@@ -20,7 +20,42 @@
             <img src="./public/back.png" alt="back" class="page-header__backimg">
         </div>
         <div class="page-header__container">
-            <button 
+            <nav role="navigation" class="nav-mobile">
+                <div id="menuToggle">
+                  <input type="checkbox" id="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                <ul id="menu" class="is-hidden">
+                    <li>
+                        <nav class="nav-site">
+                            <ul class="nav-site__list">
+                                <li class="nav-site__item">
+                                    <a href="#about" class="nav-site__link nav-site__link--current l1">Все про товар</a>
+                                </li>
+                                <li class="nav-site__item">
+                                    <a href="#charact" class="nav-site__link l2" >Характеристики</a>
+                                </li>
+                                <li class="nav-site__item">
+                                    <a href="#contacts" class="nav-site__link l3" >Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li >
+                        <ul class="contact-list">
+                            <li class="contact-list__item contact-list__item--mail">
+                                <a href="tel:+380503433041" class="contact-list__link">+38 050 343 30 41</a>
+                            </li>
+                            <li class="contact-list__item contact-list__item--smartphone">
+                                <a href="tel:+380688809947" class="contact-list__link">+38 068 880 99 47</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+               </div>
+              </nav>
+            <!-- <button 
                 type="button" 
                 aria-expanded="false"
                 class="page-header__button page-header__button--is-open" data-menu-button aria-controls="page-header__menu">
@@ -28,7 +63,7 @@
                     <use class="page-header__icon-cross" href="./public/sprite.svg#close_24px"></use>
                     <use class="page-header__icon-menu" href="./public/sprite.svg#menu_24px"></use>
                 </svg>
-            </button>
+            </button> -->
             <p class="hero__texttop">Пристрій безперебійного живлення</p>
             <div class="page-header__menu" id="page-header__menu" data-menu>
                 <nav class="nav-site">

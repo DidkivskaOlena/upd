@@ -1,14 +1,34 @@
 (() => {
-    const menuBtnRef = document.querySelector('[data-menu-button]');
-    const mobileMenuRef = document.querySelector('[data-menu]');
-  
-    menuBtnRef.addEventListener('click', () => {
-      const expanded =
-        menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-  
-      menuBtnRef.classList.toggle('is-open');
-      menuBtnRef.setAttribute('aria-expanded', !expanded);
-  
-      mobileMenuRef.classList.toggle('is-open');
-    });
+    const refs = {
+        openMenuBtn: document.querySelector('#menuToggle'),
+        checkbox: document.querySelector('#checkbox'),
+        closeMenuForLink1: document.querySelector('.l1'),
+        closeMenuForLink2: document.querySelector('.l2'),
+        closeMenuForLink3: document.querySelector('.l3'),
+        menu: document.querySelector('#menu'),
+        body: document.querySelector('body'),
+      };
+    
+      refs.openMenuBtn.addEventListener('click', toggleMenu);
+    
+      refs.closeMenuForLink1.addEventListener('click', toggleMenuInput);
+      refs.closeMenuForLink2.addEventListener('click', toggleMenuInput);
+      refs.closeMenuForLink3.addEventListener('click', toggleMenuInput);
+      
+      function toggleMenu() {
+        refs.menu.classList.toggle('is-hidden');
+        refs.body.classList.toggle('no-scroll');
+      }
+      function toggleMenuInput() {
+        refs.menu.classList.toggle('is-hidden');
+        refs.body.classList.toggle('no-scroll');
+        refs.checkbox.checked = false;
+        if (checkbox.checked) {
+            console.log('Checkbox is checked!');
+        } else {
+            console.log('Checkbox is not checked.');
+            refs.menu.classList.toggle('is-hidden');
+            refs.body.classList.toggle('no-scroll');
+        }
+      }
   })();
