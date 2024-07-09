@@ -3654,7 +3654,7 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .charact__posttitle-desktop {
-    padding: 20px 0;
+    padding: 10px 0;
     letter-spacing: 0.1em;
     line-height: 1.5;
   }
@@ -3743,7 +3743,7 @@ img {
 }
 @media (min-width: 1024px) {
   .charact__text {
-    padding: 10px 0;
+    padding: 2px 0;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.7;
@@ -4009,7 +4009,7 @@ th, td {
 }
 
 th {
-  padding-top: 22px;
+  padding-top: 12px;
   font-family: math;
   text-shadow: 1px 1px 1px #F9F9FF;
   background: #9DA4BD;
