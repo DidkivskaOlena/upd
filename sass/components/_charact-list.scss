@@ -181,7 +181,7 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-        // background: #ffffff;
+        background: rgb(3 9 29 / 3%);
         padding: 15px 0;
         z-index: 10;
 
@@ -430,7 +430,7 @@
         }
 
         @media (min-width: 1401px) {
-            @include font (400, 15px, 1.7, 0.07em);
+            @include font (400, 14px, 1.7, 0.07em);
         }
 
         @media (min-width: 1851px) {
@@ -728,25 +728,25 @@ th, td {
     }
 }
 
-.firstrow{
-    background: rgb(3 9 29 / 1%);
-}
+// .firstrow{
+//     background: rgb(3 9 29 / 1%);
+// }
 
-.secondrow{
-    background: rgb(3 9 29 / 3%);
-}
-.thirdrow{
-    background: rgb(3 9 29 / 5%);
-}
-.fourthrow{
-    background: rgb(3 9 29 / 7%);
-}
-.fifthrow{
-    background: rgb(3 9 29 / 9%);
-}
-.sixthrow{
-    background: rgb(3 9 29 / 11%);
-}
+// .secondrow{
+//     background: rgb(3 9 29 / 3%);
+// }
+// .thirdrow{
+//     background: rgb(3 9 29 / 5%);
+// }
+// .fourthrow{
+//     background: rgb(3 9 29 / 7%);
+// }
+// .fifthrow{
+//     background: rgb(3 9 29 / 9%);
+// }
+// .sixthrow{
+//     background: rgb(3 9 29 / 11%);
+// }
  
 td {
     border-top:1px solid #e0e0e07c; 

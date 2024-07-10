@@ -3622,6 +3622,7 @@ img {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  background: rgba(3, 9, 29, 0.03);
   padding: 15px 0;
   z-index: 10;
 }
@@ -3956,7 +3957,7 @@ img {
 @media (min-width: 1401px) {
   .charact__span {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
@@ -4301,30 +4302,6 @@ th, td {
   .th-sixth {
     top: 655px;
   }
-}
-
-.firstrow {
-  background: rgba(3, 9, 29, 0.01);
-}
-
-.secondrow {
-  background: rgba(3, 9, 29, 0.03);
-}
-
-.thirdrow {
-  background: rgba(3, 9, 29, 0.05);
-}
-
-.fourthrow {
-  background: rgba(3, 9, 29, 0.07);
-}
-
-.fifthrow {
-  background: rgba(3, 9, 29, 0.09);
-}
-
-.sixthrow {
-  background: rgba(3, 9, 29, 0.11);
 }
 
 td {
