@@ -3622,6 +3622,8 @@ img {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 15px 0;
+  z-index: 10;
 }
 @media screen and (max-width: 360px) {
   .charact__posttitle-desktop {
@@ -3648,7 +3650,7 @@ img {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .charact__posttitle-desktop {
     font-size: 15px;
     text-transform: uppercase;
@@ -3659,6 +3661,7 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .charact__posttitle-desktop {
+    margin: 0;
     padding: 10px 0;
     letter-spacing: 0.1em;
     line-height: 1.5;
@@ -3693,25 +3696,26 @@ img {
 @media screen and (min-width: 1401px) {
   .charact__component {
     gap: 50px 90px;
-    width: 1180px;
+    width: 880px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1851px) {
   .charact__component {
-    width: 1470px;
+    width: 940px;
     gap: 70px 150px;
   }
 }
 @media screen and (min-width: 2201px) {
   .charact__component {
-    width: 1500px;
+    width: 1000px;
     gap: 70px 150px;
   }
 }
 .charact__text {
-  font-family: math;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
+  color: #2C3049;
 }
 @media screen and (max-width: 290px) {
   .charact__text {
@@ -3754,13 +3758,14 @@ img {
   }
 }
 .charact__text-desktop {
-  font-family: math;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.655;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #2C3049;
 }
 @media (min-width: 1024px) {
   .charact__text-desktop {
-    padding: 3px 0;
+    padding: 1px 10px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.7;
@@ -3786,7 +3791,7 @@ img {
   }
 }
 .charact__text-desktopback {
-  font-family: math;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -3794,7 +3799,7 @@ img {
   .charact__text-desktopback {
     padding: 3px 0;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
@@ -3817,11 +3822,8 @@ img {
     font-size: 15px;
   }
 }
-.charact__text-desktop:nth-child(even) {
-  background: rgba(34, 39, 63, 0.3);
-}
 .charact__value {
-  font-family: math;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @media screen and (max-width: 290px) {
   .charact__value {
@@ -3874,9 +3876,10 @@ img {
 @media (min-width: 1024px) {
   .charact__value {
     text-align: center;
-    padding: 0 15px;
+    padding: 3px 15px;
+    line-height: 1.6;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
     letter-spacing: 0.2em;
   }
@@ -3900,7 +3903,7 @@ img {
   }
 }
 .charact__span {
-  font-family: math;
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
 }
 @media screen and (max-width: 360px) {
   .charact__span {
@@ -3945,7 +3948,7 @@ img {
 @media (min-width: 1024px) {
   .charact__span {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
@@ -4066,6 +4069,7 @@ table {
 
 .table-desktop {
   position: relative;
+  width: 67%;
   border-spacing: 0px;
 }
 @media screen and (max-width: 1023px) {
@@ -4079,8 +4083,6 @@ th, td {
 }
 
 .th {
-  font-family: math;
-  background: rgba(157, 164, 189, 0.2941176471);
   position: absolute;
   border-radius: 15px;
   padding: 12px 0 24px;
@@ -4089,7 +4091,7 @@ th, td {
   top: -40px;
   left: 57.5%;
   z-index: 0;
-  font-family: math;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   color: #070707;
 }
@@ -4121,35 +4123,276 @@ th, td {
 }
 
 .th-left {
-  left: 57.5%;
+  left: 41%;
+  background: rgb(255, 238, 172);
 }
 
 .th-right {
-  left: 81%;
+  left: 77%;
+  top: -50px;
+  background: rgb(255, 173, 112);
 }
 
-td:last-child {
-  background: rgba(255, 108, 0, 0.6117647059);
+.th-first {
+  background: rgba(3, 9, 29, 0.02);
+  top: 25px;
+  padding: 12px 0 12px;
+}
+@media (min-width: 1024px) {
+  .th-first {
+    left: -100px;
+  }
+}
+@media (min-width: 1401px) {
+  .th-first {
+    left: -112px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .th-first {
+    left: -130px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .th-first {
+    top: 45px;
+  }
+}
+
+.th-second {
+  background: rgba(3, 9, 29, 0.04);
+  left: -110px;
+  top: 150px;
+  padding: 12px 0 12px;
+}
+@media (min-width: 1024px) {
+  .th-second {
+    left: -100px;
+  }
+}
+@media (min-width: 1401px) {
+  .th-second {
+    left: -112px;
+    top: 180px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .th-second {
+    left: -130px;
+    top: 190px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .th-second {
+    top: 210px;
+  }
+}
+
+.th-third {
+  background: rgba(3, 9, 29, 0.06);
+  left: -110px;
+  top: 270px;
+  padding: 12px 0 12px;
+}
+@media (min-width: 1024px) {
+  .th-third {
+    left: -100px;
+  }
+}
+@media (min-width: 1401px) {
+  .th-third {
+    left: -112px;
+    top: 300px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .th-third {
+    left: -130px;
+    top: 312px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .th-third {
+    top: 340px;
+  }
+}
+
+.th-fourth {
+  background: rgba(3, 9, 29, 0.08);
+  top: 348px;
+  padding: 22px 0 22px;
+}
+@media (min-width: 1024px) {
+  .th-fourth {
+    left: -100px;
+  }
+}
+@media (min-width: 1401px) {
+  .th-fourth {
+    left: -118px;
+    top: 385px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .th-fourth {
+    left: -130px;
+    top: 400px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .th-fourth {
+    top: 435px;
+  }
+}
+
+.th-fifth {
+  background: rgba(3, 9, 29, 0.1);
+  left: -110px;
+  top: 435px;
+  padding: 12px 0 12px;
+}
+@media (min-width: 1024px) {
+  .th-fifth {
+    left: -100px;
+  }
+}
+@media (min-width: 1401px) {
+  .th-fifth {
+    left: -118px;
+    top: 475px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .th-fifth {
+    left: -130px;
+    top: 500px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .th-fifth {
+    top: 540px;
+  }
+}
+
+.th-sixth {
+  background: rgba(3, 9, 29, 0.12);
+  left: -110px;
+  top: 530px;
+  padding: 10px 10px 10px 0;
+}
+@media (min-width: 1024px) {
+  .th-sixth {
+    left: -100px;
+  }
+}
+@media (min-width: 1401px) {
+  .th-sixth {
+    left: -112px;
+    top: 580px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .th-sixth {
+    left: -130px;
+    top: 605px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .th-sixth {
+    top: 655px;
+  }
+}
+
+.firstrow {
+  background: rgba(3, 9, 29, 0.01);
+}
+
+.secondrow {
+  background: rgba(3, 9, 29, 0.03);
+}
+
+.thirdrow {
+  background: rgba(3, 9, 29, 0.05);
+}
+
+.fourthrow {
+  background: rgba(3, 9, 29, 0.07);
+}
+
+.fifthrow {
+  background: rgba(3, 9, 29, 0.09);
+}
+
+.sixthrow {
+  background: rgba(3, 9, 29, 0.11);
+}
+
+td {
+  border-top: 1px solid rgba(224, 224, 224, 0.4862745098);
+  border-right: 1px solid rgba(224, 224, 224, 0.4039215686);
+}
+
+.firstcolumn {
+  width: 33%;
+}
+@media screen and (min-width: 2201px) {
+  .firstcolumn {
+    width: 29%;
+  }
+}
+
+.twocolumn {
+  width: 10%;
+}
+
+.noborder {
+  border-top: 0px;
 }
 
 .onecolumn {
-  width: 30%;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+  width: 33%;
 }
 
 .twotablecolumn {
   position: absolute;
   border-radius: 15px;
-  padding: 14px 0;
-  width: 30%;
-  background: rgba(34, 39, 63, 0.9);
+  border-spacing: 0px;
+  padding: 4px 0 0px;
+  width: 35%;
+  background: rgb(255, 238, 172);
   text-align: center;
-  top: -13px;
-  left: 23%;
+  left: 31%;
   z-index: 2;
+  top: -4px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1401px) {
+  .twotablecolumn {
+    left: 33%;
+    width: 33%;
+  }
+}
+
+.threetablecolumn {
+  position: absolute;
+  border-radius: 15px;
+  padding: 17px 0 10px;
+  border-spacing: 0px;
+  width: 36%;
+  background: rgb(255, 173, 112);
+  text-align: center;
+  right: -15px;
+  z-index: 2;
+  top: -15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.left {
+  top: -5px;
+}
+
+.right {
+  top: -14px;
 }
 
 .temperatura1 {
@@ -4180,7 +4423,6 @@ tr:nth-child(even) {
 
 .trans {
   color: transparent;
-  background: transparent;
 }
 
 .novisibility {

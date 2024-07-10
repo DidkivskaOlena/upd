@@ -181,6 +181,9 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
+        // background: #ffffff;
+        padding: 15px 0;
+        z-index: 10;
 
         @media screen and (max-width: 360px) {
             font-size: 8px;
@@ -202,7 +205,7 @@
             font-size: 14px;
         }
         
-        @media screen and (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 1023px) {
             font-size: 15px;
             text-transform: uppercase;
             color: #FF6C00;
@@ -211,6 +214,7 @@
         }
 
         @media screen and (min-width: 1024px) {
+            margin: 0;
             padding: 10px 0;
             letter-spacing: 0.1em;
             line-height: 1.5;
@@ -261,23 +265,26 @@
 
         @media screen and (min-width: 1401px) {
             gap: 50px 90px;
-            width: 1180px;
+            width: 880px;
             margin: 0 auto;
         }
 
         @media screen and (min-width: 1851px) {
-            width: 1470px;
+            width: 940px;
             gap: 70px 150px;
         }
         @media screen and (min-width: 2201px) {
-            width: 1500px;
+            width: 1000px;
             gap: 70px 150px;
         }
     }
 
     &__text {
-        font-family: math;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-transform: uppercase;
+        color: #2C3049;
+        // background: rgba(34, 39, 63, 0.9);
+
         @media screen and (max-width: 290px) {
             @include font (600, 8px, 1.7, 0.1em);
         }
@@ -299,12 +306,13 @@
     }
 
     &__text-desktop {
-        font-family: math;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        line-height: 1.655;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #2C3049;
 
         @media (min-width: 1024px) {
-            padding: 3px 0;
+            padding: 1px 10px;
             @include font (600, 12px, 1.7, 0.07em);
         }
 
@@ -322,13 +330,13 @@
     }
 
     &__text-desktopback{
-        font-family: math;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-transform: uppercase;
         color: #FFFFFF;
 
         @media (min-width: 1024px) {
             padding: 3px 0;
-            @include font (600, 12px, 1.7, 0.07em);
+            @include font (600, 13px, 1.7, 0.07em);
         }
 
         @media (min-width: 1401px) {
@@ -344,12 +352,12 @@
         }
     }
 
-    &__text-desktop:nth-child(even){
-        background: rgba(34, 39, 63, 0.3);
-    }
+    // &__text-desktop:nth-child(even){
+    //     background: rgba(34, 39, 63, 0.3);
+    // }
 
     &__value {
-        font-family: math;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
 
         @media screen and (max-width: 290px) {
             @include font (600, 9px, 1.7, 0.1em);
@@ -376,8 +384,9 @@
 
         @media (min-width: 1024px) {
             text-align: center;
-            padding: 0 15px;
-            @include font (600, 14px, 1.7, 0.2em);
+            padding: 3px 15px;
+            line-height: 1.6;
+            @include font (600, 13px, 1.7, 0.2em);
         }
 
         @media (min-width: 1401px) {
@@ -394,7 +403,7 @@
     }
 
     &__span{
-        font-family: math;
+        font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
 
         @media screen and (max-width: 360px) {
             @include font (400, 8px, 1.7, 0.07em);
@@ -417,7 +426,7 @@
         }
 
         @media (min-width: 1024px) {
-            @include font (400, 14px, 1.7, 0.07em);
+            @include font (400, 13px, 1.7, 0.07em);
         }
 
         @media (min-width: 1401px) {
@@ -532,6 +541,7 @@ table {
 
 .table-desktop{
     position: relative;
+    width: 67%;
     border-spacing: 0px;
     @media screen and (max-width: 1023px) {
         display: none;
@@ -543,8 +553,6 @@ th, td {
 }
  
 .th { 
-    font-family: math;
-    background:#9da4bd4b;
     position: absolute;
     border-radius: 15px;
     padding: 12px 0 24px;
@@ -553,7 +561,7 @@ th, td {
     top: -40px;
     left: 57.5%;
     z-index: 0;
-    font-family: math;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-transform: uppercase;
         color: #070707;
 
@@ -575,17 +583,191 @@ th, td {
 }
 
 .th-left{
-    left: 57.5%;
+    left: 41%;
+    background: rgb(255 238 172);
 }
 
 .th-right{
-    left: 81%;
+    left: 77%;
+    top: -50px;
+    background: rgb(255, 173, 112);
+}
+
+.th-first{
+    background: rgb(3 9 29 / 2%);
+    top: 25px;
+    padding: 12px 0 12px;
+    @media (min-width: 1024px) {
+        left: -100px;
+    }
+
+    @media (min-width: 1401px) {
+        left: -112px;
+    }
+
+    @media screen and (min-width: 1851px) {
+        left: -130px;
+    }
+
+    @media screen and (min-width: 2201px) {
+        top: 45px;
+    }
+}
+.th-second{
+    background: rgb(3 9 29 / 4%);
+    left: -110px;
+    top: 150px;
+    padding: 12px 0 12px;
+    @media (min-width: 1024px) {
+        left: -100px;
+    }
+
+    @media (min-width: 1401px) {
+        left: -112px;
+        top: 180px;
+    }
+
+    @media screen and (min-width: 1851px) {
+        left: -130px;
+        top: 190px;
+    }
+
+    @media screen and (min-width: 2201px) {
+        top: 210px;
+    }
+}
+.th-third{
+    background: rgb(3 9 29 / 6%);
+    left: -110px;
+    top: 270px;
+    padding: 12px 0 12px;
+    @media (min-width: 1024px) {
+        left: -100px;
+    }
+
+    @media (min-width: 1401px) {
+        left: -112px;
+        top: 300px;
+    }
+
+    @media screen and (min-width: 1851px) {
+        left: -130px;
+        top: 312px;
+    }
+
+    @media screen and (min-width: 2201px) {
+        top: 340px;
+    }
+}
+.th-fourth{
+    background: rgb(3 9 29 / 8%);
+    top: 348px;
+    padding: 22px 0 22px;
+    @media (min-width: 1024px) {
+        left: -100px;
+    }
+
+    @media (min-width: 1401px) {
+        left: -118px;
+        top: 385px;
+    }
+
+    @media screen and (min-width: 1851px) {
+        left: -130px;
+        top: 400px;
+    }
+
+    @media screen and (min-width: 2201px) {
+        top: 435px;
+    }
+}
+.th-fifth{
+    background: rgb(3 9 29 / 10%);
+    left: -110px;
+    top: 435px;
+    padding: 12px 0 12px;
+    @media (min-width: 1024px) {
+        left: -100px;
+    }
+
+    @media (min-width: 1401px) {
+        left: -118px;
+        top: 475px;
+    }
+
+    @media screen and (min-width: 1851px) {
+        left: -130px;
+        top: 500px;
+    }
+
+    @media screen and (min-width: 2201px) {
+        top: 540px;
+    }
+}
+.th-sixth{
+    background: rgb(3 9 29 / 12%);
+    left: -110px;
+    top: 530px;
+    padding: 10px 10px 10px 0;
+    @media (min-width: 1024px) {
+        left: -100px;
+    }
+
+    @media (min-width: 1401px) {
+        left: -112px;
+        top: 580px;
+    }
+
+    @media screen and (min-width: 1851px) {
+        left: -130px;
+        top: 605px;
+    }
+
+    @media screen and (min-width: 2201px) {
+        top: 655px;
+    }
+}
+
+.firstrow{
+    background: rgb(3 9 29 / 1%);
+}
+
+.secondrow{
+    background: rgb(3 9 29 / 3%);
+}
+.thirdrow{
+    background: rgb(3 9 29 / 5%);
+}
+.fourthrow{
+    background: rgb(3 9 29 / 7%);
+}
+.fifthrow{
+    background: rgb(3 9 29 / 9%);
+}
+.sixthrow{
+    background: rgb(3 9 29 / 11%);
 }
  
-// td {
-//     border-top:1px solid #e0e0e0; 
-//     border-right:1px solid #e0e0e0;
-// }
+td {
+    border-top:1px solid #e0e0e07c; 
+    border-right:1px solid #e0e0e067;
+}
+
+.firstcolumn{
+    width: 33%;
+
+    @media screen and (min-width: 2201px) {
+        width: 29%;
+    }
+}
+
+.twocolumn{
+width: 10%;
+}
+
+.noborder{
+    border-top:0px; 
+}
  
 // tr.odd-row td {
 //     background:#e0e0e0;
@@ -595,9 +777,9 @@ th, td {
 //     text-align:left
 // }
  
-td:last-child {
-    background: #ff6c009c;
-}
+// td:nth-child(2){
+//     width: 10%;
+// }
 
 // td {
 //     background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #F9F9FF);
@@ -636,35 +818,58 @@ td:last-child {
 
 .onecolumn{
 
-    width: 30%;
+    width: 33%;
 }
 
 // .fourcolumn{
 //     background: #ff6c009c;
 // }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2
-  }
+// tr:nth-child(even) {
+//     background-color: #f2f2f2
+//   }
 
 .twotablecolumn{
     position: absolute;
     border-radius: 15px;
-    padding: 14px 0;
-    width: 30%;
-    background: rgba(34, 39, 63, 0.9);
+    border-spacing: 0px;
+    padding: 4px 0 0px;
+    width: 35%;
+    background: rgb(255 238 172);
     text-align: center;
-    top: -13px;
-    left: 23%;
+    left: 31%;
     z-index: 2;
+    top: -4px;
 
-    // @media screen and (min-width: 1400px) {
-    //     padding-bottom: 20px;
-    // }
+    @media screen and (min-width: 1401px) {
+        left: 33%;
+        width: 33%;
+    }
 
-    // @media (min-width: 1851px) {
-    //     padding-bottom: 15px;
-    // }
+    box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.25);
+}
+
+.threetablecolumn{
+    position: absolute;
+    border-radius: 15px;
+    padding: 17px 0 10px;
+    border-spacing: 0px;
+    width: 36%;
+    background: rgb(255 173 112);
+    text-align: center;
+    right: -15px;
+    z-index: 2;
+    top: -15px;
+
+    box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.25);
+}
+
+.left {
+    top: -5px;
+}
+
+.right {
+    top: -14px;
 }
 
 .temperatura1{
@@ -697,7 +902,7 @@ tr:nth-child(even) {
 
 .trans{
      color: transparent;
-     background: transparent;
+    //  background: transparent;
 }
 
 .novisibility{
