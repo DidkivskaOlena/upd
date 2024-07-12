@@ -3622,7 +3622,7 @@ img {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: rgba(3, 9, 29, 0.03);
+  background: rgba(3, 9, 29, 0.05);
   padding: 15px 0;
   z-index: 10;
 }
@@ -4305,8 +4305,8 @@ th, td {
 }
 
 td {
-  border-top: 1px solid rgba(224, 224, 224, 0.4862745098);
-  border-right: 1px solid rgba(224, 224, 224, 0.4039215686);
+  border-top: 1px solid rgba(3, 9, 28, 0.15);
+  border-right: 1px solid rgba(3, 9, 28, 0.15);
 }
 
 .firstcolumn {
@@ -4334,7 +4334,7 @@ td {
   position: absolute;
   border-radius: 15px;
   border-spacing: 0px;
-  padding: 4px 0 0px;
+  padding: 5px 0 4px;
   width: 35%;
   background: rgb(255, 238, 172);
   text-align: center;
@@ -4353,7 +4353,7 @@ td {
 .threetablecolumn {
   position: absolute;
   border-radius: 15px;
-  padding: 17px 0 10px;
+  padding: 17px 0 12px;
   border-spacing: 0px;
   width: 36%;
   background: rgb(255, 173, 112);

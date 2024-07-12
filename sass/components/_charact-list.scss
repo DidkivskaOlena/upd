@@ -181,7 +181,7 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-        background: rgb(3 9 29 / 3%);
+        background: rgb(3 9 29 / 5%);
         padding: 15px 0;
         z-index: 10;
 
@@ -749,8 +749,8 @@ th, td {
 // }
  
 td {
-    border-top:1px solid #e0e0e07c; 
-    border-right:1px solid #e0e0e067;
+    border-top:1px solid  rgb(3 9 28 / 15%); 
+    border-right:1px solid  rgb(3 9 28 / 15%);
 }
 
 .firstcolumn{
@@ -833,7 +833,7 @@ width: 10%;
     position: absolute;
     border-radius: 15px;
     border-spacing: 0px;
-    padding: 4px 0 0px;
+    padding: 5px 0 4px;
     width: 35%;
     background: rgb(255 238 172);
     text-align: center;
@@ -852,7 +852,7 @@ width: 10%;
 .threetablecolumn{
     position: absolute;
     border-radius: 15px;
-    padding: 17px 0 10px;
+    padding: 17px 0 12px;
     border-spacing: 0px;
     width: 36%;
     background: rgb(255 173 112);
