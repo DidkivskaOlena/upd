@@ -544,6 +544,7 @@ th, td {
 }
  
 .th { 
+    color: #FF6C00;
     position: absolute;
     border-radius: 15px 15px 0 0 ;
     padding: 12px 0 24px;
@@ -554,7 +555,6 @@ th, td {
     z-index: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-transform: uppercase;
-        color: #070707;
 
         @media screen and (max-width: 290px) {
             @include font (400, 7px, 1.7, 0.07em);
@@ -610,7 +610,8 @@ th, td {
         top: -45px;
     }
     left: 41%;
-    background: #6487ff;
+    background: #3F4569;
+    color: #FF9900;
 }
 
 .th-right{
@@ -628,7 +629,8 @@ th, td {
         top: -50px;
     }
     left: 77%;
-    background: #ffdb00;
+    background: #2C3049;
+    color: #FF9900;
 }
 
 .th-first{
@@ -802,8 +804,8 @@ th, td {
 }
  
 td {
-    border-top:1px solid  rgb(3 9 28 / 15%); 
-    border-right:1px solid  rgb(3 9 28 / 15%);
+    border-top:1px solid  #bababa; 
+    
 }
 
 .firstcolumn{
@@ -818,6 +820,10 @@ td {
 width: 10%;
 }
 
+.border-right{
+    border-right:1px solid  #bababa;
+}
+
 .noborder{
     border-top:0px; 
 }
@@ -830,15 +836,17 @@ width: 10%;
 
 
 .twotablecolumn{
-    color: #2C3049;
+    color: white;
     position: absolute;
     border-radius: 15px;
     border-spacing: 0px;
     padding: 5px 0 4px;
     width: 35%;
-    border: 3px solid #6487ff;
-    background: #F7FBFF;
+    border: 3px solid #3F4569;
+    background: #3F4569;
     text-align: center;
+    
+    
     left: 32%;
     z-index: 2;
     top: -7px;
@@ -852,23 +860,23 @@ width: 10%;
         display: none;
     }
 
-    box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.25);
+    box-shadow: 20px 10px 5px 5px #3f456934;
 }
 
 .threetablecolumn{
-    color: #2C3049;
+    color: white;
     position: absolute;
     border-radius: 15px;
     padding: 17px 0 12px;
     border-spacing: 0px;
-    border: 5px solid #ffdb00;
+    border: 5px solid #2C3049;
     width: 36%;
-    background: #feffe0;
+    background: #2C3049;
     text-align: center;
     right: -15px;
     z-index: 2;
     top: -20px;
-    box-shadow: 0 10px 10px 10px #ffdb0040;
+    box-shadow: 0px 5px 5px #fff;
 
     @media screen and (max-width: 1023px) {
         display: none;
@@ -906,10 +914,6 @@ width: 10%;
 .grayplace{
     background: #ecf0f3;
 }
-
-// .borderbot{
-//     border-bottom: 1px solid #ffffff;
-// }
 
 .trans{
      color: transparent;

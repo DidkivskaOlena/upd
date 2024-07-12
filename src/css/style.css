@@ -4085,6 +4085,7 @@ th, td {
 }
 
 .th {
+  color: #FF6C00;
   position: absolute;
   border-radius: 15px 15px 0 0;
   padding: 12px 0 24px;
@@ -4095,7 +4096,6 @@ th, td {
   z-index: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
-  color: #070707;
 }
 @media screen and (max-width: 290px) {
   .th {
@@ -4169,7 +4169,8 @@ th, td {
 
 .th-left {
   left: 41%;
-  background: #6487ff;
+  background: #3F4569;
+  color: #FF9900;
 }
 @media (min-width: 541px) and (max-width: 600px) {
   .th-left {
@@ -4186,7 +4187,8 @@ th, td {
 
 .th-right {
   left: 77%;
-  background: #ffdb00;
+  background: #2C3049;
+  color: #FF9900;
 }
 @media (min-width: 361px) and (max-width: 767px) {
   .th-right {
@@ -4413,8 +4415,7 @@ th, td {
 }
 
 td {
-  border-top: 1px solid rgba(3, 9, 28, 0.15);
-  border-right: 1px solid rgba(3, 9, 28, 0.15);
+  border-top: 1px solid #bababa;
 }
 
 .firstcolumn {
@@ -4430,6 +4431,10 @@ td {
   width: 10%;
 }
 
+.border-right {
+  border-right: 1px solid #bababa;
+}
+
 .noborder {
   border-top: 0px;
 }
@@ -4439,19 +4444,19 @@ td {
 }
 
 .twotablecolumn {
-  color: #2C3049;
+  color: white;
   position: absolute;
   border-radius: 15px;
   border-spacing: 0px;
   padding: 5px 0 4px;
   width: 35%;
-  border: 3px solid #6487ff;
-  background: #F7FBFF;
+  border: 3px solid #3F4569;
+  background: #3F4569;
   text-align: center;
   left: 32%;
   z-index: 2;
   top: -7px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 10px 5px 5px rgba(63, 69, 105, 0.2039215686);
 }
 @media screen and (min-width: 1401px) {
   .twotablecolumn {
@@ -4466,19 +4471,19 @@ td {
 }
 
 .threetablecolumn {
-  color: #2C3049;
+  color: white;
   position: absolute;
   border-radius: 15px;
   padding: 17px 0 12px;
   border-spacing: 0px;
-  border: 5px solid #ffdb00;
+  border: 5px solid #2C3049;
   width: 36%;
-  background: #feffe0;
+  background: #2C3049;
   text-align: center;
   right: -15px;
   z-index: 2;
   top: -20px;
-  box-shadow: 0 10px 10px 10px rgba(255, 219, 0, 0.2509803922);
+  box-shadow: 0px 5px 5px #fff;
 }
 @media screen and (max-width: 1023px) {
   .threetablecolumn {
