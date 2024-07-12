@@ -863,6 +863,8 @@ width: 10%;
     box-shadow: 20px 10px 5px 5px #3f456934;
 }
 
+
+
 .threetablecolumn{
     color: white;
     position: absolute;
@@ -922,3 +924,13 @@ width: 10%;
 .novisibility{
     display: none;
 }
+
+.threetablecolumn:hover { 
+    border: 5px double #68d4ff;
+    transition: 3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+    .twotablecolumn:hover { 
+        border: 3px double #68d4ff;
+        transition: 3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }   

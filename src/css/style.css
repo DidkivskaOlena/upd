@@ -4533,6 +4533,18 @@ td {
   display: none;
 }
 
+.threetablecolumn:hover {
+  border: 5px double #68d4ff;
+  transition: 3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.twotablecolumn:hover {
+  border: 3px double #68d4ff;
+  transition: 3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @keyframes move {
   0% {
     transform: translateX(0);
