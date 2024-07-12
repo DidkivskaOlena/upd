@@ -4157,7 +4157,7 @@ th, td {
 
 .th-left {
   left: 41%;
-  background: rgb(255, 238, 172);
+  background: #bec0c7;
 }
 @media (min-width: 541px) and (max-width: 600px) {
   .th-left {
@@ -4174,7 +4174,7 @@ th, td {
 
 .th-right {
   left: 77%;
-  background: rgb(255, 173, 112);
+  background: #ffdb00;
 }
 @media (min-width: 361px) and (max-width: 767px) {
   .th-right {
@@ -4421,16 +4421,18 @@ td {
 }
 
 .twotablecolumn {
+  color: #2C3049;
   position: absolute;
   border-radius: 15px;
   border-spacing: 0px;
   padding: 5px 0 4px;
   width: 35%;
-  background: rgb(255, 238, 172);
+  border: 3px solid #bec0c7;
+  background: #f3f5fb;
   text-align: center;
   left: 32%;
   z-index: 2;
-  top: -4px;
+  top: -7px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1401px) {
@@ -4446,17 +4448,19 @@ td {
 }
 
 .threetablecolumn {
+  color: #2C3049;
   position: absolute;
   border-radius: 15px;
   padding: 17px 0 12px;
   border-spacing: 0px;
+  border: 5px solid #ffdb00;
   width: 36%;
-  background: #ff9900;
+  background: rgb(254, 255, 224);
   text-align: center;
   right: -15px;
   z-index: 2;
-  top: -15px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  top: -20px;
+  box-shadow: 0 10px 10px 10px rgba(255, 219, 0, 0.25);
 }
 @media screen and (max-width: 1023px) {
   .threetablecolumn {
