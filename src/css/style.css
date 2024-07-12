@@ -4157,7 +4157,7 @@ th, td {
 
 .th-left {
   left: 41%;
-  background: #bec0c7;
+  background: #6487ff;
 }
 @media (min-width: 541px) and (max-width: 600px) {
   .th-left {
@@ -4427,7 +4427,7 @@ td {
   border-spacing: 0px;
   padding: 5px 0 4px;
   width: 35%;
-  border: 3px solid #bec0c7;
+  border: 3px solid #6487ff;
   background: #f3f5fb;
   text-align: center;
   left: 32%;
