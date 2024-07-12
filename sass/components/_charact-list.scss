@@ -829,7 +829,7 @@ width: 10%;
     padding: 5px 0 4px;
     width: 35%;
     border: 3px solid #6487ff;
-    background: #f3f5fb;
+    background: #F7FBFF;
     text-align: center;
     left: 32%;
     z-index: 2;
@@ -855,12 +855,12 @@ width: 10%;
     border-spacing: 0px;
     border: 5px solid #ffdb00;
     width: 36%;
-    background: rgb(254 255 224);
+    background: #feffe0;
     text-align: center;
     right: -15px;
     z-index: 2;
     top: -20px;
-    box-shadow: 0 10px 10px 10px rgb(255 219 0 / 0.25);
+    box-shadow: 0 10px 10px 10px #ffdb0040;
 
     @media screen and (max-width: 1023px) {
         display: none;
@@ -905,7 +905,6 @@ width: 10%;
 
 .trans{
      color: transparent;
-    //  background: transparent;
 }
 
 .novisibility{
