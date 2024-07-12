@@ -2943,6 +2943,18 @@ img {
   }
 }
 
+@media (min-width: 1024px) {
+  .borderbottom {
+    border-bottom: 1px solid #3E434A;
+  }
+}
+
+@media (min-width: 1851px) {
+  .borderbottom1 {
+    border-bottom: 1px solid #3E434A;
+  }
+}
+
 .footer {
   background-color: #191C26;
 }

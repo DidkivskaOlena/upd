@@ -376,3 +376,15 @@
         }
     }
 }
+
+.borderbottom{
+    @media (min-width: 1024px) {
+        border-bottom: 1px solid #3E434A;
+    }
+}
+
+.borderbottom1{
+    @media (min-width: 1851px) {
+        border-bottom: 1px solid #3E434A;
+    }
+}
