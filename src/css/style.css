@@ -4207,6 +4207,7 @@ th, td {
 }
 
 .th-first {
+  border-radius: 15px;
   background: rgba(3, 9, 29, 0.02);
   top: 25px;
   padding: 12px 0 12px;
@@ -4238,6 +4239,7 @@ th, td {
 }
 
 .th-second {
+  border-radius: 15px;
   background: rgba(3, 9, 29, 0.04);
   left: -110px;
   top: 150px;
@@ -4272,6 +4274,7 @@ th, td {
 }
 
 .th-third {
+  border-radius: 15px;
   background: rgba(3, 9, 29, 0.06);
   left: -110px;
   top: 270px;
@@ -4306,6 +4309,7 @@ th, td {
 }
 
 .th-fourth {
+  border-radius: 15px;
   background: rgba(3, 9, 29, 0.08);
   top: 348px;
   padding: 22px 0 22px;
@@ -4339,6 +4343,7 @@ th, td {
 }
 
 .th-fifth {
+  border-radius: 15px;
   background: rgba(3, 9, 29, 0.1);
   left: -110px;
   top: 435px;
@@ -4373,6 +4378,7 @@ th, td {
 }
 
 .th-sixth {
+  border-radius: 15px;
   background: rgba(3, 9, 29, 0.12);
   left: -110px;
   top: 530px;
