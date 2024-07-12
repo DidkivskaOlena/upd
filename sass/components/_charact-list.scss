@@ -286,10 +286,10 @@
         // background: rgba(34, 39, 63, 0.9);
 
         @media screen and (max-width: 290px) {
-            @include font (600, 8px, 1.7, 0.1em);
+            @include font (600, 6px, 1.7, 0.1em);
         }
 
-        @media (min-width: 281px) and (max-width: 360px) {
+        @media (min-width: 291px) and (max-width: 360px) {
             @include font (600, 7px, 1.7, 0.1em);
         }
 
@@ -297,7 +297,11 @@
             @include font (600, 8px, 1.7, 0.1em);
         }
 
-        @media (min-width: 421px) and (max-width: 768px) {
+        @media (min-width: 421px) and (max-width: 480px) {
+            @include font (600, 10px, 1.7, 0.1em);
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
             @include font (600, 11px, 1.7, 0.1em);
         }
 
@@ -329,28 +333,6 @@
         }
     }
 
-    &__text-desktopback{
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        text-transform: uppercase;
-        color: #FFFFFF;
-
-        @media (min-width: 1024px) {
-            padding: 3px 0;
-            @include font (600, 13px, 1.7, 0.07em);
-        }
-
-        @media (min-width: 1401px) {
-            @include font (600, 13px, 1.7, 0.1em);
-        }
-
-        @media screen and (min-width: 1851px) {
-            font-size: 14px;
-        }
-    
-        @media screen and (min-width: 2201px) {
-            font-size: 15px;
-        }
-    }
 
     // &__text-desktop:nth-child(even){
     //     background: rgba(34, 39, 63, 0.3);
@@ -360,11 +342,11 @@
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
 
         @media screen and (max-width: 290px) {
-            @include font (600, 9px, 1.7, 0.1em);
+            @include font (600, 6px, 1.7, 0.1em);
         }
 
-        @media (min-width: 281px) and (max-width: 360px) {
-            @include font (600, 9px, 1.7, 0.1em);
+        @media (min-width: 291px) and (max-width: 360px) {
+            @include font (600, 6px, 1.7, 0.1em);
         }
 
         @media (min-width: 361px) and (max-width: 420px) {
@@ -372,7 +354,7 @@
         }
 
         @media (min-width: 421px) and (max-width: 480px) {
-            @include font (600, 12px, 1.7, 0.1em);
+            @include font (600, 10px, 1.7, 0.1em);
         }
 
         @media (min-width: 481px) and (max-width: 769px) {
@@ -405,8 +387,12 @@
     &__span{
         font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
 
-        @media screen and (max-width: 360px) {
-            @include font (400, 8px, 1.7, 0.07em);
+        @media screen and (max-width: 290px) {
+            @include font (400, 6px, 1.7, 0.07em);
+        }
+
+        @media (min-width: 291px) and (max-width: 360px) {
+            @include font (400, 7px, 1.7, 0.07em);
         }
 
         @media (min-width: 361px) and (max-width: 420px) {
@@ -414,7 +400,7 @@
         }
 
         @media (min-width: 421px) and (max-width: 480px) {
-            @include font (400, 11px, 1.7, 0.07em);
+            @include font (400, 10px, 1.7, 0.07em);
         }
 
         @media (min-width: 481px) and (max-width: 768px) {
@@ -520,13 +506,16 @@
 
 td {
     width: 22%;
+    @media screen and (max-width: 1023px) {
+        width: 20%;
+    }
 }
 
 table {
     overflow:hidden;
     background:#F9F9FF;
     width:100%;
-    border-radius:15px;
+    border-radius: 15px;
     z-index: 1;
     
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -554,7 +543,7 @@ th, td {
  
 .th { 
     position: absolute;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0 ;
     padding: 12px 0 24px;
     width: 15%;
     text-align: center;
@@ -564,6 +553,33 @@ th, td {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-transform: uppercase;
         color: #070707;
+
+        @media screen and (max-width: 290px) {
+            @include font (400, 7px, 1.7, 0.07em);
+            top: -25px;
+            padding: 7px 0 7px;
+        }
+
+        @media (min-width: 291px) and (max-width: 360px) {
+            @include font (400, 7px, 1.7, 0.07em);
+            top: -22px;
+            padding: 7px 0 3px;
+            width: 20%;
+        }
+
+        @media (min-width: 361px) and (max-width: 480px) {
+            @include font (400, 8px, 1.7, 0.07em);
+            top: -23px;
+            padding: 7px 0 3px;
+            width: 20%;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            @include font (400, 11px, 1.7, 0.07em);
+            top: -28px;
+            padding: 7px 0 3px;
+            width: 20%;
+        }
 
         @media (min-width: 1024px) {
             @include font (600, 12px, 1.7, 0.07em);
@@ -583,13 +599,33 @@ th, td {
 }
 
 .th-left{
+    @media (min-width: 541px) and (max-width: 600px) {
+        left: 40%;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        left: 43%;
+        padding: 12px 0 12px;
+        top: -45px;
+    }
     left: 41%;
     background: rgb(255 238 172);
 }
 
 .th-right{
+    @media (min-width: 361px) and (max-width: 767px) {
+        
+        left: 74%;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding: 12px 0 12px;
+        left: 76%;
+        top: -45px;
+    }
+    @media (min-width: 1024px){
+        
+        top: -50px;
+    }
     left: 77%;
-    top: -50px;
     background: rgb(255, 173, 112);
 }
 
@@ -597,6 +633,11 @@ th, td {
     background: rgb(3 9 29 / 2%);
     top: 25px;
     padding: 12px 0 12px;
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+    
     @media (min-width: 1024px) {
         left: -100px;
     }
@@ -618,6 +659,11 @@ th, td {
     left: -110px;
     top: 150px;
     padding: 12px 0 12px;
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
     @media (min-width: 1024px) {
         left: -100px;
     }
@@ -641,6 +687,11 @@ th, td {
     left: -110px;
     top: 270px;
     padding: 12px 0 12px;
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
     @media (min-width: 1024px) {
         left: -100px;
     }
@@ -663,6 +714,11 @@ th, td {
     background: rgb(3 9 29 / 8%);
     top: 348px;
     padding: 22px 0 22px;
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
     @media (min-width: 1024px) {
         left: -100px;
     }
@@ -686,6 +742,11 @@ th, td {
     left: -110px;
     top: 435px;
     padding: 12px 0 12px;
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
     @media (min-width: 1024px) {
         left: -100px;
     }
@@ -709,6 +770,10 @@ th, td {
     left: -110px;
     top: 530px;
     padding: 10px 10px 10px 0;
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+    
     @media (min-width: 1024px) {
         left: -100px;
     }
@@ -837,13 +902,17 @@ width: 10%;
     width: 35%;
     background: rgb(255 238 172);
     text-align: center;
-    left: 31%;
+    left: 32%;
     z-index: 2;
     top: -4px;
 
     @media screen and (min-width: 1401px) {
         left: 33%;
         width: 33%;
+    }
+
+    @media screen and (max-width: 1023px) {
+        display: none;
     }
 
     box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.25);
@@ -862,6 +931,10 @@ width: 10%;
     top: -15px;
 
     box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
 }
 
 .left {
