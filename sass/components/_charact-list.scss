@@ -531,6 +531,7 @@ table {
 }
 
 .table-desktop{
+    color: #2C3049;
     position: relative;
     width: 67%;
     border-spacing: 0px;
@@ -544,7 +545,7 @@ th, td {
 }
  
 .th { 
-    color: #FF6C00;
+    color: #FFF;
     position: absolute;
     border-radius: 15px 15px 0 0 ;
     padding: 12px 0 24px;
@@ -555,6 +556,7 @@ th, td {
     z-index: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-transform: uppercase;
+        background: #2C3049;
 
         @media screen and (max-width: 290px) {
             @include font (400, 7px, 1.7, 0.07em);
@@ -602,40 +604,42 @@ th, td {
 
 .th-left{
     @media (min-width: 541px) and (max-width: 600px) {
-        left: 40%;
+        left: 74%;
     }
     @media (min-width: 768px) and (max-width: 1023px) {
-        left: 43%;
+        left: 73%;
         padding: 12px 0 12px;
         top: -45px;
     }
-    left: 41%;
-    background: #3F4569;
-    color: #FF9900;
+    left: 77%;
+    background: #e6e6e7;
+    color: #2C3049;
 }
 
 .th-right{
     @media (min-width: 361px) and (max-width: 767px) {
         
-        left: 74%;
+        left: 44%;
     }
     @media (min-width: 768px) and (max-width: 1023px) {
         padding: 12px 0 12px;
-        left: 76%;
+        left: 46%;
         top: -45px;
     }
     @media (min-width: 1024px){
         
         top: -50px;
     }
-    left: 77%;
-    background: #2C3049;
-    color: #FF9900;
+    left: 43%;
+
+    background: #ffdb00;
+    color: #2C3049;
+    
 }
 
 .th-first{
     border-radius: 15px;
-    background: rgb(3 9 29 / 2%);
+    // background: rgb(3 9 29 / 2%);
     top: 25px;
     padding: 12px 0 12px;
 
@@ -661,7 +665,7 @@ th, td {
 }
 .th-second{
     border-radius: 15px;
-    background: rgb(3 9 29 / 4%);
+    // background: rgb(3 9 29 / 4%);
     left: -110px;
     top: 150px;
     padding: 12px 0 12px;
@@ -690,7 +694,7 @@ th, td {
 }
 .th-third{
     border-radius: 15px;
-    background: rgb(3 9 29 / 6%);
+    // background: rgb(3 9 29 / 6%);
     left: -110px;
     top: 270px;
     padding: 12px 0 12px;
@@ -719,7 +723,7 @@ th, td {
 }
 .th-fourth{
     border-radius: 15px;
-    background: rgb(3 9 29 / 8%);
+    // background: rgb(3 9 29 / 8%);
     top: 348px;
     padding: 22px 0 22px;
 
@@ -747,7 +751,7 @@ th, td {
 }
 .th-fifth{
     border-radius: 15px;
-    background: rgb(3 9 29 / 10%);
+    // background: rgb(3 9 29 / 10%);
     left: -110px;
     top: 435px;
     padding: 12px 0 12px;
@@ -776,7 +780,7 @@ th, td {
 }
 .th-sixth{
     border-radius: 15px;
-    background: rgb(3 9 29 / 12%);
+    // background: rgb(3 9 29 / 12%);
     left: -110px;
     top: 530px;
     padding: 10px 10px 10px 0;
@@ -836,23 +840,22 @@ width: 10%;
 
 
 .twotablecolumn{
-    color: white;
+    color: #2C3049;
     position: absolute;
     border-radius: 15px;
     border-spacing: 0px;
     padding: 5px 0 4px;
     width: 35%;
-    border: 3px solid #3F4569;
-    background: #3F4569;
+    border: 3px solid #e6e6e7;
+    background: #F9F9FF;
     text-align: center;
-    
-    
-    left: 32%;
+    right: 0;
     z-index: 2;
     top: -7px;
+    
 
     @media screen and (min-width: 1401px) {
-        left: 33%;
+        // left: 33%;
         width: 33%;
     }
 
@@ -860,22 +863,23 @@ width: 10%;
         display: none;
     }
 
-    box-shadow: 20px 10px 5px 5px #3f456934;
+    box-shadow: 0px 5px 5px 5px #3f456934;
 }
 
 
 
 .threetablecolumn{
-    color: white;
+    color: #2C3049;
     position: absolute;
     border-radius: 15px;
     padding: 17px 0 12px;
     border-spacing: 0px;
-    border: 5px solid #2C3049;
+    border: 5px solid #ffdb00;
     width: 36%;
-    background: #2C3049;
+    background: #feffe0;
     text-align: center;
-    right: -15px;
+    
+    left: 32%;
     z-index: 2;
     top: -20px;
     box-shadow: 0px 5px 5px #fff;
