@@ -3577,7 +3577,7 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .charact__title-main {
-    margin-bottom: 80px;
+    margin-bottom: 110px;
   }
 }
 .charact__title {
@@ -3715,7 +3715,7 @@ img {
   .charact__component {
     align-items: baseline;
     width: 720px;
-    margin: 0 auto;
+    margin: 50px auto 0;
   }
 }
 @media screen and (min-width: 1401px) {
@@ -4180,37 +4180,37 @@ th, td {
 }
 
 .th-left {
-  left: 77%;
-  background: #e6e6e7;
-  color: #2C3049;
+  left: 43%;
+  background: rgba(34, 39, 63, 0.8);
+  color: #ffffff;
 }
 @media (min-width: 541px) and (max-width: 600px) {
   .th-left {
-    left: 74%;
+    left: 44%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .th-left {
-    left: 73%;
+    left: 46%;
     padding: 12px 0 12px;
     top: -45px;
   }
 }
 
 .th-right {
-  left: 43%;
-  background: #ffdb00;
+  left: 77%;
+  background: #FF9900;
   color: #2C3049;
 }
 @media (min-width: 361px) and (max-width: 767px) {
   .th-right {
-    left: 44%;
+    left: 74%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .th-right {
     padding: 12px 0 12px;
-    left: 46%;
+    left: 73%;
     top: -45px;
   }
 }
@@ -4402,13 +4402,12 @@ td {
   border-spacing: 0px;
   padding: 5px 0 4px;
   width: 35%;
-  border: 3px solid #e6e6e7;
+  border: 3px solid rgba(34, 39, 63, 0.8);
   background: #F9F9FF;
   text-align: center;
-  right: -10px;
+  left: 33%;
   z-index: 2;
-  top: -7px;
-  box-shadow: 0px 5px 5px 5px rgba(63, 69, 105, 0.2039215686);
+  top: -6px;
 }
 @media screen and (min-width: 1401px) {
   .twotablecolumn {
@@ -4426,25 +4425,36 @@ td {
   }
 }
 
+.border-twotable {
+  background: rgba(34, 39, 63, 0.13);
+  height: 18px;
+}
+
 .threetablecolumn {
   color: #2C3049;
   position: absolute;
   border-radius: 15px;
-  padding: 17px 0 12px;
+  padding: 11px 0 7px;
   border-spacing: 0px;
-  border: 5px solid #ffdb00;
+  border: 5px solid #FF9900;
+  border-collapse: 0px;
   width: 36%;
-  background: #feffe0;
+  right: -10px;
+  background: #F9F9FF;
   text-align: center;
-  left: 32%;
   z-index: 2;
-  top: -20px;
+  top: -15px;
   box-shadow: 0px 5px 5px #fff;
 }
 @media screen and (max-width: 1023px) {
   .threetablecolumn {
     display: none;
   }
+}
+
+.border-threetable {
+  background: rgba(255, 153, 0, 0.25);
+  height: 18px;
 }
 
 .left {
