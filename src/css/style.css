@@ -3712,7 +3712,7 @@ img {
 @media (min-width: 1024px) {
   .charact__component {
     align-items: baseline;
-    width: 1020px;
+    width: 920px;
     margin: 50px auto 0;
   }
 }
@@ -4167,10 +4167,11 @@ th, td {
 }
 
 .th-left {
-  left: 48%;
-  background: rgba(34, 39, 63, 0.904);
+  left: 46%;
+  background: rgb(34, 39, 63);
   color: #ffffff;
   top: -40px;
+  z-index: 1;
 }
 @media (min-width: 541px) and (max-width: 600px) {
   .th-left {
@@ -4184,9 +4185,18 @@ th, td {
     top: -45px;
   }
 }
+@media (min-width: 1024px) {
+  .th-left {
+    top: -40px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .th-left {
+    left: 51%;
+  }
+}
 
 .th-right {
-  left: 77%;
   background: #fc5a0f;
   color: #FFFFFF;
 }
@@ -4204,6 +4214,7 @@ th, td {
 }
 @media (min-width: 1024px) {
   .th-right {
+    left: 77%;
     top: -40px;
   }
 }
@@ -4382,23 +4393,24 @@ td {
   position: absolute;
   border-radius: 15px;
   border-spacing: 0px;
-  width: 25%;
+  width: 30%;
   height: 100%;
   border: 2px solid rgba(34, 39, 63, 0.7);
   background: rgba(157, 164, 190, 0.15);
   text-align: center;
-  left: 39%;
+  left: 38%;
   z-index: 2;
   top: 0;
 }
 @media screen and (min-width: 1401px) {
   .twotablecolumn {
-    width: 30%;
+    left: 39%;
   }
 }
 @media screen and (min-width: 2201px) {
   .twotablecolumn {
-    width: 34%;
+    left: 45%;
+    width: 26.5%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -4419,14 +4431,24 @@ td {
   border-spacing: 0px;
   border: 2px solid rgba(252, 90, 15, 0.7);
   border-collapse: 0px;
-  width: 29%;
+  width: 30%;
   height: 100%;
   right: 5px;
   background: rgba(255, 108, 0, 0.15);
   text-align: center;
   z-index: 2;
-  top: -3px;
+  top: 0;
   box-shadow: 0px 5px 5px #fff;
+}
+@media screen and (min-width: 1401px) {
+  .threetablecolumn {
+    width: 29%;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .threetablecolumn {
+    width: 26.5%;
+  }
 }
 @media screen and (max-width: 1023px) {
   .threetablecolumn {
