@@ -373,7 +373,7 @@
             text-align: center;
             padding: 3px 15px;
             line-height: 1.6;
-            @include font (600, 13px, 1.7, 0.2em);
+            @include font (600, 12px, 1.7, 0.2em);
         }
 
         @media (min-width: 1401px) {
@@ -381,11 +381,11 @@
         }
 
         @media screen and (min-width: 1851px) {
-            font-size: 16px;
+            font-size: 14px;
         }
     
         @media screen and (min-width: 2201px) {
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 
@@ -417,19 +417,19 @@
         }
 
         @media (min-width: 1024px) {
-            @include font (400, 13px, 1.7, 0.07em);
+            @include font (400, 12px, 1.7, 0.07em);
         }
 
         @media (min-width: 1401px) {
-            @include font (400, 14px, 1.7, 0.07em);
+            @include font (400, 13px, 1.7, 0.07em);
         }
 
         @media (min-width: 1851px) {
-            font-size: 16px;
+            font-size: 14px;
         }
     
         @media (min-width: 2201px) {
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 

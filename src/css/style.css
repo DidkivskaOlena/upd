@@ -3875,7 +3875,7 @@ img {
     padding: 3px 15px;
     line-height: 1.6;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.2em;
   }
@@ -3890,12 +3890,12 @@ img {
 }
 @media screen and (min-width: 1851px) {
   .charact__value {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 2201px) {
   .charact__value {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 290px) {
@@ -3949,7 +3949,7 @@ img {
 @media (min-width: 1024px) {
   .charact__span {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
@@ -3957,19 +3957,19 @@ img {
 @media (min-width: 1401px) {
   .charact__span {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
 }
 @media (min-width: 1851px) {
   .charact__span {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 2201px) {
   .charact__span {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 .charact__line {
