@@ -3791,7 +3791,7 @@ img {
   line-height: 1.655;
   text-transform: uppercase;
   color: #000000;
-  background: rgba(104, 212, 255, 0.0941176471);
+  background: rgba(242, 251, 255, 0.6);
 }
 @media (min-width: 1024px) {
   .charact__text-desktop {
@@ -3870,7 +3870,7 @@ img {
 }
 @media (min-width: 1024px) {
   .charact__value {
-    background: rgba(255, 255, 255, 0.69);
+    background: rgb(255, 255, 255);
     text-align: center;
     padding: 3px 15px;
     line-height: 1.6;

@@ -315,7 +315,7 @@
         line-height: 1.655;
         text-transform: uppercase;
         color: #000000;
-        background: #68d4ff18;
+        background: #f2fbff99;
         // border: none;
         // border-radius: 15px;
 
@@ -369,7 +369,7 @@
             @include font (600, 14px, 1.7, 0.1em);}
 
         @media (min-width: 1024px) {
-            background: rgb(255 255 255 / 69%);
+            background: rgb(255 255 255 / 100%);
             text-align: center;
             padding: 3px 15px;
             line-height: 1.6;
