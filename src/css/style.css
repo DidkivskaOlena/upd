@@ -3692,7 +3692,7 @@ img {
 }
 .charact__component {
   position: relative;
-  background: rgba(157, 164, 190, 0);
+  background: #ecf0f3;
   border-radius: 15px;
   box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.15);
   margin-bottom: 19px;
@@ -3791,11 +3791,12 @@ img {
   line-height: 1.655;
   text-transform: uppercase;
   color: #000000;
+  background: rgba(104, 212, 255, 0.2);
 }
 @media (min-width: 1024px) {
   .charact__text-desktop {
     padding: 1px 10px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.07em;
@@ -3803,7 +3804,7 @@ img {
 }
 @media (min-width: 1401px) {
   .charact__text-desktop {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 13px;
     line-height: 1.7;
     letter-spacing: 0.1em;
