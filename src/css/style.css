@@ -4387,7 +4387,7 @@ td {
   border-spacing: 0px;
   width: 30%;
   height: 100%;
-  border: 2px solid rgba(34, 39, 63, 0.7);
+  border: 2px solid rgba(34, 39, 63, 0.46);
   background: rgba(157, 164, 190, 0.15);
   text-align: center;
   left: 38%;
@@ -4415,7 +4415,7 @@ td {
   position: absolute;
   border-radius: 15px;
   border-spacing: 0px;
-  border: 2px solid rgba(252, 90, 15, 0.7);
+  border: 2px solid rgba(252, 92, 15, 0.46);
   border-collapse: 0px;
   width: 30%;
   height: 100%;
