@@ -3870,6 +3870,7 @@ img {
 }
 @media (min-width: 1024px) {
   .charact__value {
+    background: rgba(255, 255, 255, 0.69);
     text-align: center;
     padding: 3px 15px;
     line-height: 1.6;
