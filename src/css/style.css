@@ -4453,7 +4453,7 @@ th, td {
   width: 10%;
   color: #fff;
   font-weight: 600;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #68d4ff;
 }
 
 .twocolumn {
@@ -4588,6 +4588,7 @@ th, td {
 @media screen and (min-width: 1401px) {
   .threetablecolumn-new {
     width: 20%;
+    left: 66%;
   }
 }
 @media screen and (min-width: 1851px) {
@@ -4678,6 +4679,10 @@ th, td {
 
 .table-bigpadding {
   padding: 12px 5px;
+}
+
+.backgroundtable {
+  background: rgba(157, 164, 189, 0.1294117647);
 }
 
 @keyframes move {
