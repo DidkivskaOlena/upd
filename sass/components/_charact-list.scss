@@ -289,6 +289,7 @@
         color: #fff;
         padding: 4px;
         font-size: 11px;
+        letter-spacing: 0.2em;
         // background: rgba(34, 39, 63, 0.9);
 
         @media screen and (max-width: 290px) {
@@ -313,7 +314,17 @@
 
         @media (min-width: 769px) and (max-width: 1023px) {
             @include font (600, 12px, 1.7, 0.1em);}
+         
+            @media (min-width: 1401px)  {
+                font-size: 11px;}
+    
+            @media (min-width: 1851px)  {
+                font-size: 12px;
     }
+    }
+        
+
+
 
     &__text-desktop {
         // font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
@@ -474,15 +485,15 @@
         }
 
         @media (min-width: 1401px) {
-            @include font (400, 13px, 1.7, 0.07em);
+            @include font (400, 12px, 1.7, 0.07em);
         }
 
         @media (min-width: 1851px) {
-            font-size: 14px;
+            font-size: 11px;
         }
     
         @media (min-width: 2201px) {
-            font-size: 15px;
+            font-size: 12px;
         }
     }
 
@@ -1093,5 +1104,5 @@ width: 10%;
 }
 
 .backgroundtable{
-    background: #9da4bd21;
+    background: rgb(185 191 210 / 4%);
 }
