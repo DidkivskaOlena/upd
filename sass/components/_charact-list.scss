@@ -219,7 +219,7 @@
             padding: 12px 0;
             letter-spacing: 0.1em;
             line-height: 1.5;
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 
@@ -287,8 +287,8 @@
         // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         text-transform: uppercase;
         color: #fff;
-        padding: 6px;
-        font-size: 12px;
+        padding: 4px;
+        font-size: 11px;
         // background: rgba(34, 39, 63, 0.9);
 
         @media screen and (max-width: 290px) {
@@ -424,9 +424,9 @@
         @media (min-width: 1024px) {
             background: #F7F7F7;
             text-align: center;
-            padding: 6px;
+            padding: 4px;
             line-height: 1.6;
-            @include font (600, 14px, 1.7, 0.2em);
+            @include font (600, 12px, 1.7, 0.2em);
         }
 
         @media (min-width: 1401px) {
@@ -470,7 +470,7 @@
         }
 
         @media (min-width: 1024px) {
-            @include font (400, 12px, 1.7, 0.07em);
+            @include font (400, 11px, 1.7, 0.07em);
         }
 
         @media (min-width: 1401px) {
@@ -924,8 +924,9 @@ width: 10%;
     z-index: 2;
     top: -62px;
 
-    @media screen and (min-width: 1401px) {
-        left: 39.9%;
+    @media screen and (min-width: 1851px) {
+        left: 45%;
+        width: 20%;
     }
 
 
@@ -997,6 +998,10 @@ width: 10%;
     @media screen and (min-width: 1401px) {
         width: 29%;
     }
+    @media screen and (min-width: 1851px) {
+        left: 68%;
+        width: 20%;
+    }
 
     // @media screen and (min-width: 2201px) {
     //     width: 26.5%;
@@ -1063,6 +1068,10 @@ width: 10%;
 .table-container{
     width: 920px;
     margin: 30px auto;
+
+    @media screen and (min-width: 1851px) {
+        width: 1220px;
+    }
 }
 
 .table-header{

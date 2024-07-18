@@ -3688,7 +3688,7 @@ img {
     padding: 12px 0;
     letter-spacing: 0.1em;
     line-height: 1.5;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .charact__component {
@@ -3739,8 +3739,8 @@ img {
 .charact__text {
   text-transform: uppercase;
   color: #fff;
-  padding: 6px;
-  font-size: 12px;
+  padding: 4px;
+  font-size: 11px;
 }
 @media screen and (max-width: 290px) {
   .charact__text {
@@ -3954,10 +3954,10 @@ img {
   .charact__value-new {
     background: #F7F7F7;
     text-align: center;
-    padding: 6px;
+    padding: 4px;
     line-height: 1.6;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.2em;
   }
@@ -4031,7 +4031,7 @@ img {
 @media (min-width: 1024px) {
   .charact__span {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
@@ -4523,9 +4523,10 @@ th, td {
   z-index: 2;
   top: -62px;
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1851px) {
   .twotablecolumn-new {
-    left: 39.9%;
+    left: 45%;
+    width: 20%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -4581,6 +4582,12 @@ th, td {
 @media screen and (min-width: 1401px) {
   .threetablecolumn-new {
     width: 29%;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .threetablecolumn-new {
+    left: 68%;
+    width: 20%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -4645,6 +4652,11 @@ th, td {
 .table-container {
   width: 920px;
   margin: 30px auto;
+}
+@media screen and (min-width: 1851px) {
+  .table-container {
+    width: 1220px;
+  }
 }
 
 .table-header {
