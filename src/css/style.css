@@ -3470,7 +3470,7 @@ img {
 @media screen and (min-width: 1024px) {
   .charact__container {
     text-align: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 }
@@ -3685,10 +3685,25 @@ img {
 @media screen and (min-width: 1024px) {
   .charact__posttitle-desktop {
     margin: 0;
-    padding: 12px;
+    padding: 0 5px;
     letter-spacing: 0.1em;
     line-height: 1.5;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .charact__posttitle-desktop {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .charact__posttitle-desktop {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .charact__posttitle-desktop {
+    font-size: 16px;
   }
 }
 .charact__component {
@@ -3793,12 +3808,12 @@ img {
 }
 @media (min-width: 1401px) {
   .charact__text {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media (min-width: 1851px) {
   .charact__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .charact__text-desktop {
@@ -3812,26 +3827,26 @@ img {
 }
 @media (min-width: 1024px) {
   .charact__text-desktop {
-    padding: 1px 10px 1px 20px;
+    padding: 4px 10px 4px 20px;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 9px;
     line-height: 1.7;
     letter-spacing: 0.2em;
   }
 }
 @media (min-width: 1401px) {
   .charact__text-desktop {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media (min-width: 1851px) {
   .charact__text-desktop {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 2201px) {
   .charact__text-desktop {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 290px) {
@@ -3967,7 +3982,7 @@ img {
     padding: 4px 20px;
     line-height: 1.6;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 9px;
     line-height: 1.7;
     letter-spacing: 0.2em;
   }
@@ -3975,7 +3990,7 @@ img {
 @media (min-width: 1401px) {
   .charact__value-new {
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.1em;
   }
@@ -3987,7 +4002,7 @@ img {
 }
 @media screen and (min-width: 2201px) {
   .charact__value-new {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 .charact__span {
@@ -4044,7 +4059,7 @@ img {
 @media (min-width: 1024px) {
   .charact__span {
     font-weight: 400;
-    font-size: 11px;
+    font-size: 9px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
@@ -4052,19 +4067,19 @@ img {
 @media (min-width: 1401px) {
   .charact__span {
     font-weight: 400;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
 }
 @media (min-width: 1851px) {
   .charact__span {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media (min-width: 2201px) {
   .charact__span {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .charact__line {
@@ -4144,8 +4159,8 @@ img {
 }
 
 td {
-  border-top: 1px solid #bec0c7;
-  border-bottom: 1px solid #bec0c7;
+  border-top: 1px solid rgba(190, 192, 199, 0.48);
+  border-bottom: 1px solid rgba(190, 192, 199, 0.48);
   width: 22%;
 }
 @media screen and (max-width: 1023px) {
@@ -4162,6 +4177,12 @@ table {
   z-index: 1;
 }
 
+@media screen and (min-width: 1024px) {
+  .table {
+    display: none;
+  }
+}
+
 .table-desktop {
   margin: 15px;
   position: relative;
@@ -4175,9 +4196,25 @@ table {
 }
 
 .table-desktop-new {
-  padding: 25px 10px 160px 0;
+  padding: 34px 10px 160px 0;
   position: relative;
-  width: 43%;
+  width: 580px;
+  border-spacing: 0px;
+}
+@media screen and (min-width: 1401px) {
+  .table-desktop-new {
+    width: 795px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .table-desktop-new {
+    width: 840px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .table-desktop-new {
+    width: 940px;
+  }
 }
 
 th, td {
@@ -4464,12 +4501,8 @@ th, td {
   border-right: 1px solid #68d4ff;
 }
 
-.twocolumn {
-  width: 10%;
-}
-
 .border-right {
-  border-right: 1px solid #ccc;
+  border-right: 1px solid rgba(190, 192, 199, 0.48);
 }
 
 .noborder {
@@ -4524,17 +4557,30 @@ th, td {
   position: absolute;
   border-radius: 15px;
   border-spacing: 0px;
-  width: 25%;
+  padding-bottom: 15px;
   background: #F7F7F7;
   text-align: center;
-  left: 47%;
+  left: 425px;
   z-index: 2;
   top: -62px;
-  width: 18%;
+  width: 200px;
 }
 @media screen and (min-width: 1401px) {
   .twotablecolumn-new {
-    width: 17%;
+    left: 580px;
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .twotablecolumn-new {
+    width: 300px;
+    left: 615px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .twotablecolumn-new {
+    width: 335px;
+    left: 690px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -4579,9 +4625,10 @@ th, td {
   position: absolute;
   border-radius: 15px;
   border-spacing: 0px;
+  padding-bottom: 15px;
   border-collapse: 0px;
-  width: 18%;
-  left: 66%;
+  width: 200px;
+  right: 0;
   text-align: center;
   background: #F7F7F7;
   z-index: 2;
@@ -4589,8 +4636,17 @@ th, td {
 }
 @media screen and (min-width: 1401px) {
   .threetablecolumn-new {
-    width: 17%;
-    left: 66%;
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .threetablecolumn-new {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .threetablecolumn-new {
+    width: 335px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -4600,7 +4656,45 @@ th, td {
 }
 
 .border-threetable {
-  height: 20px;
+  height: 15px;
+}
+
+.fourtablecolumn-new {
+  color: #2C3049;
+  position: absolute;
+  border-radius: 15px;
+  border-spacing: 0px;
+  padding-bottom: 15px;
+  border-collapse: 0px;
+  width: 425px;
+  right: 0;
+  text-align: center;
+  background: #F7F7F7;
+  z-index: 2;
+  top: 298px;
+}
+@media screen and (min-width: 1401px) {
+  .fourtablecolumn-new {
+    width: 580px;
+    top: 340px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .fourtablecolumn-new {
+    width: 615px;
+    top: 366px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .fourtablecolumn-new {
+    width: 690px;
+    top: 394px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .fourtablecolumn-new {
+    display: none;
+  }
 }
 
 .left {
@@ -4652,17 +4746,23 @@ th, td {
 }
 
 .table-container {
-  width: 920px;
+  position: relative;
+  width: 850px;
   margin: 30px auto 0;
 }
 @media screen and (min-width: 1401px) {
   .table-container {
-    width: 920px;
+    width: 1160px;
   }
 }
 @media screen and (min-width: 1851px) {
   .table-container {
-    width: 1220px;
+    width: 1230px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .table-container {
+    width: 1380px;
   }
 }
 
