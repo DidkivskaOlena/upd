@@ -3685,9 +3685,10 @@ img {
 @media screen and (min-width: 1024px) {
   .charact__posttitle-desktop {
     margin: 0;
-    padding: 10px 0;
+    padding: 12px 0;
     letter-spacing: 0.1em;
     line-height: 1.5;
+    font-size: 13px;
   }
 }
 .charact__component {
@@ -3737,7 +3738,9 @@ img {
 }
 .charact__text {
   text-transform: uppercase;
-  color: #2C3049;
+  color: #fff;
+  padding: 6px;
+  font-size: 12px;
 }
 @media screen and (max-width: 290px) {
   .charact__text {
@@ -3798,7 +3801,7 @@ img {
   .charact__text-desktop {
     padding: 1px 10px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.7;
     letter-spacing: 0.07em;
   }
@@ -3896,6 +3899,84 @@ img {
 }
 @media screen and (min-width: 2201px) {
   .charact__value {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .charact__value-new {
+    font-weight: 600;
+    font-size: 6px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 291px) and (max-width: 360px) {
+  .charact__value-new {
+    font-weight: 600;
+    font-size: 6px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 361px) and (max-width: 420px) {
+  .charact__value-new {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 421px) and (max-width: 480px) {
+  .charact__value-new {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 481px) and (max-width: 769px) {
+  .charact__value-new {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .charact__value-new {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 1024px) {
+  .charact__value-new {
+    background: #F7F7F7;
+    text-align: center;
+    padding: 6px;
+    line-height: 1.6;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.2em;
+  }
+}
+@media (min-width: 1401px) {
+  .charact__value-new {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .charact__value-new {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 2201px) {
+  .charact__value-new {
     font-size: 15px;
   }
 }
@@ -4082,6 +4163,13 @@ table {
   .table-desktop {
     display: none;
   }
+}
+
+.table-desktop-new {
+  padding: 25px 10px 80px 0;
+  position: relative;
+  width: 40%;
+  border-spacing: 0px;
 }
 
 th, td {
@@ -4361,12 +4449,11 @@ th, td {
   }
 }
 
-td {
-  border-top: 1px solid #ccc;
-}
-
 .firstcolumn {
   width: 10%;
+  color: #fff;
+  font-weight: 600;
+  border-right: 1px solid #ccc;
 }
 
 .twocolumn {
@@ -4424,6 +4511,29 @@ td {
   }
 }
 
+.twotablecolumn-new {
+  color: #2C3049;
+  position: absolute;
+  border-radius: 15px;
+  border-spacing: 0px;
+  width: 25%;
+  background: #F7F7F7;
+  text-align: center;
+  left: 41%;
+  z-index: 2;
+  top: -62px;
+}
+@media screen and (min-width: 1401px) {
+  .twotablecolumn-new {
+    left: 39.9%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .twotablecolumn-new {
+    display: none;
+  }
+}
+
 .border-twotable {
   background: rgba(34, 39, 63, 0.13);
   height: 18px;
@@ -4439,7 +4549,6 @@ td {
   width: 30%;
   height: 100%;
   right: 17px;
-  background: rgba(255, 108, 0, 0.15);
   text-align: center;
   z-index: 2;
   top: 0;
@@ -4456,9 +4565,32 @@ td {
   }
 }
 
+.threetablecolumn-new {
+  color: #2C3049;
+  position: absolute;
+  border-radius: 15px;
+  border-spacing: 0px;
+  border-collapse: 0px;
+  width: 25%;
+  left: 68%;
+  text-align: center;
+  background: #F7F7F7;
+  z-index: 2;
+  top: -62px;
+}
+@media screen and (min-width: 1401px) {
+  .threetablecolumn-new {
+    width: 29%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .threetablecolumn-new {
+    display: none;
+  }
+}
+
 .border-threetable {
-  background: rgba(252, 92, 15, 0.25);
-  height: 18px;
+  height: 20px;
 }
 
 .left {
@@ -4501,6 +4633,29 @@ td {
 
 .novisibility {
   display: none;
+}
+
+.backtable {
+  position: relative;
+  width: 100%;
+  background-color: rgba(34, 39, 63, 0.8);
+  margin-top: 30vh;
+}
+
+.table-container {
+  width: 920px;
+  margin: 30px auto;
+}
+
+.table-header {
+  background: #fc5a0f;
+  height: 60px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.table-bigpadding {
+  padding: 12px 5px;
 }
 
 @keyframes move {
