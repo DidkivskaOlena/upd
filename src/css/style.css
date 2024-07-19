@@ -4207,6 +4207,7 @@ table {
 }
 
 .table-desktop-new {
+  border: 1px solid rgba(190, 192, 199, 0.25);
   position: relative;
   width: 340px;
   border-spacing: 0px;
@@ -4572,7 +4573,7 @@ th, td {
   border: 1px solid rgba(190, 192, 199, 0.25);
   left: 300px;
   z-index: 2;
-  top: 27px;
+  top: 28px;
   width: 250px;
 }
 @media screen and (min-width: 1401px) {
@@ -4643,7 +4644,7 @@ th, td {
   background: #f7f7f7;
   border: 1px solid rgba(190, 192, 199, 0.25);
   z-index: 2;
-  top: 27px;
+  top: 28px;
 }
 @media screen and (min-width: 1401px) {
   .threetablecolumn-new {
