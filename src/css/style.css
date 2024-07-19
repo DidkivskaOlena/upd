@@ -3826,7 +3826,7 @@ img {
   line-height: 1.655;
   text-transform: uppercase;
   padding: 0 5px;
-  background: rgba(236, 240, 243, 0.4117647059);
+  background: #fff;
   color: #000;
   font-size: 11px;
   letter-spacing: 0.2em;
@@ -3987,6 +3987,7 @@ img {
 }
 @media (min-width: 1024px) {
   .charact__value-new {
+    background-color: #fff;
     text-align: start;
     padding: 4px 20px;
     line-height: 1.6;

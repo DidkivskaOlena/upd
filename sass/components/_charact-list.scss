@@ -345,7 +345,7 @@
         line-height: 1.655;
         text-transform: uppercase;
         padding: 0 5px;
-        background: #ecf0f369;
+        background: #fff;
         // color: #fff;
         color: #000;
         font-size: 11px;
@@ -452,7 +452,8 @@
 
         @media (min-width: 1024px) {
             // background: #F7F7F7;
-            // background-color: rgba(34, 39, 63, 0.8);
+
+            background-color: #fff;
             text-align: start;
             padding: 4px 20px;
             line-height: 1.6;
