@@ -349,18 +349,19 @@
             display: none;
         }
 
-
         @media screen and (min-width: 1024px) {
             z-index: 3;
-            width: 18vw;
-            height: 18vw;
+            width: 16vw;
+            height: 19vw;
             margin: 0;
         }
 
         @media screen and (min-width: 1401px) {
-            width: 18vw;
-            height: 18vw;
+            width: 16vw;
+            height: 19vw;
             margin: 0;
+            margin-left: 30px;
+            margin-top: 10px;
         }
     }
 

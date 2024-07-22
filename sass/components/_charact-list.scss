@@ -1006,12 +1006,10 @@ th, td {
         width: 910px;
     }
     @media screen and (min-width: 1851px) {
-        // width: 1230px;
         width: 1020px;
     }
 
     @media screen and (min-width: 2201px) {
-        // width: 1380px;
         width: 1150px;
     }
 }
@@ -1055,9 +1053,9 @@ th, td {
 }
 
 .table-bigpadding{
-    padding: 4px 20px 25px;
+    padding: 4px 20px 24px;
     @media screen and (min-width: 1401px) {
-        padding-bottom: 27px;
+        padding-bottom: 28px;
     }
 
     @media screen and (min-width: 1851px) {
@@ -1067,6 +1065,10 @@ th, td {
     @media screen and (min-width: 2201px) {
         padding-bottom: 34px;
     }
+}
+
+.table-topbigpadding{
+    padding: 25px 20px 0px;
 }
 
 .backgroundtable{

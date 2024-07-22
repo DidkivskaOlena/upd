@@ -1060,16 +1060,18 @@ img {
 @media screen and (min-width: 1024px) {
   .hero__img-desktop {
     z-index: 3;
-    width: 18vw;
-    height: 18vw;
+    width: 16vw;
+    height: 19vw;
     margin: 0;
   }
 }
 @media screen and (min-width: 1401px) {
   .hero__img-desktop {
-    width: 18vw;
-    height: 18vw;
+    width: 16vw;
+    height: 19vw;
     margin: 0;
+    margin-left: 30px;
+    margin-top: 10px;
   }
 }
 .hero__backdrop-container {
@@ -4657,11 +4659,11 @@ th, td {
 }
 
 .table-bigpadding {
-  padding: 4px 20px 25px;
+  padding: 4px 20px 24px;
 }
 @media screen and (min-width: 1401px) {
   .table-bigpadding {
-    padding-bottom: 27px;
+    padding-bottom: 28px;
   }
 }
 @media screen and (min-width: 1851px) {
@@ -4673,6 +4675,10 @@ th, td {
   .table-bigpadding {
     padding-bottom: 34px;
   }
+}
+
+.table-topbigpadding {
+  padding: 25px 20px 0px;
 }
 
 .backgroundtable {
