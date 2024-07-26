@@ -768,23 +768,40 @@
                 <h2 class="footer__title footer__firsttitle">Ваші запитання</h2>
                 <form>
                     <div class="user-box">
-                        <label class="newsletter__top">
-                            <input type="text" name="name" placeholder="Ім'я" class="newsletter__input" />
-                        </label>
-                        <label class="newsletter__top">
-                            <input type="phone" name="phone" placeholder="Телефон" class="newsletter__input" />
+                        <div class="newsletter__top form-field">
+                            <input type="text" name="name" class="newsletter__input" placeholder=" " required/>
+                            <label class=" newsletter__label" for="name">
+                                Ім'я
+                            </label>
+                        </div>
+                        <div class="form-field newsletter__top">
+                            <input type="tel" name="phone" class="newsletter__input" placeholder=" " required/>
+                            <label class=" newsletter__label" for="phone">
+                                Телефон
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" name="email" class="newsletter__input" placeholder=" " required/>
+                        <label for="email" class="newsletter__label">
+                            Email
                         </label>
                     </div>
-                    <label>
-                        <input type="text" name="text" placeholder="Повідомлення" class="newsletter__input" />
-                    </label>
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        ВІДПРАВИТИ
-                      </a>
+                    <div class="form-field">
+                        <textarea rows="4" type="text" name="text" class="newsletter__input newsletter__textarea" placeholder="  " required></textarea>
+                        <label for="text" class="newsletter__label">
+                            Повідомлення 
+                        </label>
+                    </div>
+                    <button class="newsletter__button" type="submit">
+                        <a >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            ВІДПРАВИТИ
+                          </a>
+                    </button>
                 </form>
             </div>
             <div class="footer__address">
