@@ -94,10 +94,15 @@
   color: #68d4ff;
 }
 
+.newsletter__input:focus + .label__textarea,
+.newsletter__textarea:not(:placeholder-shown) + .label__textarea{
+  transform: translateY(-55px);
+}
+
 .newsletter__textarea:focus,
 .newsletter__textarea:not(:placeholder-shown){
   height: 100px;
-  padding-top: 25px;
+  padding-top: 5px;
 }
 
 .login-box form a {
