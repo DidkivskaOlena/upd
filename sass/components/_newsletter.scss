@@ -49,18 +49,14 @@
       }
     }
 
-    // &__input:not(:last-child){
-    //   width: 330px;
-    // }
-
     &__textarea{
       resize: none;
       width: 100%;
       border: none;
-      padding: 30px 0 5px;
+      padding: 5px 0 5px;
       letter-spacing: 0.08em;
       margin-top: 9px;
-      height: 100px;
+      height: 10px;
       margin-bottom: 0;
       border-bottom: 1px solid #fff;
     }
@@ -98,7 +94,11 @@
   color: #68d4ff;
 }
 
-
+.newsletter__textarea:focus,
+.newsletter__textarea:not(:placeholder-shown){
+  height: 100px;
+  padding-top: 25px;
+}
 
 .login-box form a {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

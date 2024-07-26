@@ -12,7 +12,6 @@
     @media (min-width: 768px) and (max-width: 1023px) {
         padding: 60px 50px;
     }
-     
 
     &__component {
         background-color: rgba(34, 39, 63, 0.8);
@@ -184,16 +183,10 @@
 
         @media (min-width: 1024px) {
             margin-right: 40px;
-            // width: 200px;
         }
 
         @media (min-width: 1401px) {
             margin-right: 50px;
-            // width: 300px;
-        }
-
-        @media screen and (min-width: 1851px) {
-            // width: 250px;
         }
     }
 
@@ -203,15 +196,8 @@
         border-top: 1px solid #3E434A;
         padding: 15px 0;
 
-        @media (min-width: 769px) {
-            // flex-direction: row-reverse;
-            // justify-content: space-around;
-            padding: 15px 0;
-        }
-
         @media (min-width: 1024px) {
             padding: 30px 0;
-            // border-top: none;
         }
     }
 
@@ -220,53 +206,19 @@
         transition: 2s cubic-bezier(0.4, 0, 0.2, 1);;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-    // &__item span {
-    //     position: relative;
-    //     display: block;
-    //     top: -100px;
-    //     left: 0%;
-    //     width: 50%;
-    //     height: 2px;
-        // background: linear-gradient(90deg, transparent, #68d4ff);
-    //     animation: btn-anim1 10s linear infinite;
-    //   }
-    //   }
-
-    //   @keyframes btn-anim1 {
-    //     0% {
-    //       left: 0%;
-    //     }
-    //     50%,100% {
-    //       left: 50%;
-    //     }
 
     &__item:nth-child(even) {
         flex-direction: row-reverse;
       }
 
-    // &__item:not(:last-child) {
-    //     @media screen and (max-width: 768px) {
-    //         padding: 15px 0;
-    //     }
-
-    //     @media screen and (min-width: 769px) {
-    //         margin-right: 0;
-    //     }
-    // }
-
     &__item:last-child {
         border-bottom: 1px solid #3E434A;
-
-        @media (min-width: 1024px) {
-            // border-bottom: none;
-        }
       }
 
     &__icon {
         display: block;
         width: 70px;
         height: 70px;
-        fill: var(--title-text-color);
     }
 
     &__text {
