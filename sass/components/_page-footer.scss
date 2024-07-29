@@ -52,7 +52,7 @@
         @media (min-width: 291px) and (max-width: 540px) {
             font-size: 20px;
         }
-        
+
         @media (min-width: 541px) and (max-width: 1023px) {
             font-size: 20px;
             height: 290px;
@@ -81,7 +81,8 @@
     }
 
     &__title {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: Arial, sans-serif;
+        font-weight: 600;
         margin-bottom: 30px;
         color: #FFFFFF;
 
