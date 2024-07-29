@@ -153,7 +153,7 @@
 
     &__title {
         margin-bottom: 9px;
-        font-weight: 800;
+
         color: #FF9900;
         text-transform: uppercase;
 
@@ -222,7 +222,7 @@
     }
 
     &__text {
-        font-family: sans-serif;
+        font-family:'Arial Regular', sans-serif;
         color: #FFFFFF;
         @include font (400, 8px, 1.51, 0.05em);
 

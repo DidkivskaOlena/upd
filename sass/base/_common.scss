@@ -10,8 +10,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   margin: 0;
 }
@@ -21,9 +20,9 @@ body.modal-open {
 }
 
 h2 {
-        font-family: "Ysabeau Office", Arial, sans-serif;
-        font-weight: 600;
-        letter-spacing: 0.03em;
+        font-family: "Franklin Gothic Medium", 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.1em;
         margin-top: 24px;
         margin-bottom: 20px;
 
@@ -45,9 +44,8 @@ h2 {
 }
 
 h3 {
-  font-family: "Ysabeau Office", Arial, sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 600;
+  font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.1em;
   line-height: 1.5;
   font-size: 9px;
 
