@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --rotate-speed: 60;
   --count: 11; /* Default count, the DOM element should override this */
@@ -4126,6 +4127,54 @@ th, td {
   text-align: start;
 }
 
+@supports (-moz-appearance: none) {
+  h2,
+  h3,
+  .hero__title-tablet,
+  .hero__textbottom-tablet,
+  .hero__titletop,
+  .overlay,
+  .about__title-hero,
+  .about__title,
+  .slide__text,
+  .nav-site,
+  .contact-list__link,
+  .charact__text-desktop,
+  .charact__span,
+  .charact__value-new {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .feature__text {
+    font-weight: 510; /* или любое другое значение, которое вам нужно для Firefox */
+    letter-spacing: 0em;
+    color: #EAEAEA;
+  }
+  @media (min-width: 1024px) {
+    .about__title {
+      letter-spacing: 0.09em;
+    }
+  }
+  @media screen and (min-width: 1851px) {
+    .about__title {
+      letter-spacing: 0.1em;
+      font-size: 15px;
+    }
+  }
+  .table-header-left,
+  .table-header-right {
+    font-weight: 600;
+  }
+  .charact__text-desktop {
+    color: #2f2f2f;
+  }
+  .charact__span, .charact__value-new {
+    color: #32333e;
+  }
+  .footer__title {
+    letter-spacing: 0.04em;
+    color: #EAEAEA;
+  }
+}
 @keyframes move {
   0% {
     transform: translateX(0);
