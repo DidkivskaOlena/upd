@@ -53,7 +53,8 @@
       resize: none;
       width: 100%;
       border: none;
-      padding: 5px 0 5px;
+      height: 30px;
+      padding: 15px 0 15px;
       letter-spacing: 0.08em;
       margin-top: 9px;
       height: 10px;
@@ -82,6 +83,8 @@
 .newsletter__label{
   position: absolute;
   top: 30%;
+  cursor: text;
+    pointer-events: none;
   left: 0;
   color: #ECF0F3;
   transform: translateY(-50%);
@@ -96,7 +99,7 @@
 
 .newsletter__input:focus + .label__textarea,
 .newsletter__textarea:not(:placeholder-shown) + .label__textarea{
-  transform: translateY(-55px);
+  transform: translateY(-85px);
 }
 
 .newsletter__textarea:focus,
@@ -110,6 +113,7 @@
     position: relative;
     display: inline-block;
     padding: 10px 20px;
+    
     color: #68d4ff;
     text-decoration: none;
     text-transform: uppercase;
@@ -218,4 +222,8 @@
       display: flex;
       justify-content: space-between;
     }
+  }
+
+  .label__textarea{
+    top: 50%;
   }
