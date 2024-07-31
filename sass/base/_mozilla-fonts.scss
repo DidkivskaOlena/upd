@@ -13,8 +13,7 @@
     .charact__text-desktop,
     .charact__span,
     .charact__value-new,
-    .newsletter__input,
-    .done {
+    .newsletter__input {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
     .feature__text {
@@ -35,10 +34,7 @@
         }
     }
 
-    .about__title,
-    .done__item,
-    .done__item-last,
-    .done__button {
+    .about__title{
         @media (min-width: 1024px) {
             letter-spacing: 0.09em;
 
@@ -51,9 +47,7 @@
 
     .table-header-left,
     .table-header-right,
-    .newsletter__button,
-    .done__title,
-    .done__button{
+    .newsletter__button{
         font-weight: 600;
     }
 
