@@ -12,13 +12,26 @@
     .contact-list__link,
     .charact__text-desktop,
     .charact__span,
-    .charact__value-new {
+    .charact__value-new,
+    .newsletter__input {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
     .feature__text {
         font-weight: 510; /* или любое другое значение, которое вам нужно для Firefox */
         letter-spacing: 0.00em;
         color : #EAEAEA;
+    }
+
+    .newsletter__input {
+        color : #EAEAEA;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 15px;
+          }
+  
+          @media screen and (min-width: 1851px) {
+            font-size: 17px;
+        }
     }
 
     .about__title{
@@ -33,7 +46,8 @@
     }
 
     .table-header-left,
-    .table-header-right{
+    .table-header-right,
+    .newsletter__button{
         font-weight: 600;
     }
 
