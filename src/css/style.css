@@ -4138,54 +4138,6 @@ th, td {
   text-align: start;
 }
 
-.done {
-  background-color: rgba(34, 39, 63, 0.8);
-  height: 100vh;
-  text-align: center;
-  position: relative;
-  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
-}
-.done__container {
-  position: relative;
-  width: 90%;
-  background: #f7f7f7;
-  border-radius: 15px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-  padding: 30px 20px;
-  margin: 0 auto;
-  top: 30%;
-}
-@media screen and (min-width: 541px) {
-  .done__container {
-    width: 50%;
-    top: 35%;
-  }
-}
-.done__title {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-bottom: 35px;
-}
-.done__item {
-  margin-bottom: 15px;
-}
-.done__item-last {
-  margin-bottom: 35px;
-}
-.done__button {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  display: block;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0 auto;
-  color: #000;
-  text-transform: uppercase;
-  border: 1px solid #FF6C00;
-  border-radius: 25px;
-  margin-top: 25px;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
 @supports (-moz-appearance: none) {
   h2,
   h3,
@@ -4201,8 +4153,7 @@ th, td {
   .charact__text-desktop,
   .charact__span,
   .charact__value-new,
-  .newsletter__input,
-  .done {
+  .newsletter__input {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   .feature__text {
@@ -4224,27 +4175,19 @@ th, td {
     }
   }
   @media (min-width: 1024px) {
-    .about__title,
-    .done__item,
-    .done__item-last,
-    .done__button {
+    .about__title {
       letter-spacing: 0.09em;
     }
   }
   @media screen and (min-width: 1851px) {
-    .about__title,
-    .done__item,
-    .done__item-last,
-    .done__button {
+    .about__title {
       letter-spacing: 0.1em;
       font-size: 15px;
     }
   }
   .table-header-left,
   .table-header-right,
-  .newsletter__button,
-  .done__title,
-  .done__button {
+  .newsletter__button {
     font-weight: 600;
   }
   .charact__text-desktop {
