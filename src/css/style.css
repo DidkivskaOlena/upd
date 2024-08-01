@@ -1382,11 +1382,6 @@ img {
     width: 33%;
   }
 }
-@media (min-width: 1201px) {
-  .about__block {
-    padding: 0 20px;
-  }
-}
 @media (min-width: 1401px) {
   .about__block {
     padding: 0 25px;
@@ -1468,11 +1463,6 @@ img {
     border-bottom-left-radius: 0px;
     padding: 0 0 0 15px;
     width: 33%;
-  }
-}
-@media (min-width: 1201px) {
-  .about__block-end {
-    padding: 0 0 0 20px;
   }
 }
 @media (min-width: 1401px) {
@@ -1625,7 +1615,7 @@ img {
   .about__title {
     font-size: 9px;
     margin-bottom: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     color: #2C3049;
   }
 }
