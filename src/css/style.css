@@ -1184,12 +1184,12 @@ img {
 }
 @media (min-width: 381px) and (max-width: 480px) {
   .about {
-    height: 470px;
+    height: 480px;
   }
 }
 @media (min-width: 481px) and (max-width: 540px) {
   .about {
-    height: 500px;
+    height: 510px;
   }
 }
 @media (min-width: 541px) and (max-width: 767px) {
