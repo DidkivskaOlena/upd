@@ -3516,7 +3516,7 @@ img {
     letter-spacing: 0.1em;
   }
 }
-@media (min-width: 291px) and (max-width: 360px) {
+@media (min-width: 291px) and (max-width: 365px) {
   .charact__text-desktop {
     font-weight: 500;
     font-size: 7px;
@@ -3524,7 +3524,7 @@ img {
     letter-spacing: 0.1em;
   }
 }
-@media (min-width: 361px) and (max-width: 420px) {
+@media (min-width: 366px) and (max-width: 420px) {
   .charact__text-desktop {
     font-weight: 600;
     font-size: 8px;

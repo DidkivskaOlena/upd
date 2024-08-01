@@ -212,11 +212,11 @@
             @include font (600, 6px, 1.7, 0.1em);
         }
 
-        @media (min-width: 291px) and (max-width: 360px) {
+        @media (min-width: 291px) and (max-width: 365px) {
             @include font (500, 7px, 1.7, 0.1em);
         }
 
-        @media (min-width: 361px) and (max-width: 420px) {
+        @media (min-width: 366px) and (max-width: 420px) {
             @include font (600, 8px, 1.7, 0.1em);
         }
 
