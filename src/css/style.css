@@ -4211,10 +4211,4 @@ th, td {
   100% {
     transform: translateX(100px);
   }
-}
-@font-face {
-  font-family: "Arial Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Arial Regular"), url("../fonts/ARIAL.woff") format("woff");
 }/*# sourceMappingURL=style.css.map */
