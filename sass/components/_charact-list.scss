@@ -220,11 +220,11 @@
             @include font (600, 8px, 1.7, 0.1em);
         }
 
-        @media (min-width: 421px) and (max-width: 480px) {
+        @media (min-width: 421px) and (max-width: 500px) {
             @include font (600, 10px, 1.7, 0.1em);
         }
 
-        @media (min-width: 481px) and (max-width: 768px) {
+        @media (min-width: 501px) and (max-width: 768px) {
             padding: 4px 10px;
             @include font (600, 11px, 1.7, 0.1em);
         }
@@ -271,7 +271,7 @@
             @include font (500, 10px, 1.7, 0.1em);
         }
 
-        @media (min-width: 481px) and (max-width: 769px) {
+        @media (min-width: 481px) and (max-width: 768px) {
             padding: 4px 10px;
             @include font (500, 10px, 1.7, 0.1em);
         }
