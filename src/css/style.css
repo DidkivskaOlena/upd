@@ -564,7 +564,7 @@ img {
     font-size: 13px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1174,12 +1174,12 @@ img {
 }
 @media screen and (max-width: 320px) {
   .about {
-    height: 350px;
+    height: 390px;
   }
 }
 @media (min-width: 321px) and (max-width: 380px) {
   .about {
-    height: 400px;
+    height: 420px;
   }
 }
 @media (min-width: 381px) and (max-width: 480px) {
@@ -1189,7 +1189,7 @@ img {
 }
 @media (min-width: 481px) and (max-width: 540px) {
   .about {
-    height: 480px;
+    height: 500px;
   }
 }
 @media (min-width: 541px) and (max-width: 767px) {
@@ -1734,28 +1734,32 @@ img {
 }
 @media (min-width: 281px) and (max-width: 300px) {
   .about__text {
-    top: -260px;
+    height: 140px;
+    top: -290px;
     left: 120px;
     letter-spacing: 0.04em;
   }
 }
 @media (min-width: 301px) and (max-width: 320px) {
   .about__text {
-    top: -260px;
+    height: 150px;
+    top: -290px;
     left: 120px;
     line-height: 1.27;
   }
 }
 @media (min-width: 321px) and (max-width: 340px) {
   .about__text {
-    top: -285px;
+    height: 157px;
+    top: -310px;
     left: 140px;
     font-size: 10px;
   }
 }
 @media (min-width: 341px) and (max-width: 380px) {
   .about__text {
-    top: -280px;
+    height: 150px;
+    top: -310px;
     left: 145px;
     font-size: 10px;
     line-height: 1.25;
@@ -1763,7 +1767,8 @@ img {
 }
 @media (min-width: 381px) and (max-width: 480px) {
   .about__text {
-    top: -315px;
+    height: 165px;
+    top: -335px;
     left: 170px;
     font-size: 11px;
     line-height: 1.25;
@@ -1781,7 +1786,7 @@ img {
 }
 @media (min-width: 481px) and (max-width: 540px) {
   .about__text {
-    top: -295px;
+    top: -325px;
     left: 205px;
     font-size: 12px;
     letter-spacing: 0.05em;
@@ -1790,6 +1795,7 @@ img {
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .about__text {
+    height: 200px;
     top: -395px;
     left: 50%;
     font-size: 14px;
@@ -1800,6 +1806,7 @@ img {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .about__text {
+    height: 190px;
     font-size: 15px;
     left: 50%;
     width: 45%;
@@ -1881,7 +1888,7 @@ img {
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .about__btn {
-    top: -355px;
+    top: -350px;
     margin-top: 11px;
     margin-left: 50%;
     font-size: 12px;
@@ -2164,20 +2171,25 @@ img {
 @media screen and (max-width: 280px) {
   .owl-carousel {
     position: relative;
-    top: -280px;
+    top: -260px;
   }
 }
 @media (min-width: 281px) and (max-width: 540px) {
   .owl-carousel {
     position: relative;
-    top: -270px;
+    top: -260px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 381px) and (max-width: 540px) {
+  .owl-carousel {
+    top: -275px;
   }
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .owl-carousel {
     position: relative;
-    top: -270px;
+    top: -300px;
     margin: 0 auto;
     width: 500px;
   }
@@ -2233,13 +2245,13 @@ img {
 @media (min-width: 541px) and (max-width: 767px) {
   .feedback-slider-item {
     width: 60px;
-    height: 140px;
+    height: 150px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .feedback-slider-item {
-    width: 70px;
-    height: 160px;
+    width: 90px;
+    height: 190px;
   }
 }
 
@@ -3488,6 +3500,7 @@ img {
   line-height: 1.655;
   text-transform: uppercase;
   padding: 4px;
+  padding-left: 10px;
   background: #fff;
   color: #000;
   letter-spacing: 0.15em;
@@ -4136,6 +4149,10 @@ th, td {
 
 .text-start {
   text-align: start;
+}
+
+.ps {
+  padding-left: 10px;
 }
 
 @supports (-moz-appearance: none) {

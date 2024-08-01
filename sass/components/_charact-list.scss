@@ -202,6 +202,7 @@
         line-height: 1.655;
         text-transform: uppercase;
         padding: 4px ;
+        padding-left: 10px;
         background: #fff;
         color: #000;
         letter-spacing: 0.15em;
@@ -689,4 +690,8 @@ th, td {
 
 .text-start{
     text-align: start;
+}
+
+.ps{
+    padding-left: 10px;
 }

@@ -3,11 +3,11 @@
     background-color: rgba(212, 214, 216, 30%);
 
     @media screen and (max-width: 320px) {
-        height: 350px;
+        height: 390px;
     }
 
     @media (min-width: 321px) and (max-width: 380px) {
-        height: 400px;
+        height: 420px;
     }
 
     @media (min-width: 381px) and (max-width: 480px) {
@@ -15,7 +15,7 @@
     }
 
     @media (min-width: 481px) and (max-width: 540px) {
-        height: 480px;
+        height: 500px;
     }
 
     @media (min-width: 541px) and (max-width: 767px) {
@@ -497,32 +497,37 @@
         line-height: 1.2;
 
         @media (min-width: 281px) and (max-width: 300px) {
-            top: -260px;
+            height: 140px;
+            top: -290px;
             left: 120px;
             letter-spacing: 0.04em;
         }
 
         @media (min-width: 301px) and (max-width: 320px) {
-            top: -260px;
+            height: 150px;
+            top: -290px;
             left: 120px;
             line-height: 1.27;
         }
 
         @media (min-width: 321px) and (max-width: 340px) {
-            top: -285px;
+            height: 157px;
+            top: -310px;
             left: 140px;
             font-size: 10px;
         }
 
         @media (min-width: 341px) and (max-width: 380px) {
-            top: -280px;
+            height: 150px;
+            top: -310px;
             left: 145px;
             font-size: 10px;
             line-height: 1.25;
         }
     
         @media (min-width: 381px) and (max-width: 480px) {
-            top: -315px;
+            height: 165px;
+            top: -335px;
             left: 170px;
             font-size: 11px;
             line-height: 1.25;
@@ -537,7 +542,7 @@
         }
 
         @media (min-width: 481px) and (max-width: 540px) {
-            top: -295px;
+            top: -325px;
             left: 205px;
             font-size: 12px;
             letter-spacing: 0.05em;
@@ -545,6 +550,7 @@
         }
 
         @media (min-width: 541px) and (max-width: 767px) {
+            height: 200px;
             top: -395px;
             left: 50%;
             font-size: 14px;
@@ -554,6 +560,7 @@
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {
+            height: 190px;
             font-size: 15px;
             left: 50%;
             width: 45%;
@@ -627,7 +634,7 @@
         }
 
         @media (min-width: 541px) and (max-width: 767px) {
-            top: -355px;
+            top: -350px;
             margin-top: 11px;
             margin-left: 50%;
             font-size: 12px;
@@ -878,17 +885,21 @@
 .owl-carousel {
     @media screen and (max-width: 280px) {
         position: relative;
-        top: -280px;
+        top: -260px;
     }
     @media (min-width: 281px) and (max-width: 540px) {
         position: relative;
-        top: -270px;
+        top: -260px;
         margin: 0 auto;
+    }
+
+    @media (min-width: 381px) and (max-width: 540px) {
+        top: -275px;
     }
 
     @media (min-width: 541px) and (max-width: 767px) {
         position: relative;
-        top: -270px;
+        top: -300px;
         margin: 0 auto;
         width: 500px;
     }
@@ -939,12 +950,12 @@
 
     @media (min-width: 541px) and (max-width: 767px) {
         width: 60px;
-	    height: 140px;
+	    height: 150px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        width: 70px;
-	    height: 160px;
+        width: 90px;
+        height: 190px;
     }
 }
 
