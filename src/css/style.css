@@ -2266,7 +2266,7 @@ img {
   text-align: center;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 540px) {
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin: 0;
   }
