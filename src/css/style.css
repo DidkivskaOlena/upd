@@ -3631,7 +3631,7 @@ img {
     text-align: start;
     padding: 4px 20px;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.15em;
@@ -3931,6 +3931,12 @@ th, td {
   border: 1px solid rgba(190, 192, 199, 0.25);
   z-index: 2;
   top: 28px;
+}
+@media screen and (min-width: 1401px) {
+  .threetablecolumn-new {
+    width: 290px;
+    top: 30px;
+  }
 }
 @media screen and (min-width: 1401px) {
   .threetablecolumn-new {
