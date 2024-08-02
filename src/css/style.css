@@ -1220,12 +1220,17 @@ img {
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .about__slider {
-    padding: 30px 20px;
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .about__slider {
+    padding: 30px 10px 30px 60px;
   }
 }
 @media (min-width: 768px) {
   .about__slider {
-    padding: 10px 20px 40px 20px;
+    padding: 10px 0 40px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -1233,26 +1238,42 @@ img {
     padding: 0px 20px 40px 20px;
   }
 }
-@media screen and (min-width: 1024px) {
+.about__container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 540px) and (max-width: 767px) {
   .about__container {
-    width: 880px;
+    max-width: 540px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1401px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .about__container {
-    max-width: 1300px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media screen and (min-width: 1851px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
   .about__container {
-    max-width: 1650px;
+    width: 880px;
+  }
+}
+@media (min-width: 1401px) and (max-width: 1850px) {
+  .about__container {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1851px) and (max-width: 2200px) {
+  .about__container {
+    max-width: 950px;
   }
 }
 @media screen and (min-width: 2201px) {
   .about__container {
-    max-width: 2000px;
+    max-width: 1100px;
   }
 }
 .about__component {
@@ -1609,7 +1630,7 @@ img {
     margin-bottom: 6px;
   }
 }
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 541px) and (max-width: 767px) {
   .about__title {
     font-weight: 500;
     font-size: 13px;
@@ -2107,20 +2128,10 @@ img {
 }
 @media (min-width: 381px) and (max-width: 480px) {
   .slide__text {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
-@media (min-width: 481px) and (max-width: 540px) {
-  .slide__text {
-    font-size: 12px;
-  }
-}
-@media (min-width: 541px) {
-  .slide__text {
-    font-size: 11px;
-  }
-}
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .slide__text {
     font-size: 12px;
   }
@@ -2172,10 +2183,10 @@ img {
 }
 
 /* CAROUSEL STARTS */
-@media (min-width: 541px) and (max-width: 767px) {
+@media (min-width: 600px) and (max-width: 767px) {
   .owl-carousel {
     margin: 0 auto;
-    width: 500px;
+    width: 550px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -2202,13 +2213,13 @@ img {
 @media screen and (max-width: 299px) {
   .feedback-slider-item {
     margin: 0 auto;
-    width: 60px;
+    width: 65px;
     height: 150px;
   }
 }
 @media (min-width: 300px) and (max-width: 380px) {
   .feedback-slider-item {
-    width: 60px;
+    width: 65px;
     height: 150px;
   }
 }
@@ -2220,20 +2231,20 @@ img {
 }
 @media (min-width: 481px) and (max-width: 540px) {
   .feedback-slider-item {
-    width: 85px;
+    width: 90px;
     height: 180px;
   }
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .feedback-slider-item {
-    width: 60px;
-    height: 150px;
+    width: 90px;
+    height: 190px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .feedback-slider-item {
-    width: 90px;
-    height: 190px;
+    width: 100px;
+    height: 200px;
   }
 }
 
@@ -2277,33 +2288,37 @@ img {
 }
 @media (min-width: 381px) and (max-width: 480px) {
   .item-title {
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 7px;
   }
 }
-@media (min-width: 481px) and (max-width: 540px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .item-title {
     font-size: 12px;
     margin-top: 10px;
   }
 }
-@media (min-width: 541px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .item-title {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1024px) and (max-width: 1450px) {
   .item-title {
-    font-size: 13px;
-    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1451px) {
+  .item-title {
+    font-size: 16px;
   }
 }
 
 /* RESPONSIVE */
 @media screen and (max-width: 767px) {
   .feedback-slider-item:after {
-    left: 30px;
+    left: 50px;
     right: 30px;
   }
   .customer-feedback .owl-nav [class*=owl-] {
