@@ -1174,32 +1174,32 @@ img {
 }
 @media screen and (max-width: 320px) {
   .about {
-    height: 430px;
+    height: 200px;
   }
 }
 @media (min-width: 321px) and (max-width: 380px) {
   .about {
-    height: 450px;
+    height: 220px;
   }
 }
 @media (min-width: 381px) and (max-width: 480px) {
   .about {
-    height: 490px;
+    height: 260px;
   }
 }
 @media (min-width: 481px) and (max-width: 540px) {
   .about {
-    height: 520px;
+    height: 270px;
   }
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .about {
-    height: 550px;
+    height: 300px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .about {
-    height: 634px;
+    height: 370px;
   }
 }
 @media (min-width: 1024px) {
@@ -1207,18 +1207,25 @@ img {
     text-align: center;
     background-size: cover;
     padding: 0;
-    height: 655px;
   }
 }
 @media (min-width: 1401px) {
   .about {
     padding: 0;
-    height: 705px;
   }
 }
-@media screen and (min-width: 1851px) {
-  .about {
-    height: 800px;
+.about__slider {
+  padding: 20px;
+  background-color: rgba(212, 214, 216, 0.3);
+}
+@media (min-width: 541px) and (max-width: 767px) {
+  .about__slider {
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 768px) {
+  .about__slider {
+    padding: 0px 20px 40px 20px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -2160,36 +2167,14 @@ img {
 }
 
 /* CAROUSEL STARTS */
-@media screen and (max-width: 280px) {
-  .owl-carousel {
-    position: relative;
-    top: -260px;
-  }
-}
-@media (min-width: 281px) and (max-width: 540px) {
-  .owl-carousel {
-    position: relative;
-    top: -260px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 381px) and (max-width: 540px) {
-  .owl-carousel {
-    top: -280px;
-  }
-}
 @media (min-width: 541px) and (max-width: 767px) {
   .owl-carousel {
-    position: relative;
-    top: -300px;
     margin: 0 auto;
     width: 500px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .owl-carousel {
-    position: relative;
-    top: -150px;
     left: 2%;
     margin: 0 auto;
     width: 740px;

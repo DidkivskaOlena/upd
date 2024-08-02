@@ -3,43 +3,54 @@
     background-color: rgba(212, 214, 216, 30%);
 
     @media screen and (max-width: 320px) {
-        height: 430px;
+        height: 200px;
     }
 
     @media (min-width: 321px) and (max-width: 380px) {
-        height: 450px;
+        height: 220px;
     }
 
     @media (min-width: 381px) and (max-width: 480px) {
-        height: 490px;
+        height: 260px;
     }
 
     @media (min-width: 481px) and (max-width: 540px) {
-        height: 520px;
+        height: 270px;
     }
 
     @media (min-width: 541px) and (max-width: 767px) {
-        height: 550px;
+        height: 300px;
     }
 
-    @media (min-width: 768px) {
-        height: 634px;
+    @media (min-width: 768px) and (max-width: 1023px){
+        height: 370px;
     }
 
     @media (min-width: $desktop) {
         text-align: center;
         background-size: cover;
         padding: 0;
-        height: 655px;
     }
 
     @media (min-width: 1401px) {
         padding: 0;
-        height: 705px;
     }
 
     @media screen and (min-width: 1851px) {
-        height: 800px;
+       
+    }
+
+    &__slider{
+        padding: 20px;
+        background-color: rgba(212, 214, 216, 30%);
+
+        @media (min-width: 541px) and (max-width: 767px) {
+            padding: 30px 20px;
+        }
+
+        @media (min-width: 768px){
+            padding: 0px 20px 40px 20px;
+        }
     }
 
     &__container{
@@ -877,30 +888,30 @@
 
 /* CAROUSEL STARTS */
 .owl-carousel {
-    @media screen and (max-width: 280px) {
-        position: relative;
-        top: -260px;
-    }
-    @media (min-width: 281px) and (max-width: 540px) {
-        position: relative;
-        top: -260px;
-        margin: 0 auto;
-    }
+    // @media screen and (max-width: 280px) {
+    //     position: relative;
+    //     top: -260px;
+    // }
+    // @media (min-width: 281px) and (max-width: 540px) {
+    //     position: relative;
+    //     top: -260px;
+    //     margin: 0 auto;
+    // }
 
-    @media (min-width: 381px) and (max-width: 540px) {
-        top: -280px;
-    }
+    // @media (min-width: 381px) and (max-width: 540px) {
+    //     top: -280px;
+    // }
 
     @media (min-width: 541px) and (max-width: 767px) {
-        position: relative;
-        top: -300px;
+        // position: relative;
+        // top: -300px;
         margin: 0 auto;
         width: 500px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        position: relative;
-        top: -150px;
+        // position: relative;
+        // top: -150px;
         left: 2%;
         margin: 0 auto;
         width: 740px;
