@@ -1174,17 +1174,17 @@ img {
 }
 @media screen and (max-width: 320px) {
   .about {
-    height: 410px;
+    height: 430px;
   }
 }
 @media (min-width: 321px) and (max-width: 380px) {
   .about {
-    height: 430px;
+    height: 450px;
   }
 }
 @media (min-width: 381px) and (max-width: 480px) {
   .about {
-    height: 470px;
+    height: 490px;
   }
 }
 @media (min-width: 481px) and (max-width: 540px) {
@@ -2256,12 +2256,6 @@ img {
 
 .owl-item {
   text-align: center;
-}
-
-@media screen and (max-width: 540px) {
-  .owl-theme .owl-nav.disabled + .owl-dots {
-    margin: 0;
-  }
 }
 
 .thumb-next {
