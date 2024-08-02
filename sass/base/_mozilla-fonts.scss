@@ -65,4 +65,19 @@
         letter-spacing: 0.04em;
         color : #EAEAEA;
     }
+
+    .about__slider{
+        padding-top: 30px;
+        @media (min-width: 541px) and (max-width: 767px) {
+            padding-top: 40px;
+        }
+
+        @media (min-width: 768px){
+            padding: 20px 20px 40px 20px;
+        }
+
+        @media (min-width: 1024px){
+            padding: 0px 20px 40px 20px;
+        }
+    }
 }
