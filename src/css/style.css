@@ -1225,6 +1225,11 @@ img {
 }
 @media (min-width: 768px) {
   .about__slider {
+    padding: 10px 20px 40px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .about__slider {
     padding: 0px 20px 40px 20px;
   }
 }
