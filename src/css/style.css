@@ -2704,23 +2704,23 @@ img {
   .feature__list {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 0 80px;
+    gap: 0 85px;
   }
 }
 @media (min-width: 1401px) {
   .feature__list {
-    gap: 0 90px;
+    gap: 0 100px;
   }
 }
 @media screen and (min-width: 1851px) {
   .feature__list {
     grid-template-columns: auto auto auto;
-    gap: 0 100px;
+    gap: 0 110px;
   }
 }
 @media screen and (min-width: 2201px) {
   .feature__list {
-    gap: 0 150px;
+    gap: 0 190px;
   }
 }
 
