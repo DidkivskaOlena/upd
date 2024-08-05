@@ -39,7 +39,7 @@
 
     @media screen and (min-width: 1024px) {
         margin-right: auto;
-        width: 350px;
+        width: 370px;
     }
 
     @media screen and (min-width: 1401px) {
@@ -67,6 +67,10 @@
         margin-bottom: 15px;
     }
 
+    @media (min-width: 541px) and (max-width: 1023px) {
+        margin-bottom: 18px;
+    }
+
     @media screen and (min-width: 1024px) {
         width: 22px;
     }
@@ -81,7 +85,7 @@
 .address__link {
     color: #9DA4BD;
 
-    @include font (400, 14px, 1.71, 0.03em);
+    @include font (400, 14px, 1.71, 0.05em);
     font-style: normal;
     text-decoration: none;
 
