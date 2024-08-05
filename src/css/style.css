@@ -2979,7 +2979,6 @@ img {
 }
 
 .address__link {
-  font-family: math;
   color: #9DA4BD;
   font-weight: 400;
   font-size: 14px;
@@ -3627,7 +3626,7 @@ img {
 }
 @media (min-width: 1024px) {
   .charact__value-new {
-    text-align: start;
+    text-align: center;
     padding: 4px 20px;
     line-height: 1.6;
     font-weight: 400;
