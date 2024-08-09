@@ -1170,7 +1170,7 @@ img {
 
 .about {
   padding: 10px 20px;
-  background-color: rgba(212, 214, 216, 0.3);
+  background-color: #f2f3f3;
 }
 @media screen and (max-width: 320px) {
   .about {
@@ -1216,7 +1216,7 @@ img {
 }
 .about__slider {
   padding: 20px;
-  background-color: rgba(212, 214, 216, 0.3);
+  background-color: #f2f3f3;
 }
 @media (min-width: 541px) and (max-width: 767px) {
   .about__slider {
