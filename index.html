@@ -371,7 +371,7 @@
                 </ul>
             </div>
         </section>
-        <!--Наша команда-->
+        <!--ХАРАКТЕРИСТИКИ ПРИЛАДУ-->
         <section class="charact" id="charact">
             <div class="charact__container">
                 <div class="row">
@@ -765,6 +765,19 @@
                         </tbody>
                     </table>
                     <p class="charact__span table-topbigpadding" >* - при роботі від акумулятору/ зовнішньої мережі</p>
+                    <div class="download_container table-topbigpadding">
+                        <div class="custom-select-container">
+                            <select id="instructionSelect" class="select">
+                                <option value="path/to/UPD-1600.pdf">Інструкція 1</option>
+                                <option value="path/to/instruction2.pdf">Інструкція 2</option>
+                                <option value="path/to/instruction3.pdf">Інструкція 3</option>
+                            </select>
+                        </div>
+                        <a id="downloadLink" target="_blank">
+                            <button id="downloadButton" class="download_btn">Завантажити інструкцію</button>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -830,5 +843,25 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="script.js" type="module"></script>
         <script src="menu.js" type="module"></script>
+        <!-- <script>
+            document.getElementById('downloadButton').addEventListener('click', function() {
+                var select = document.getElementById('instructionSelect');
+                var selectedValue = select.options[select.selectedIndex].value;
+                var downloadLink = document.getElementById('downloadLink');
+                downloadLink.href = selectedValue;
+                downloadLink.click();
+            });
+
+        </script> -->
   </body>
+  <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            var select = document.getElementById('instructionSelect');
+            var selectedValue = select.options[select.selectedIndex].value;
+            var downloadLink = document.getElementById('downloadLink');
+            downloadLink.href = selectedValue;
+            downloadLink.click();
+        });
+
+    </script>
 </html>

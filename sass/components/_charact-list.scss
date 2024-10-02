@@ -702,3 +702,52 @@ th, td {
 .ps{
     padding-left: 10px;
 }
+
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin-right: 32px;
+}
+
+.select, .download_btn {
+    font-family: "Open Sans";
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    appearance: none;
+    background-color: #f9f9f9;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNOC4wMDEgMTEuOTk5bC00LjI5OS00LjI5OSAxLjQxNC0xLjQxNCAyLjg4NSAyLjg4NSAyLjg4NS0yLjg4NSAxLjQxNCAxLjQxNC00LjI5OSA0LjI5OXoiLz4KPC9zdmc+Cg==');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+
+.download_btn {
+    background-color: #4CAF50; /* Зелений */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.download_btn:hover {
+    background-color: #45a049;
+}
+
+.select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.download_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
