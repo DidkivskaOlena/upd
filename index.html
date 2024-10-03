@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
   </head>
   <body>
@@ -371,7 +372,7 @@
                 </ul>
             </div>
         </section>
-        <!--Наша команда-->
+        <!--ХАРАКТЕРИСТИКИ ПРИЛАДУ-->
         <section class="charact" id="charact">
             <div class="charact__container">
                 <div class="row">
@@ -512,6 +513,10 @@
 
                     <div class="th th-left">1600/100</div>
                     <div class="th th-right">1600/280</div>
+                    </div>
+                    
+                    <div class="btn_container"></div>
+                            <a href="/path/to/UPD-1600.pdf" download class="download_btn"><i class="fas fa-download"></i>Завантажити інструкцію</a>
                     </div>
                 </li>
             </ul>
@@ -765,6 +770,9 @@
                         </tbody>
                     </table>
                     <p class="charact__span table-topbigpadding" >* - при роботі від акумулятору/ зовнішньої мережі</p>
+                    <div class="btn_container">
+                        <a href="/path/to/UPD-1600.pdf" download class="download_btn"><i class="fas fa-download"></i>Завантажити інструкцію</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -830,5 +838,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="script.js" type="module"></script>
         <script src="menu.js" type="module"></script>
+		<script>
+			// Функція для виконання AJAX-запиту до counter.php
+			function updateCounter() {
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', 'counter.php', true);
+				xhr.send(); // Виконуємо запит без обробки відповіді
+			}
+			// Відправляємо запит під час завантаження сторінки
+			window.onload = updateCounter;
+		</script>
   </body>
 </html>
