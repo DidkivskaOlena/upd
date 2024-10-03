@@ -509,12 +509,12 @@
                                     <td colspan="6" class="charact__span ps">* - при роботі від акумулятору/ зовнішньої мережі</td>
                                 </tr>
                             </tbody>
-                            
                         </table>
+
                     <div class="th th-left">1600/100</div>
                     <div class="th th-right">1600/280</div>
                     </div>
-
+                    
                     <div class="btn_container"></div>
                             <a href="/path/to/UPD-1600.pdf" download class="download_btn"><i class="fas fa-download"></i>Завантажити інструкцію</a>
                     </div>
@@ -838,5 +838,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="script.js" type="module"></script>
         <script src="menu.js" type="module"></script>
+		<script>
+			// Функція для виконання AJAX-запиту до counter.php
+			function updateCounter() {
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', 'counter.php', true);
+				xhr.send(); // Виконуємо запит без обробки відповіді
+			}
+			// Відправляємо запит під час завантаження сторінки
+			window.onload = updateCounter;
+		</script>
   </body>
 </html>
