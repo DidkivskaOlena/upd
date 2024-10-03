@@ -1,5 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/public/',
+  build: {
+    rollupOptions: {
+      // external: [/^\/external-assets\/.*$/],
+    },
+  },
 });
