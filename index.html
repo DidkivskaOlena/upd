@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
   </head>
   <body>
@@ -765,19 +766,9 @@
                         </tbody>
                     </table>
                     <p class="charact__span table-topbigpadding" >* - при роботі від акумулятору/ зовнішньої мережі</p>
-                    <div class="download_container table-topbigpadding">
-                        <div class="custom-select-container">
-                            <select id="instructionSelect" class="select">
-                                <option value="./path/to/UPD-1600.pdf">Інструкція 1</option>
-                                <option value="./path/to/instruction2.pdf">Інструкція 2</option>
-                                <option value="./path/to/instruction3.pdf">Інструкція 3</option>
-                            </select>
-                        </div>
-                        <a id="downloadLink" target="_blank">
-                            <button id="downloadButton" class="download_btn">Завантажити інструкцію</button>
-                        </a>
+                    <div class="btn_container">
+                        <a href="./public/path/to/UPD-1600.pdf" download class="download_btn"><i class="fas fa-download"></i>Завантажити інструкцію</a>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -843,25 +834,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="script.js" type="module"></script>
         <script src="menu.js" type="module"></script>
-        <!-- <script>
-            document.getElementById('downloadButton').addEventListener('click', function() {
-                var select = document.getElementById('instructionSelect');
-                var selectedValue = select.options[select.selectedIndex].value;
-                var downloadLink = document.getElementById('downloadLink');
-                downloadLink.href = selectedValue;
-                downloadLink.click();
-            });
-
-        </script> -->
   </body>
-  <script>
-        document.getElementById('downloadButton').addEventListener('click', function() {
-            var select = document.getElementById('instructionSelect');
-            var selectedValue = select.options[select.selectedIndex].value;
-            var downloadLink = document.getElementById('downloadLink');
-            downloadLink.href = selectedValue;
-            downloadLink.click();
-        });
-
-    </script>
 </html>
