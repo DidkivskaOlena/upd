@@ -4227,7 +4227,7 @@ th, td {
 .btn_container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .download_btn {
